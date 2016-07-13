@@ -6,7 +6,7 @@
  */
 ?>
 
-<div id="zo-header" class="zo-main-header header-default <?php echo $transparent; ?> <?php if (!zo_get_data_theme_options('menu_sticky')) {
+<div id="zo-header" class="zo-main-header header-default  <?php if (!zo_get_data_theme_options('menu_sticky')) {
 	echo 'no-sticky';
 } ?> <?php if (zo_get_data_theme_options('menu_sticky_tablets')) {
 	echo 'sticky-tablets';
