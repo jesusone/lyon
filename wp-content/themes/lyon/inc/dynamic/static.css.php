@@ -113,7 +113,6 @@ class ZoTheme_StaticCss
             echo "#yeah-header-logo a img { max-height: \$main_logo_height; }";
         }
         if(!empty($smof_data['bg_header']['rgba'])) {
-            var_dump($smof_data['bg_header']['rgba']);
             echo "#yeah-header { background-color:".esc_attr($smof_data['bg_header']['rgba'])."; }";
         }
         /* End Header Main */
