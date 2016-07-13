@@ -665,7 +665,7 @@ $this->sections[] = array(
             'title' => __('Header Background Color', 'fajar'),
             'default'   => array(
                 'alpha'     => 1,
-				'color'		=> '#fff',
+				'color'		=> '#283c5a',
 				'rgba'		=> 'rgba(255,255,255,1)'
             )
         )
