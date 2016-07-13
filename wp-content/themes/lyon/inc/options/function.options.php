@@ -8,7 +8,7 @@ $local_fonts = is_admin() ? $zo_base->getListLocalFontsName() : array() ;
  * @author OhYeah
  */
 $this->sections[] = array(
-    'title' => __('Main Options', 'fajar'),
+    'title' => __('Main Options', 'lyon'),
     'icon' => 'el-icon-dashboard',
     'fields' => array(
         array(
@@ -24,13 +24,13 @@ $this->sections[] = array(
  * @author OhYeah
  */
 $this->sections[] = array(
-    'title' => __('Header', 'fajar'),
+    'title' => __('Header', 'lyon'),
     'icon' => 'el-icon-credit-card',
     'fields' => array(
         array(
             'id' => 'header_layout',
-            'title' => __('Layouts', 'fajar'),
-            'subtitle' => __('select a layout for header', 'fajar'),
+            'title' => __('Layouts', 'lyon'),
+            'subtitle' => __('select a layout for header', 'lyon'),
             'default' => '',
             'type' => 'image_select',
             'options' => array(
@@ -39,25 +39,25 @@ $this->sections[] = array(
             )
         ),
         array(
-            'subtitle' => __('enable sticky mode for menu.', 'fajar'),
+            'subtitle' => __('enable sticky mode for menu.', 'lyon'),
             'id' => 'menu_sticky',
             'type' => 'switch',
-            'title' => __('Sticky Header', 'fajar'),
+            'title' => __('Sticky Header', 'lyon'),
             'default' => true,
         ),
         array(
-            'subtitle' => __('enable sticky mode for menu Tablets.', 'fajar'),
+            'subtitle' => __('enable sticky mode for menu Tablets.', 'lyon'),
             'id' => 'menu_sticky_tablets',
             'type' => 'switch',
-            'title' => __('Sticky Tablets', 'fajar'),
+            'title' => __('Sticky Tablets', 'lyon'),
             'default' => false,
             'required' => array( 0 => 'menu_sticky', 1 => '=', 2 => 1 )
         ),
         array(
-            'subtitle' => __('enable sticky mode for menu Mobile.', 'fajar'),
+            'subtitle' => __('enable sticky mode for menu Mobile.', 'lyon'),
             'id' => 'menu_sticky_mobile',
             'type' => 'switch',
-            'title' => __('Sticky Mobile', 'fajar'),
+            'title' => __('Sticky Mobile', 'lyon'),
             'default' => false,
             'required' => array( 0 => 'menu_sticky', 1 => '=', 2 => 1 )
         )
@@ -66,15 +66,15 @@ $this->sections[] = array(
 
 /* Header Top */
 $this->sections[] = array(
-    'title' => __('Header Top', 'fajar'),
+    'title' => __('Header Top', 'lyon'),
     'icon' => 'el-icon-minus',
     'subsection' => true,
     'fields' => array(
         array(
-            'subtitle' => __('Enable header top.', 'fajar'),
+            'subtitle' => __('Enable header top.', 'lyon'),
             'id' => 'header_top',
             'type' => 'switch',
-            'title' => __('Enable Header Top', 'fajar'),
+            'title' => __('Enable Header Top', 'lyon'),
             'default' => true
         ),
     )
@@ -82,13 +82,13 @@ $this->sections[] = array(
 
 /* Logo */
 $this->sections[] = array(
-    'title' => __('Logo', 'fajar'),
+    'title' => __('Logo', 'lyon'),
     'icon' => 'el-icon-picture',
     'subsection' => true,
     'fields' => array(
         array(
-            'title' => __('Select Logo', 'fajar'),
-            'subtitle' => __('Select an image file for your logo.', 'fajar'),
+            'title' => __('Select Logo', 'lyon'),
+            'subtitle' => __('Select an image file for your logo.', 'lyon'),
             'id' => 'main_logo',
             'type' => 'media',
             'url' => true,
@@ -100,7 +100,7 @@ $this->sections[] = array(
             'id'       => 'main_logo_height',
             'type'     => 'dimensions',
             'units'    => array('px'),
-            'title'    => __('Logo Height', 'fajar'),
+            'title'    => __('Logo Height', 'lyon'),
             'width' => false,
             'default'  => array(
                 'height'  => '90px'
@@ -111,14 +111,14 @@ $this->sections[] = array(
 
 /* Menu */
 $this->sections[] = array(
-    'title' => __('Menu', 'fajar'),
+    'title' => __('Menu', 'lyon'),
     'icon' => 'el-icon-tasks',
     'subsection' => true,
     'fields' => array(
         array(
             'id' => 'menu_fontsize_first_level',
             'type' => 'typography',
-            'title' => __('Menu Font Size - First Level', 'fajar'),
+            'title' => __('Menu Font Size - First Level', 'lyon'),
             'google' => false,
             'font-backup' => false,
             'all_styles' => false,
@@ -138,7 +138,7 @@ $this->sections[] = array(
         array(
             'id' => 'menu_fontsize_sub_level',
             'type' => 'typography',
-            'title' => __('Menu Font Size - Sub Level', 'fajar'),
+            'title' => __('Menu Font Size - Sub Level', 'lyon'),
             'google' => false,
             'font-backup' => false,
             'all_styles' => false,
@@ -156,41 +156,41 @@ $this->sections[] = array(
             )
         ),
         array(
-            'title'       => esc_html__( 'Menu Height', 'artista' ),
-            'subtitle' => esc_html__( 'Controls the menu height.', 'artista' ),
+            'title'       => esc_html__( 'Menu Height', 'lyon' ),
+            'subtitle' => esc_html__( 'Controls the menu height.', 'lyon' ),
             'id'          => 'menu_height',
             'type'        => 'slider',
-            "default"   => 80,
+            "default"   => 140,
             "min"       => 30,
             "step"      => 1,
             "max"       => 300,
             'display_value' => 'label'
         ),
         array(
-            'subtitle' => __('Enable mega menu.', 'fajar'),
+            'subtitle' => __('Enable mega menu.', 'lyon'),
             'id' => 'menu_mega',
             'type' => 'switch',
-            'title' => __('Mega Menu', 'fajar'),
+            'title' => __('Mega Menu', 'lyon'),
             'default' => true,
         ),
         array(
-            'subtitle' => __('Enable menu first level uppercase.', 'fajar'),
+            'subtitle' => __('Enable menu first level uppercase.', 'lyon'),
             'id' => 'menu_first_level_uppercase',
             'type' => 'switch',
-            'title' => __('Menu First Level Uppercase', 'fajar'),
+            'title' => __('Menu First Level Uppercase', 'lyon'),
             'default' => true,
         ),
         array(
-            'subtitle' => __('Enable sub menu uppercase.', 'fajar'),
+            'subtitle' => __('Enable sub menu uppercase.', 'lyon'),
             'id' => 'sub_menu_uppercase',
             'type' => 'switch',
-            'title' => __('Sub menu Uppercase', 'fajar'),
+            'title' => __('Sub menu Uppercase', 'lyon'),
             'default' => false,
         ),
         array(
             'id' => 'menu_icon_font_size',
             'type' => 'typography',
-            'title' => __('Menu Icon Font Size', 'fajar'),
+            'title' => __('Menu Icon Font Size', 'lyon'),
             'google' => false,
             'font-backup' => false,
             'all_styles' => false,
@@ -222,8 +222,8 @@ $this->sections[] = array(
 $page_title = array(
     array(
         'id' => 'page_title_layout',
-        'title' => __('Layouts', 'fajar'),
-        'subtitle' => __('select a layout for page title', 'fajar'),
+        'title' => __('Layouts', 'lyon'),
+        'subtitle' => __('select a layout for page title', 'lyon'),
         'default' => '5',
         'type' => 'image_select',
         'options' => array(
@@ -239,8 +239,8 @@ $page_title = array(
     array(
         'id'       => 'page_title_background',
         'type'     => 'background',
-        'title'    => __( 'Background', 'fajar' ),
-        'subtitle' => __( 'page title background with image, color, etc.', 'fajar' ),
+        'title'    => __( 'Background', 'lyon' ),
+        'subtitle' => __( 'page title background with image, color, etc.', 'lyon' ),
         'output'   => array('#zo-page-element-wrap'),
         'default'   => array(
             'background-color'=>'#ffffff',
@@ -253,7 +253,7 @@ $page_title = array(
     ),
     array(
         'id' => 'page_title_margin',
-        'title' => __('Margin', 'fajar'),
+        'title' => __('Margin', 'lyon'),
         'type' => 'spacing',
         'units' => 'px',
         'mode' => 'margin',
@@ -268,7 +268,7 @@ $page_title = array(
     ),
     array(
         'id' => 'page_title_padding',
-        'title' => __('Padding', 'fajar'),
+        'title' => __('Padding', 'lyon'),
         'type' => 'spacing',
         'units' => 'px',
         'mode' => 'padding',
@@ -283,13 +283,13 @@ $page_title = array(
     ),
     array(
         'id' => 'page_title_parallax',
-        'title' => __('Enable Header Parallax', 'fajar'),
+        'title' => __('Enable Header Parallax', 'lyon'),
         'type' => 'switch',
         'default' => false
     ),
     array(
         'id' => 'page_title_custom_post',
-        'title' => __('Custom Background For Post Type', 'fajar'),
+        'title' => __('Custom Background For Post Type', 'lyon'),
         'type' => 'switch',
         'default' => false
     ),
@@ -302,8 +302,8 @@ foreach( $post_types as $type => $name) {
     $page_title[] = array(
         'id'       => 'page_title_custom_post_' . $type,
         'type'     => 'background',
-        'title'    => sprintf( __( 'Background For %s' , 'fajar'), $name),
-        'subtitle' => sprintf( __( 'Custom background image for post type %s', 'fajar' ), $name),
+        'title'    => sprintf( __( 'Background For %s' , 'lyon'), $name),
+        'subtitle' => sprintf( __( 'Custom background image for post type %s', 'lyon' ), $name),
         'output'   => array('.single-'.$type.' #zo-page-element-wrap'),
         'background-color' => false,
         'background-repeat' => false,
@@ -320,7 +320,7 @@ foreach( $post_types as $type => $name) {
  * Section settings
  */
 $this->sections[] = array(
-    'title' => __('Page Title & BC', 'fajar'),
+    'title' => __('Page Title & BC', 'lyon'),
     'icon' => 'el-icon-map-marker',
     'fields' => $page_title
 );
@@ -328,19 +328,19 @@ $this->sections[] = array(
 /* Page Title */
 $this->sections[] = array(
     'icon' => 'el-icon-podcast',
-    'title' => __('Page Title', 'fajar'),
+    'title' => __('Page Title', 'lyon'),
     'subsection' => true,
     'fields' => array(
         array(
             'id' => 'page_title_typography',
             'type' => 'typography',
-            'title' => __('Typography', 'fajar'),
+            'title' => __('Typography', 'lyon'),
             'google' => true,
             'font-backup' => true,
             'all_styles' => true,
             'output'  => array('.page-title #page-title-text h1'),
             'units' => 'px',
-            'subtitle' => __('Typography option with title text.', 'fajar'),
+            'subtitle' => __('Typography option with title text.', 'lyon'),
             'default' => array(
                 'color' => '#fff',
                 'font-style' => 'normal',
@@ -355,13 +355,13 @@ $this->sections[] = array(
         array(
             'id' => 'page_sub_title_typography',
             'type' => 'typography',
-            'title' => __('Sub Title', 'fajar'),
+            'title' => __('Sub Title', 'lyon'),
             'google' => true,
             'font-backup' => true,
             'all_styles' => true,
             'output'  => array('.page-title #page-title-text .page-sub-title'),
             'units' => 'px',
-            'subtitle' => __('Typography option with sub title text.', 'fajar'),
+            'subtitle' => __('Typography option with sub title text.', 'lyon'),
             'default' => array(
                 'color' => '#fff',
                 'font-style' => 'normal',
@@ -378,26 +378,26 @@ $this->sections[] = array(
 /* Breadcrumb */
 $this->sections[] = array(
     'icon' => 'el-icon-random',
-    'title' => __('Breadcrumb', 'fajar'),
+    'title' => __('Breadcrumb', 'lyon'),
     'subsection' => true,
     'fields' => array(
         array(
-            'subtitle' => __('The text before the breadcrumb home.', 'fajar'),
+            'subtitle' => __('The text before the breadcrumb home.', 'lyon'),
             'id' => 'breacrumb_home_prefix',
             'type' => 'text',
-            'title' => __('Breadcrumb Home Prefix', 'fajar'),
+            'title' => __('Breadcrumb Home Prefix', 'lyon'),
             'default' => 'Home'
         ),
         array(
             'id' => 'breacrumb_typography',
             'type' => 'typography',
-            'title' => __('Typography', 'fajar'),
+            'title' => __('Typography', 'lyon'),
             'google' => true,
             'font-backup' => true,
             'all_styles' => true,
             'output'  => array('#breadcrumb #breadcrumb-text .breadcrumbs','#breadcrumb #breadcrumb-text ul li a'),
             'units' => 'px',
-            'subtitle' => __('Typography option with title text.', 'fajar'),
+            'subtitle' => __('Typography option with title text.', 'lyon'),
             'default' => array(
                 'color' => '',
                 'font-style' => 'normal',
@@ -418,26 +418,26 @@ $this->sections[] = array(
  * @author OhYeah
  */
 $this->sections[] = array(
-    'title' => __('Body', 'fajar'),
+    'title' => __('Body', 'lyon'),
     'icon' => 'el-icon-website',
     'fields' => array(
         array(
-            'subtitle' => __('Set layout boxed default(Wide).', 'fajar'),
+            'subtitle' => __('Set layout boxed default(Wide).', 'lyon'),
             'id' => 'body_layout',
             'type' => 'switch',
-            'title' => __('Boxed Layout', 'fajar'),
+            'title' => __('Boxed Layout', 'lyon'),
             'default' => false,
         ),
         array(
             'id'       => 'body_background',
             'type'     => 'background',
-            'title'    => __( 'Background', 'fajar' ),
-            'subtitle' => __( 'body background with image, color, etc.', 'fajar' ),
+            'title'    => __( 'Background', 'lyon' ),
+            'subtitle' => __( 'body background with image, color, etc.', 'lyon' ),
             'output'   => array('body'),
         ),
         array(
             'id' => 'body_margin',
-            'title' => __('Margin', 'fajar'),
+            'title' => __('Margin', 'lyon'),
             'type' => 'spacing',
             'units' => 'px',
             'mode' => 'margin',
@@ -452,7 +452,7 @@ $this->sections[] = array(
         ),
         array(
             'id' => 'body_padding',
-            'title' => __('Padding', 'fajar'),
+            'title' => __('Padding', 'lyon'),
             'type' => 'spacing',
             'units' => 'px',
             'mode' => 'padding',
@@ -475,20 +475,20 @@ $this->sections[] = array(
  * @author OhYeah
  */
 $this->sections[] = array(
-    'title' => __('Content', 'fajar'),
+    'title' => __('Content', 'lyon'),
     'icon' => 'el-icon-compass',
     'subsection' => true,
     'fields' => array(
         array(
             'id'       => 'container_background',
             'type'     => 'background',
-            'title'    => __( 'Background', 'fajar' ),
-            'subtitle' => __( 'Container background with image, color, etc.', 'fajar' ),
+            'title'    => __( 'Background', 'lyon' ),
+            'subtitle' => __( 'Container background with image, color, etc.', 'lyon' ),
             'output'   => array('#main'),
         ),
         array(
             'id' => 'container_margin',
-            'title' => __('Margin', 'fajar'),
+            'title' => __('Margin', 'lyon'),
             'type' => 'spacing',
             'units' => 'px',
             'mode' => 'margin',
@@ -503,7 +503,7 @@ $this->sections[] = array(
         ),
         array(
             'id' => 'container_padding',
-            'title' => __('Padding', 'fajar'),
+            'title' => __('Padding', 'lyon'),
             'type' => 'spacing',
             'units' => 'px',
             'mode' => 'padding',
@@ -526,26 +526,26 @@ $this->sections[] = array(
  * @author OhYeah
  */
 $this->sections[] = array(
-    'title' => __('Page Loadding', 'fajar'),
+    'title' => __('Page Loadding', 'lyon'),
     'icon' => 'el-icon-compass',
     'subsection' => true,
     'fields' => array(
         array(
-            'subtitle' => __('Enable page loadding.', 'fajar'),
+            'subtitle' => __('Enable page loadding.', 'lyon'),
             'id' => 'enable_page_loadding',
             'type' => 'switch',
-            'title' => __('Enable Page Loadding', 'fajar'),
+            'title' => __('Enable Page Loadding', 'lyon'),
             'default' => false,
         ),
         array(
-            'subtitle' => __('Select Style Page Loadding.', 'fajar'),
+            'subtitle' => __('Select Style Page Loadding.', 'lyon'),
             'id' => 'page_loadding_style',
             'type' => 'select',
             'options' => array(
                 '1' => 'Style 1',
                 '2' => 'Style 2'
             ),
-            'title' => __('Page Loadding Style', 'fajar'),
+            'title' => __('Page Loadding Style', 'lyon'),
             'default' => 'style-1',
             'required' => array( 0 => 'enable_page_loadding', 1 => '=', 2 => 1 )
         )
@@ -558,13 +558,13 @@ $this->sections[] = array(
  * @author OhYeah
  */
 $this->sections[] = array(
-    'title' => __('Footer', 'fajar'),
+    'title' => __('Footer', 'lyon'),
     'icon' => 'el-icon-credit-card',
 	'fields' => array(
 		array(
             'id' => 'footer_layout',
-            'title' => __('Layouts', 'fajar'),
-            'subtitle' => __('select a layout for footer', 'fajar'),
+            'title' => __('Layouts', 'lyon'),
+            'subtitle' => __('select a layout for footer', 'lyon'),
             'default' => '',
             'type' => 'image_select',
             'options' => array(
@@ -572,8 +572,8 @@ $this->sections[] = array(
             )
         ),
 		array(
-            'title' => __('Select Logo', 'fajar'),
-            'subtitle' => __('Select an image file for your logo.', 'fajar'),
+            'title' => __('Select Logo', 'lyon'),
+            'subtitle' => __('Select an image file for your logo.', 'lyon'),
             'id' => 'footer_logo',
             'type' => 'media',
             'url' => true,
@@ -586,46 +586,46 @@ $this->sections[] = array(
 
 /* Custom Footer */
 $this->sections[] = array(
-    'title' => __('Customize Footer', 'fajar'),
+    'title' => __('Customize Footer', 'lyon'),
     'icon' => 'el-icon-fork',
     'subsection' => true,
     'fields' => array(
         array(
             'id' => 'footer_row_1',
             'type' => 'switch',
-            'title' => __('Enable Footer Row 1', 'fajar'),
+            'title' => __('Enable Footer Row 1', 'lyon'),
             'default' => true,
         ),
         array(
             'id' => 'footer_row_2',
             'type' => 'switch',
-            'title' => __('Enable Footer Row 2', 'fajar'),
+            'title' => __('Enable Footer Row 2', 'lyon'),
             'default' => true,
         ),
         array(
             'id' => 'footer_row_3',
             'type' => 'switch',
-            'title' => __('Enable Footer Row 3', 'fajar'),
+            'title' => __('Enable Footer Row 3', 'lyon'),
             'default' => true,
         ),
         array(
             'id' => 'footer_banners',
             'type' => 'switch',
-            'title' => __('Enable Footer Banners', 'fajar'),
+            'title' => __('Enable Footer Banners', 'lyon'),
             'default' => true,
         ),
 		array(
-            'subtitle' => __('Enable footer bottom.', 'fajar'),
+            'subtitle' => __('Enable footer bottom.', 'lyon'),
             'id' => 'footer_bottom',
             'type' => 'switch',
-            'title' => __('Enable Footer Bottom', 'fajar'),
+            'title' => __('Enable Footer Bottom', 'lyon'),
             'default' => true,
         ),
         array(
-            'subtitle' => __('enable button back to top.', 'fajar'),
+            'subtitle' => __('enable button back to top.', 'lyon'),
             'id' => 'footer_botton_back_to_top',
             'type' => 'switch',
-            'title' => __('Back To Top', 'fajar'),
+            'title' => __('Back To Top', 'lyon'),
             'default' => true,
         )
     )
@@ -638,21 +638,21 @@ $this->sections[] = array(
  * @author OhYeah
  */
 $this->sections[] = array(
-    'title' => __('Styling', 'fajar'),
+    'title' => __('Styling', 'lyon'),
     'icon' => 'el-icon-adjust',
     'fields' => array(
         array(
-            'subtitle' => __('set color main color.', 'fajar'),
+            'subtitle' => __('set color main color.', 'lyon'),
             'id' => 'primary_color',
             'type' => 'color',
-            'title' => __('Primary Color', 'fajar'),
+            'title' => __('Primary Color', 'lyon'),
             'default' => '#ee3b24'
         ),
         array(
-            'subtitle' => __('set color for tags <a></a>.', 'fajar'),
+            'subtitle' => __('set color for tags <a></a>.', 'lyon'),
             'id' => 'link_color',
             'type' => 'link_color',
-            'title' => __('Link Color', 'fajar'),
+            'title' => __('Link Color', 'lyon'),
             'output'  => array('a'),
             'default' => array(
 				'regular'  => '#333',
@@ -665,15 +665,15 @@ $this->sections[] = array(
 
 /** Header Main Color **/
 $this->sections[] = array(
-    'title' => __('Header Main Color', 'fajar'),
+    'title' => __('Header Main Color', 'lyon'),
     'icon' => 'el-icon-minus',
     'subsection' => true,
     'fields' => array(
         array(
-            'subtitle' => __('set color for header background color.', 'fajar'),
+            'subtitle' => __('set color for header background color.', 'lyon'),
             'id' => 'bg_header',
             'type' => 'color_rgba',
-            'title' => __('Header Background Color', 'fajar'),
+            'title' => __('Header Background Color', 'lyon'),
             'default'   => array(
                 'color'     => '#283c5a',
                 'alpha'     => 1,
@@ -685,32 +685,32 @@ $this->sections[] = array(
 
 /** Footer Top Color **/
 $this->sections[] = array(
-    'title' => __('Footer Top Color', 'fajar'),
+    'title' => __('Footer Top Color', 'lyon'),
     'icon' => 'el-icon-chevron-up',
     'subsection' => true,
     'fields' => array(
         array(
-            'subtitle' => __('Set color footer top.', 'fajar'),
+            'subtitle' => __('Set color footer top.', 'lyon'),
             'id' => 'footer_top_color',
             'type' => 'color',
             'output' => array('#zo-footer-top'),
-            'title' => __('Footer Top Color', 'fajar'),
+            'title' => __('Footer Top Color', 'lyon'),
             'default' => '#636363'
         ),
         array(
-            'subtitle' => __('Set title color footer top.', 'fajar'),
+            'subtitle' => __('Set title color footer top.', 'lyon'),
             'id' => 'footer_heading_color',
             'type' => 'color',
             'output' => array('#zo-footer-top h1,#zo-footer-top h2,#zo-footer-top h3,#zo-footer-top h4,#zo-footer-top h5,#zo-footer-top h6'),
-            'title' => __('Footer Heading Color', 'fajar'),
+            'title' => __('Footer Heading Color', 'lyon'),
             'default' => '#ffffff'
         ),
         array(
-            'subtitle' => __('Set title link color footer top.', 'fajar'),
+            'subtitle' => __('Set title link color footer top.', 'lyon'),
             'id' => 'footer_top_link_color',
             'type' => 'link_color',
             'output' => array('#zo-footer-top a'),
-            'title' => __('Footer Link Color', 'fajar'),
+            'title' => __('Footer Link Color', 'lyon'),
             'default' => '#636363',
             'default' => array(
 				'regular'  => '#636363',
@@ -722,16 +722,16 @@ $this->sections[] = array(
 
 /** Footer Bottom Color **/
 $this->sections[] = array(
-    'title' => __('Footer Bottom Color', 'fajar'),
+    'title' => __('Footer Bottom Color', 'lyon'),
     'icon' => 'el-icon-chevron-down',
     'subsection' => true,
     'fields' => array(
         array(
-            'subtitle' => __('Set color footer top.', 'fajar'),
+            'subtitle' => __('Set color footer top.', 'lyon'),
             'id' => 'footer_bottom_color',
             'type' => 'color',
             'output' => array('#yeah-footer-bottom'),
-            'title' => __('Footer Bottom Color', 'fajar'),
+            'title' => __('Footer Bottom Color', 'lyon'),
             'default' => '#3a3a3a'
         )
     )
@@ -743,13 +743,13 @@ $this->sections[] = array(
  * @author OhYeah
  */
 $this->sections[] = array(
-    'title' => __('Typography', 'fajar'),
+    'title' => __('Typography', 'lyon'),
     'icon' => 'el-icon-text-width',
     'fields' => array(
         array(
             'id' => 'font_body',
             'type' => 'typography',
-            'title' => __('Body Font', 'fajar'),
+            'title' => __('Body Font', 'lyon'),
             'google' => true,
             'font-backup' => true,
             'all_styles' => true,
@@ -764,13 +764,13 @@ $this->sections[] = array(
                 'google' => true,
                 'font-size' => '18px',
             ),
-            'subtitle' => __('Typography option with each property can be called individually.', 'fajar'),
+            'subtitle' => __('Typography option with each property can be called individually.', 'lyon'),
         ),
         array(
             'id' => 'font-body-selector',
             'type' => 'textarea',
-            'title' => __('Selector of Body Font', 'fajar'),
-            'subtitle' => __('add html tags ID or class (body,a,.class,#id, Note: no use characters: > * + & ^ @ ...), extend class ".body_font" to using this font', 'fajar'),
+            'title' => __('Selector of Body Font', 'lyon'),
+            'subtitle' => __('add html tags ID or class (body,a,.class,#id, Note: no use characters: > * + & ^ @ ...), extend class ".body_font" to using this font', 'lyon'),
             'validate' => 'no_html',
             'default' => 'body, .body_font',
         ),
@@ -779,14 +779,14 @@ $this->sections[] = array(
 
 /* extra font. */
 $this->sections[] = array(
-    'title' => __('Extra Fonts', 'fajar'),
+    'title' => __('Extra Fonts', 'lyon'),
     'icon' => 'el el-fontsize',
     'subsection' => true,
     'fields' => array(
         array(
             'id' => 'google-font-1',
             'type' => 'typography',
-            'title' => __('Font 1', 'fajar'),
+            'title' => __('Font 1', 'lyon'),
             'google' => true,
             'font-backup' => true,
             'font-style' => false,
@@ -804,15 +804,15 @@ $this->sections[] = array(
         array(
             'id' => 'google-font-selector-1',
             'type' => 'textarea',
-            'title' => __('Selector of Body Font', 'fajar'),
-            'subtitle' => __('add html tags ID or class (body,a,.class,#id, Note: no use characters: > * + & ^ @ ...), extend class ".google-font-1" to using this font', 'fajar'),
+            'title' => __('Selector of Body Font', 'lyon'),
+            'subtitle' => __('add html tags ID or class (body,a,.class,#id, Note: no use characters: > * + & ^ @ ...), extend class ".google-font-1" to using this font', 'lyon'),
             'validate' => 'no_html',
             'default' => '.google-font-1',
         ),
         array(
             'id' => 'google-font-2',
             'type' => 'typography',
-            'title' => __('Font 2', 'fajar'),
+            'title' => __('Font 2', 'lyon'),
             'google' => true,
             'font-backup' => false,
             'font-style' => false,
@@ -830,8 +830,8 @@ $this->sections[] = array(
         array(
             'id' => 'google-font-selector-2',
             'type' => 'textarea',
-            'title' => __('Selector of Body Font', 'fajar'),
-            'subtitle' => __('add html tags ID or class (body,a,.class,#id, Note: no use characters: > * + & ^ @ ...), extend class ".google-font-2" to using this font', 'fajar'),
+            'title' => __('Selector of Body Font', 'lyon'),
+            'subtitle' => __('add html tags ID or class (body,a,.class,#id, Note: no use characters: > * + & ^ @ ...), extend class ".google-font-2" to using this font', 'lyon'),
             'validate' => 'no_html',
             'default' => '.google-font-2',
         ),
@@ -840,22 +840,22 @@ $this->sections[] = array(
 
 /* local fonts. */
 $this->sections[] = array(
-    'title' => __('Local Fonts', 'fajar'),
+    'title' => __('Local Fonts', 'lyon'),
     'icon' => 'el-icon-bookmark',
     'subsection' => true,
     'fields' => array(
         array(
             'id'       => 'local-fonts-1',
             'type'     => 'select',
-            'title'    => __( 'Fonts 1', 'fajar' ),
+            'title'    => __( 'Fonts 1', 'lyon' ),
             'options'  => $local_fonts,
             'default'  => 'museo_slab_100',
         ),
         array(
             'id' => 'local-fonts-selector-1',
             'type' => 'textarea',
-            'title' => __('Selector 1', 'fajar'),
-            'subtitle' => __('add html tags ID or class (body,a,.class,#id, Note: no use characters: > * + & ^ @ ...), or extend ".museo_slab_100" to use font', 'fajar'),
+            'title' => __('Selector 1', 'lyon'),
+            'subtitle' => __('add html tags ID or class (body,a,.class,#id, Note: no use characters: > * + & ^ @ ...), or extend ".museo_slab_100" to use font', 'lyon'),
             'validate' => 'no_html',
             'default' => '.museo_slab_100, h1, h2, h3, h4, h5, h6',
             'required' => array(
@@ -867,15 +867,15 @@ $this->sections[] = array(
         array(
             'id'       => 'local-fonts-2',
             'type'     => 'select',
-            'title'    => __( 'Fonts 2', 'fajar' ),
+            'title'    => __( 'Fonts 2', 'lyon' ),
             'options'  => $local_fonts,
             'default'  => 'museo_slab_300',
         ),
         array(
             'id' => 'local-fonts-selector-2',
             'type' => 'textarea',
-            'title' => __('Selector 2', 'fajar'),
-            'subtitle' => __('add html tags ID or class (body,a,.class,#id, Note: no use characters: > * + & ^ @ ...), or extend ".museo_slab_300" to use font', 'fajar'),
+            'title' => __('Selector 2', 'lyon'),
+            'subtitle' => __('add html tags ID or class (body,a,.class,#id, Note: no use characters: > * + & ^ @ ...), or extend ".museo_slab_300" to use font', 'lyon'),
             'validate' => 'no_html',
             'default' => '.museo_slab_300, #yeah-header-menu',
             'required' => array(
@@ -887,15 +887,15 @@ $this->sections[] = array(
         array(
             'id'       => 'local-fonts-3',
             'type'     => 'select',
-            'title'    => __( 'Fonts 3', 'fajar' ),
+            'title'    => __( 'Fonts 3', 'lyon' ),
             'options'  => $local_fonts,
             'default'  => 'museo_slab_500',
         ),
         array(
             'id' => 'local-fonts-selector-3',
             'type' => 'textarea',
-            'title' => __('Selector 3', 'fajar'),
-            'subtitle' => __('add html tags ID or class (body,a,.class,#id, Note: no use characters: > * + & ^ @ ...), or extend ".museo_slab_500" to use font', 'fajar'),
+            'title' => __('Selector 3', 'lyon'),
+            'subtitle' => __('add html tags ID or class (body,a,.class,#id, Note: no use characters: > * + & ^ @ ...), or extend ".museo_slab_500" to use font', 'lyon'),
             'validate' => 'no_html',
             'default' => '.museo_slab_500',
             'required' => array(
@@ -914,14 +914,14 @@ $this->sections[] = array(
  * @author OhYeah
  */
 $this->sections[] = array(
-    'title' => __('Custom CSS', 'fajar'),
+    'title' => __('Custom CSS', 'lyon'),
     'icon' => 'el-icon-bulb',
     'fields' => array(
         array(
             'id' => 'custom_css',
             'type' => 'ace_editor',
-            'title' => __('CSS Code', 'fajar'),
-            'subtitle' => __('create your css code here.', 'fajar'),
+            'title' => __('CSS Code', 'lyon'),
+            'subtitle' => __('create your css code here.', 'lyon'),
             'mode' => 'css',
             'theme' => 'monokai',
         )
@@ -934,21 +934,21 @@ $this->sections[] = array(
  * @author OhYeah
  */
 $this->sections[] = array(
-    'title' => __('Animations', 'fajar'),
+    'title' => __('Animations', 'lyon'),
     'icon' => 'el-icon-magic',
     'fields' => array(
         array(
-            'subtitle' => __('Enable animation mouse scroll...', 'fajar'),
+            'subtitle' => __('Enable animation mouse scroll...', 'lyon'),
             'id' => 'smoothscroll',
             'type' => 'switch',
-            'title' => __('Smooth Scroll', 'fajar'),
+            'title' => __('Smooth Scroll', 'lyon'),
             'default' => false
         ),
         array(
-            'subtitle' => __('Enable animation parallax for images...', 'fajar'),
+            'subtitle' => __('Enable animation parallax for images...', 'lyon'),
             'id' => 'paralax',
             'type' => 'switch',
-            'title' => __('Images Paralax', 'fajar'),
+            'title' => __('Images Paralax', 'lyon'),
             'default' => true
         ),
     )
@@ -965,10 +965,10 @@ $this->sections[] = array(
     'icon' => 'el-icon-idea',
     'fields' => array(
         array(
-            'subtitle' => __('no minimize , generate css over time...', 'fajar'),
+            'subtitle' => __('no minimize , generate css over time...', 'lyon'),
             'id' => 'dev_mode',
             'type' => 'switch',
-            'title' => __('Dev Mode (not recommended)', 'fajar'),
+            'title' => __('Dev Mode (not recommended)', 'lyon'),
             'default' => true
         )
     )

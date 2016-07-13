@@ -125,10 +125,11 @@ class ZoTheme_StaticCss
 			}";
 		}
 		 //MENU HEIGHT
-        if(!empty($smof_data['nav_height'])){
-            echo '#yeah-header .yeah-header-navigation .nav-menu > li > a {';
-            echo 	'height: ' . esc_attr($smof_data['nav_height']) . 'px;';
-            echo 	'line-height: ' . esc_attr($smof_data['nav_height']) . 'px;';
+        if(!empty($smof_data['menu_height'])){
+
+            echo '#yeah-header .yeah-header-navigation .main-navigation .menu ul > li > a {';
+            echo 	'height: ' . esc_attr($smof_data['menu_height']) . 'px;';
+            echo 	'line-height: ' . esc_attr($smof_data['menu_height']) . 'px;';
             echo '}';
 
         }
