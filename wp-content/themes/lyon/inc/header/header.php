@@ -27,7 +27,7 @@
 					<?php
 					$attr = array(
 						'theme_location' => 'left_menu',
-						'items_wrap' => '<ul class="nav-menu menu-main-menu">%3$s</ul>',
+						'menu_class' => 'nav-menu menu-main-menu',
 					);
 
 					/* enable mega menu. */
@@ -47,7 +47,7 @@
 					<?php
 					$attr = array(
 						'theme_location' => 'right_menu',
-						'items_wrap' => '<ul class="nav-menu menu-main-menu">%3$s</ul>',
+						'menu_class' => 'nav-menu menu-main-menu',
 					);
 
 					/* enable mega menu. */

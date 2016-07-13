@@ -39,6 +39,17 @@ $this->sections[] = array(
             )
         ),
         array(
+            'subtitle' => __('set color for header background color.', 'lyon'),
+            'id' => 'bg_header',
+            'type' => 'color_rgba',
+            'title' => __('Header Background Color', 'lyon'),
+            'default'   => array(
+                'color'     => '#283c5a',
+                'alpha'     => 1,
+                'rgba' 		=> 'rgba(40, 60, 90, 1)'
+            ),
+        ),
+        array(
             'subtitle' => __('enable sticky mode for menu.', 'lyon'),
             'id' => 'menu_sticky',
             'type' => 'switch',
@@ -134,6 +145,27 @@ $this->sections[] = array(
             'default' => array(
                 'font-size' => '15px',
             )
+        ),
+        array(
+            'subtitle' => __('Controls the text color of first level menu items.', 'artista'),
+            'id' => 'menu_color_first_level',
+            'type' => 'color',
+            'title' => __('Menu Color - First Level', 'artista'),
+            'default' => '#ffffff'
+        ),
+        array(
+            'subtitle' => __('Controls the text hover color of first level menu items.', 'artista'),
+            'id' => 'menu_color_hover_first_level',
+            'type' => 'color',
+            'title' => __('Menu Color Hover - First Level', 'artista'),
+            'default' => '#FF3A47'
+        ),
+        array(
+            'subtitle' => __('Controls the text hover color of first level menu items.', 'artista'),
+            'id' => 'menu_color_active_first_level',
+            'type' => 'color',
+            'title' => __('Menu Color Active - First Level', 'artista'),
+            'default' => '#FF3A47'
         ),
         array(
             'id' => 'menu_fontsize_sub_level',
@@ -663,25 +695,7 @@ $this->sections[] = array(
     )
 );
 
-/** Header Main Color **/
-$this->sections[] = array(
-    'title' => __('Header Main Color', 'lyon'),
-    'icon' => 'el-icon-minus',
-    'subsection' => true,
-    'fields' => array(
-        array(
-            'subtitle' => __('set color for header background color.', 'lyon'),
-            'id' => 'bg_header',
-            'type' => 'color_rgba',
-            'title' => __('Header Background Color', 'lyon'),
-            'default'   => array(
-                'color'     => '#283c5a',
-                'alpha'     => 1,
-                'rgba' 		=> 'rgba(40, 60, 90, 1)'
-            ),
-        )
-    )
-);
+
 
 /** Footer Top Color **/
 $this->sections[] = array(

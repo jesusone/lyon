@@ -127,7 +127,7 @@ class ZoTheme_StaticCss
 		 //MENU HEIGHT
         if(!empty($smof_data['menu_height'])){
 
-            echo '#yeah-header .yeah-header-navigation .main-navigation .menu ul > li > a {';
+            echo '#yeah-header .yeah-header-navigation .main-navigation .nav-menu ul > li > a {';
             echo 	'height: ' . esc_attr($smof_data['menu_height']) . 'px;';
             echo 	'line-height: ' . esc_attr($smof_data['menu_height']) . 'px;';
             echo '}';
