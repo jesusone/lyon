@@ -93,7 +93,7 @@ $this->sections[] = array(
             'type' => 'media',
             'url' => true,
             'default' => array(
-                'url'=>get_template_directory_uri().'/logo.png'
+                'url'=>get_template_directory_uri().'/assets/images/logo.png'
             )
         ),
         array(
@@ -103,7 +103,7 @@ $this->sections[] = array(
             'title'    => __('Logo Height', 'fajar'),
             'width' => false,
             'default'  => array(
-                'height'  => '60px'
+                'height'  => '90px'
             ),
         ),
     )
@@ -154,6 +154,17 @@ $this->sections[] = array(
             'default' => array(
                 'font-size' => '16px',
             )
+        ),
+        array(
+            'title'       => esc_html__( 'Menu Height', 'artista' ),
+            'subtitle' => esc_html__( 'Controls the menu height.', 'artista' ),
+            'id'          => 'menu_height',
+            'type'        => 'slider',
+            "default"   => 80,
+            "min"       => 30,
+            "step"      => 1,
+            "max"       => 300,
+            'display_value' => 'label'
         ),
         array(
             'subtitle' => __('Enable mega menu.', 'fajar'),

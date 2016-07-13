@@ -124,6 +124,14 @@ class ZoTheme_StaticCss
 				text-transform: uppercase;
 			}";
 		}
+		 //MENU HEIGHT
+        if(!empty($smof_data['nav_height'])){
+            echo '#yeah-header .yeah-header-navigation .nav-menu > li > a {';
+            echo 	'height: ' . esc_attr($smof_data['nav_height']) . 'px;';
+            echo 	'line-height: ' . esc_attr($smof_data['nav_height']) . 'px;';
+            echo '}';
+
+        }
 		if(!empty($smof_data['sub_menu_uppercase'])){
 			echo "#yeah-header-navigation .main-navigation .menu-main-menu li ul a {
 				text-transform: uppercase;

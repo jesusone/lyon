@@ -18,7 +18,8 @@
 <!-- Header Logo, Icon, Cart -->
 	<div class="container-fluid">
 		<div class="row">
-			<div class="yeah-header-find-hotel">
+			<div class="yeah-header-main">
+			<div id="yeah-header-find-hotel" class="yeah-header-find-hotel yeah-header-sidebar">
 				<?php if(is_active_sidebar('header-find-hotel')){ dynamic_sidebar('header-find-hotel'); } ?>
 			</div><!--End find-hotel-->
 			<div class="hidden-xs hidden-sm yeah-header-navigation left-menu">
@@ -58,8 +59,9 @@
 					wp_nav_menu($attr); ?>
 				</nav>
 			</div>
-			<div id="yeah-header-language" class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
+			<div id="yeah-header-language" class="yeah-header-sidebar">
 				<?php if(is_active_sidebar('sidebar-language')){ dynamic_sidebar('sidebar-language'); } ?>
+			</div>
 			</div>
 		</div>
 	</div>
