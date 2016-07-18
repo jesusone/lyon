@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b625b242-6e1c-401a-b383-adb841f87fd4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/assets/css/static.css" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/assets/css/static.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/assets/scss/options.scss" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/assets/scss/options.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/inc/base.class.php" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/inc/base.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/inc/dynamic/static.css.php" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/inc/dynamic/static.css.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/zo_grid--welcome.php" />
     </list>
     <ignored path="lyon.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,11 +36,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="static.css.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="static.css.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/inc/dynamic/static.css.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8473968">
+            <state vertical-scroll-proportion="-18.153847">
               <caret line="247" column="32" selection-start-line="247" selection-start-column="32" selection-end-line="247" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zo_grid.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/zo_grid.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="5.8846154">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zo_grid--welcome.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/zo_grid--welcome.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.54937166">
+              <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -114,28 +130,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navigation.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/assets/scss/navigation.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/inc/header/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-              <folding>
-                <element signature="e#6#85#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -159,6 +153,7 @@
         <option value="$PROJECT_DIR$/wp-content/themes/lyon/inc/options/function.options.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/lyon/inc/base.class.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/lyon/inc/dynamic/static.css.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/zo_grid--welcome.php" />
       </list>
     </option>
   </component>
@@ -410,18 +405,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/assets/images/pagetitle.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="79" column="23" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/inc/libs/class-tgm-plugin-activation.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -771,8 +754,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/inc/dynamic/static.css.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8473968">
+        <state vertical-scroll-proportion="-18.153847">
           <caret line="247" column="32" selection-start-line="247" selection-start-column="32" selection-end-line="247" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/zo_grid.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="5.8846154">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/zo_grid--welcome.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54937166">
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
           <folding />
         </state>
       </provider>
