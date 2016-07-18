@@ -63,7 +63,8 @@
             }
             ?>
             <div class="zo-grid-item <?php echo esc_attr($atts['item_class']);?>" data-groups='[<?php echo implode(',', $groups);?>]'>
-                <?php 
+                <div class="col-md-6">
+                <?php
                     if(has_post_thumbnail() && !post_password_required() && !is_attachment() &&  wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), $size, false)):
                         $class = ' has-thumbnail';
                         $thumbnail = get_the_post_thumbnail(get_the_ID(),$size);
@@ -73,14 +74,17 @@
                     endif;
                     echo '<div class="zo-grid-media '.esc_attr($class).'">'.$thumbnail.'</div>';
                 ?>
-                <div class="zo-grid-title">
-                    <?php the_title();?>
                 </div>
-                <div class="zo-grid-time">
-                    <?php the_time('l, F jS, Y');?>
-                </div>
-                <div class="zo-grid-categories">
-                    <?php echo get_the_term_list( get_the_ID(), $taxo, 'Category: ', ', ', '' ); ?>
+                <div class="col-md-6">
+                    <div class="zo-grid-title">
+                        <?php the_title();?>
+                    </div>
+                    <div class="zo-grid-time">
+                        <?php the_time('l, F jS, Y');?>
+                    </div>
+                    <div class="zo-grid-categories">
+                        <?php echo get_the_term_list( get_the_ID(), $taxo, 'Category: ', ', ', '' ); ?>
+                    </div>
                 </div>
             </div>
             <?php

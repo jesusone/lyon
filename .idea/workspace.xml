@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b625b242-6e1c-401a-b383-adb841f87fd4" name="Default" comment="" />
+    <list default="true" id="b625b242-6e1c-401a-b383-adb841f87fd4" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/zo_grid--welcome.php" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/zo_grid--welcome.php" />
+    </list>
     <ignored path="lyon.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -57,8 +59,8 @@
       <file leaf-file-name="zo_grid--welcome.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/zo_grid--welcome.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32854578">
-              <caret line="64" column="26" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.6947935">
+              <caret line="88" column="18" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -683,7 +685,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
           <folding>
-            <element signature="e#6#85#0#PHP" expanded="true" />
+            <element signature="e#6#85#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -768,8 +770,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/zo_grid--welcome.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32854578">
-          <caret line="64" column="26" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.6947935">
+          <caret line="88" column="18" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
           <folding />
         </state>
       </provider>

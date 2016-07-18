@@ -979,6 +979,16 @@ body h3 {
   margin-top: 0;
   margin-bottom: 15px; }
 
+body h4 {
+  font-family: Karla;
+  font-weight: 700;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 15px; }
+
 .btn, button, .button, input[type="submit"] {
   line-height: 1;
   display: inline-block;
