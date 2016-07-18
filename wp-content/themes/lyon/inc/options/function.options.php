@@ -814,6 +814,204 @@ $this->sections[] = array(
             'validate' => 'no_html',
             'default' => 'body, .body_font',
         ),
+        array(
+            'id' => 'font_h1',
+            'type' => 'typography',
+            'title' => __('H1 Headers Typography', 'labella'),
+            'subtitle' => __('These settings control the typography for all H1 Headers.', 'labella'),
+            'google' => true,
+            'font-backup' => true,
+            'all_styles' => true,
+            'letter-spacing' => true,
+            'units' => 'px',
+            'default' => array(
+                'font-family' => 'Karla',
+                'font-weight' => '700',
+                'font-size' => '48px',
+                'line-height' => '60px',
+                'color' => '#000000'
+            )
+        ),
+        array(
+            'id' => 'font_h1_margin',
+            'title' => __('H1 Headers Margin', 'labella'),
+            'subtitle' => __('Controls the top/bottom margins for the H1. Enter values including any valid CSS unit, ex: 0px, 15px..', 'labella'),
+            'type' => 'spacing',
+            'units' => 'px',
+            'mode' => 'margin',
+            'left' => false,
+            'right' => false,
+            'default' => array(
+                'margin-top'     => '0',
+                'margin-bottom'  => '15px',
+                'units'          => 'px',
+            )
+        ),
+        array(
+            'id' => 'font_h2',
+            'type' => 'typography',
+            'title' => __('H2 Headers Typography', 'labella'),
+            'subtitle' => __('These settings control the typography for all H2 Headers.', 'labella'),
+            'google' => true,
+            'font-backup' => true,
+            'all_styles' => true,
+            'letter-spacing' => true,
+            'units' => 'px',
+            'default' => array(
+                'font-family' => 'Karla',
+                'font-weight' => '700',
+                'font-size' => '36px',
+                'line-height' => '60px',
+                'color' => '#000000'
+            )
+        ),
+        array(
+            'id' => 'font_h2_margin',
+            'title' => __('H2 Headers Margin', 'labella'),
+            'subtitle' => __('Controls the top/bottom margins for the H2. Enter values including any valid CSS unit, ex: 0px, 15px..', 'labella'),
+            'type' => 'spacing',
+            'units' => 'px',
+            'mode' => 'margin',
+            'left' => false,
+            'right' => false,
+            'default' => array(
+                'margin-top'     => '0',
+                'margin-bottom'  => '15px',
+                'units'          => 'px',
+            )
+        ),
+        array(
+            'id' => 'font_h3',
+            'type' => 'typography',
+            'title' => __('H3 Headers Typography', 'labella'),
+            'subtitle' => __('These settings control the typography for all H3 Headers.', 'labella'),
+            'google' => true,
+            'font-backup' => true,
+            'all_styles' => true,
+            'letter-spacing' => true,
+            'units' => 'px',
+            'default' => array(
+                'font-family' => 'Karla',
+                'font-weight' => '700',
+                'font-size' => '24px',
+                'line-height' => '30px',
+                'color' => '#000000'
+            )
+        ),
+        array(
+            'id' => 'font_h3_margin',
+            'title' => __('H3 Headers Margin', 'labella'),
+            'subtitle' => __('Controls the top/bottom margins for the H3. Enter values including any valid CSS unit, ex: 0px, 15px..', 'labella'),
+            'type' => 'spacing',
+            'units' => 'px',
+            'mode' => 'margin',
+            'left' => false,
+            'right' => false,
+            'default' => array(
+                'margin-top'     => '0',
+                'margin-bottom'  => '15px',
+                'units'          => 'px',
+            )
+        ),
+        array(
+            'id' => 'font_h4',
+            'type' => 'typography',
+            'title' => __('H4 Headers Typography', 'labella'),
+            'subtitle' => __('These settings control the typography for all H4 Headers.', 'labella'),
+            'google' => true,
+            'font-backup' => true,
+            'all_styles' => true,
+            'letter-spacing' => true,
+            'units' => 'px',
+            'default' => array(
+                'font-family' => 'Karla',
+                'font-weight' => '700',
+                'font-size' => '20px',
+                'line-height' => '30px',
+                'color' => '#000000'
+            )
+        ),
+        array(
+            'id' => 'font_h4_margin',
+            'title' => __('H4 Headers Margin', 'labella'),
+            'subtitle' => __('Controls the top/bottom margins for the H4. Enter values including any valid CSS unit, ex: 0px, 15px..', 'labella'),
+            'type' => 'spacing',
+            'units' => 'px',
+            'mode' => 'margin',
+            'left' => false,
+            'right' => false,
+            'default' => array(
+                'margin-top'     => '0',
+                'margin-bottom'  => '15px',
+                'units'          => 'px',
+            )
+        ),
+        array(
+            'id' => 'font_h5',
+            'type' => 'typography',
+            'title' => __('H5 Headers Typography', 'labella'),
+            'subtitle' => __('These settings control the typography for all H5 Headers.', 'labella'),
+            'google' => true,
+            'font-backup' => true,
+            'all_styles' => true,
+            'letter-spacing' => true,
+            'units' => 'px',
+            'default' => array(
+                'font-family' => 'Karla',
+                'font-weight' => '700',
+                'font-size' => '18px',
+                'line-height' => '30px',
+                'color' => '#000000'
+            )
+        ),
+        array(
+            'id' => 'font_h5_margin',
+            'title' => __('H5 Headers Margin', 'labella'),
+            'subtitle' => __('Controls the top/bottom margins for the H5. Enter values including any valid CSS unit, ex: 0px, 15px..', 'labella'),
+            'type' => 'spacing',
+            'units' => 'px',
+            'mode' => 'margin',
+            'left' => false,
+            'right' => false,
+            'default' => array(
+                'margin-top'     => '0',
+                'margin-bottom'  => '15px',
+                'units'          => 'px',
+            )
+        ),
+        array(
+            'id' => 'font_h6',
+            'type' => 'typography',
+            'title' => __('H6 Headers Typography', 'labella'),
+            'subtitle' => __('These settings control the typography for all H6 Headers.', 'labella'),
+            'letter-spacing' => true,
+            'google' => true,
+            'font-backup' => true,
+            'all_styles' => true,
+            'units' => 'px',
+            'default' => array(
+                'font-family' => 'Karla',
+                'font-weight' => '700',
+                'font-size' => '16px',
+                'line-height' => '30px',
+                'color' => '#000000'
+            )
+        ),
+        array(
+            'id' => 'font_h6_margin',
+            'title' => __('H6 Headers Margin', 'labella'),
+            'subtitle' => __('Controls the top/bottom margins for the H6. Enter values including any valid CSS unit, ex: 0px, 15px..', 'labella'),
+            'type' => 'spacing',
+            'units' => 'px',
+            'mode' => 'margin',
+            'left' => false,
+            'right' => false,
+            'default' => array(
+                'margin-top'     => '0',
+                'margin-bottom'  => '15px',
+                'units'          => 'px',
+            )
+        ),
     )
 );
 

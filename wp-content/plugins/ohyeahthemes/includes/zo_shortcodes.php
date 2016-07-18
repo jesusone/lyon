@@ -19,3 +19,4 @@ require_once ZO_DIR . '/shortcodes/zo_progressbar.php';
 require_once ZO_DIR . '/shortcodes/zo_masonry.php';
 require_once ZO_DIR . '/shortcodes/zo_googlemap.php';
 require_once ZO_DIR . '/shortcodes/zo_video.php';
+require_once ZO_DIR . '/shortcodes/zo_heading.php';
