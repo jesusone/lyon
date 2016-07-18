@@ -905,10 +905,10 @@
   font-family: 'museo_slab_500'; }
 
 body, .body_font {
-  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
   font-weight: 400;
   color: #404040;
-  font-size: 18px; }
+  font-size: 16px; }
 
 .google-font-1, .yeah-footer-row-1 .place-order-widget .tag, .yeah-footer-row-1 p span, .yeah-footer-row-3 ul li a, #yeah-header-menu.header-default .menu-sreach form input[type="text"], #yeah-header-navigation .main-navigation .menu-main-menu > li ul li, #yeah-header-navigation .main-navigation .menu-main-menu > li ul li a, #yeah-header-navigation .main-navigation .menu-main-menu > ul > li ul li, #yeah-header-navigation .main-navigation .menu-main-menu > ul > li ul li a {
   font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;

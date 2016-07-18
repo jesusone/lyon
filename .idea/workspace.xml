@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b625b242-6e1c-401a-b383-adb841f87fd4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/includes/zo_shortcodes.php" afterPath="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/includes/zo_shortcodes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/assets/css/static.css" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/assets/css/static.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/assets/scss/options.scss" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/assets/scss/options.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/inc/options/function.options.php" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/inc/options/function.options.php" />
     </list>
     <ignored path="lyon.iws" />
@@ -29,8 +30,8 @@
       <file leaf-file-name="function.options.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/inc/options/function.options.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8390151">
-              <caret line="1013" column="10" selection-start-line="1013" selection-start-column="10" selection-end-line="1013" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.434">
+              <caret line="799" column="29" selection-start-line="799" selection-start-column="29" selection-end-line="799" selection-end-column="29" />
               <folding>
                 <element signature="e#2834#3651#0#PHP" expanded="false" />
               </folding>
@@ -962,8 +963,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/inc/options/function.options.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8390151">
-          <caret line="1013" column="10" selection-start-line="1013" selection-start-column="10" selection-end-line="1013" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.434">
+          <caret line="799" column="29" selection-start-line="799" selection-start-column="29" selection-end-line="799" selection-end-column="29" />
           <folding>
             <element signature="e#2834#3651#0#PHP" expanded="false" />
           </folding>

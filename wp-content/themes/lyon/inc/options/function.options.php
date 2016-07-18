@@ -797,12 +797,12 @@ $this->sections[] = array(
 			'subsets' => false,
             'units' => 'px',
             'default' => array(
-                'color' => '#404040',
+                'color' => '#252525',
                 'font-weight' => '400',
-                'font-family' => 'Source Sans Pro',
+                'font-family' => 'Lato',
 				'font-backup' => 'Arial, Helvetica, sans-serif',
                 'google' => true,
-                'font-size' => '18px',
+                'font-size' => '16px',
             ),
             'subtitle' => __('Typography option with each property can be called individually.', 'lyon'),
         ),
@@ -817,25 +817,25 @@ $this->sections[] = array(
         array(
             'id' => 'font_h1',
             'type' => 'typography',
-            'title' => __('H1 Headers Typography', 'labella'),
-            'subtitle' => __('These settings control the typography for all H1 Headers.', 'labella'),
+            'title' => __('H1 Headers Typography', 'lyon'),
+            'subtitle' => __('These settings control the typography for all H1 Headers.', 'lyon'),
             'google' => true,
             'font-backup' => true,
             'all_styles' => true,
             'letter-spacing' => true,
             'units' => 'px',
             'default' => array(
-                'font-family' => 'Karla',
+                'font-family' => 'Old Standard TT',
                 'font-weight' => '700',
                 'font-size' => '48px',
                 'line-height' => '60px',
-                'color' => '#000000'
+                'color' => '#283c5a'
             )
         ),
         array(
             'id' => 'font_h1_margin',
-            'title' => __('H1 Headers Margin', 'labella'),
-            'subtitle' => __('Controls the top/bottom margins for the H1. Enter values including any valid CSS unit, ex: 0px, 15px..', 'labella'),
+            'title' => __('H1 Headers Margin', 'lyon'),
+            'subtitle' => __('Controls the top/bottom margins for the H1. Enter values including any valid CSS unit, ex: 0px, 15px..', 'lyon'),
             'type' => 'spacing',
             'units' => 'px',
             'mode' => 'margin',
@@ -850,25 +850,25 @@ $this->sections[] = array(
         array(
             'id' => 'font_h2',
             'type' => 'typography',
-            'title' => __('H2 Headers Typography', 'labella'),
-            'subtitle' => __('These settings control the typography for all H2 Headers.', 'labella'),
+            'title' => __('H2 Headers Typography', 'lyon'),
+            'subtitle' => __('These settings control the typography for all H2 Headers.', 'lyon'),
             'google' => true,
             'font-backup' => true,
             'all_styles' => true,
             'letter-spacing' => true,
             'units' => 'px',
             'default' => array(
-                'font-family' => 'Karla',
+                'font-family' => 'Old Standard TT',
                 'font-weight' => '700',
                 'font-size' => '36px',
                 'line-height' => '60px',
-                'color' => '#000000'
+                'color' => '#283c5a'
             )
         ),
         array(
             'id' => 'font_h2_margin',
-            'title' => __('H2 Headers Margin', 'labella'),
-            'subtitle' => __('Controls the top/bottom margins for the H2. Enter values including any valid CSS unit, ex: 0px, 15px..', 'labella'),
+            'title' => __('H2 Headers Margin', 'lyon'),
+            'subtitle' => __('Controls the top/bottom margins for the H2. Enter values including any valid CSS unit, ex: 0px, 15px..', 'lyon'),
             'type' => 'spacing',
             'units' => 'px',
             'mode' => 'margin',
@@ -883,8 +883,8 @@ $this->sections[] = array(
         array(
             'id' => 'font_h3',
             'type' => 'typography',
-            'title' => __('H3 Headers Typography', 'labella'),
-            'subtitle' => __('These settings control the typography for all H3 Headers.', 'labella'),
+            'title' => __('H3 Headers Typography', 'lyon'),
+            'subtitle' => __('These settings control the typography for all H3 Headers.', 'lyon'),
             'google' => true,
             'font-backup' => true,
             'all_styles' => true,
@@ -900,8 +900,8 @@ $this->sections[] = array(
         ),
         array(
             'id' => 'font_h3_margin',
-            'title' => __('H3 Headers Margin', 'labella'),
-            'subtitle' => __('Controls the top/bottom margins for the H3. Enter values including any valid CSS unit, ex: 0px, 15px..', 'labella'),
+            'title' => __('H3 Headers Margin', 'lyon'),
+            'subtitle' => __('Controls the top/bottom margins for the H3. Enter values including any valid CSS unit, ex: 0px, 15px..', 'lyon'),
             'type' => 'spacing',
             'units' => 'px',
             'mode' => 'margin',
@@ -916,8 +916,8 @@ $this->sections[] = array(
         array(
             'id' => 'font_h4',
             'type' => 'typography',
-            'title' => __('H4 Headers Typography', 'labella'),
-            'subtitle' => __('These settings control the typography for all H4 Headers.', 'labella'),
+            'title' => __('H4 Headers Typography', 'lyon'),
+            'subtitle' => __('These settings control the typography for all H4 Headers.', 'lyon'),
             'google' => true,
             'font-backup' => true,
             'all_styles' => true,
@@ -933,8 +933,8 @@ $this->sections[] = array(
         ),
         array(
             'id' => 'font_h4_margin',
-            'title' => __('H4 Headers Margin', 'labella'),
-            'subtitle' => __('Controls the top/bottom margins for the H4. Enter values including any valid CSS unit, ex: 0px, 15px..', 'labella'),
+            'title' => __('H4 Headers Margin', 'lyon'),
+            'subtitle' => __('Controls the top/bottom margins for the H4. Enter values including any valid CSS unit, ex: 0px, 15px..', 'lyon'),
             'type' => 'spacing',
             'units' => 'px',
             'mode' => 'margin',
@@ -949,8 +949,8 @@ $this->sections[] = array(
         array(
             'id' => 'font_h5',
             'type' => 'typography',
-            'title' => __('H5 Headers Typography', 'labella'),
-            'subtitle' => __('These settings control the typography for all H5 Headers.', 'labella'),
+            'title' => __('H5 Headers Typography', 'lyon'),
+            'subtitle' => __('These settings control the typography for all H5 Headers.', 'lyon'),
             'google' => true,
             'font-backup' => true,
             'all_styles' => true,
@@ -966,8 +966,8 @@ $this->sections[] = array(
         ),
         array(
             'id' => 'font_h5_margin',
-            'title' => __('H5 Headers Margin', 'labella'),
-            'subtitle' => __('Controls the top/bottom margins for the H5. Enter values including any valid CSS unit, ex: 0px, 15px..', 'labella'),
+            'title' => __('H5 Headers Margin', 'lyon'),
+            'subtitle' => __('Controls the top/bottom margins for the H5. Enter values including any valid CSS unit, ex: 0px, 15px..', 'lyon'),
             'type' => 'spacing',
             'units' => 'px',
             'mode' => 'margin',
@@ -982,8 +982,8 @@ $this->sections[] = array(
         array(
             'id' => 'font_h6',
             'type' => 'typography',
-            'title' => __('H6 Headers Typography', 'labella'),
-            'subtitle' => __('These settings control the typography for all H6 Headers.', 'labella'),
+            'title' => __('H6 Headers Typography', 'lyon'),
+            'subtitle' => __('These settings control the typography for all H6 Headers.', 'lyon'),
             'letter-spacing' => true,
             'google' => true,
             'font-backup' => true,
@@ -999,8 +999,8 @@ $this->sections[] = array(
         ),
         array(
             'id' => 'font_h6_margin',
-            'title' => __('H6 Headers Margin', 'labella'),
-            'subtitle' => __('Controls the top/bottom margins for the H6. Enter values including any valid CSS unit, ex: 0px, 15px..', 'labella'),
+            'title' => __('H6 Headers Margin', 'lyon'),
+            'subtitle' => __('Controls the top/bottom margins for the H6. Enter values including any valid CSS unit, ex: 0px, 15px..', 'lyon'),
             'type' => 'spacing',
             'units' => 'px',
             'mode' => 'margin',
@@ -1061,7 +1061,7 @@ $this->sections[] = array(
             'subsets'=> false,
             'default' => array(
                 'font-weight' => '700',
-                'font-family' => 'Source Sans Pro',
+                'font-family' => 'Lato',
 				'font-backup' => 'Arial, Helvetica, sans-serif',
             )
         ),
