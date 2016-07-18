@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b625b242-6e1c-401a-b383-adb841f87fd4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/assets/css/static.css" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/assets/css/static.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/assets/scss/options.scss" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/assets/scss/options.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/inc/options/function.options.php" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/inc/options/function.options.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/inc/dynamic/static.css.php" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/inc/dynamic/static.css.php" />
     </list>
     <ignored path="lyon.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="function.options.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="function.options.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/inc/options/function.options.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.434">
-              <caret line="799" column="29" selection-start-line="799" selection-start-column="29" selection-end-line="799" selection-end-column="29" />
+            <state vertical-scroll-proportion="-0.7710843">
+              <caret line="850" column="28" selection-start-line="850" selection-start-column="21" selection-end-line="850" selection-end-column="28" />
               <folding>
                 <element signature="e#2834#3651#0#PHP" expanded="false" />
               </folding>
@@ -39,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="static.css.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="static.css.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/inc/dynamic/static.css.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.038462">
-              <caret line="127" column="41" selection-start-line="127" selection-start-column="41" selection-end-line="127" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.9389587">
+              <caret line="249" column="9" selection-start-line="249" selection-start-column="9" selection-end-line="249" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -150,9 +149,9 @@
         <option value="$PROJECT_DIR$/wp-content/themes/lyon/inc/header/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/lyon/assets/scss/navigation.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/lyon/assets/scss/header.scss" />
-        <option value="$PROJECT_DIR$/wp-content/themes/lyon/inc/dynamic/static.css.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/includes/zo_shortcodes.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/lyon/inc/options/function.options.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/lyon/inc/dynamic/static.css.php" />
       </list>
     </option>
   </component>
@@ -345,6 +344,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="options" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lyon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lyon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lyon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dynamic" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -913,14 +942,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/inc/dynamic/static.css.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.038462">
-          <caret line="127" column="41" selection-start-line="127" selection-start-column="41" selection-end-line="127" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/shortcodes/zo_heading.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -963,11 +984,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/inc/options/function.options.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.434">
-          <caret line="799" column="29" selection-start-line="799" selection-start-column="29" selection-end-line="799" selection-end-column="29" />
+        <state vertical-scroll-proportion="-0.7710843">
+          <caret line="850" column="28" selection-start-line="850" selection-start-column="21" selection-end-line="850" selection-end-column="28" />
           <folding>
             <element signature="e#2834#3651#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/inc/dynamic/static.css.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9389587">
+          <caret line="249" column="9" selection-start-line="249" selection-start-column="9" selection-end-line="249" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
