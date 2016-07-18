@@ -949,6 +949,36 @@ body, .body_font {
 .nav-menu > li ul a:focus, .nav-menu > li ul li:hover, .nav-menu > li ul li.current-menu-item, .nav-menu > li ul li.current-menu-parent, .nav-menu > li ul li.current-menu-ancestor, .nav-menu > li ul li.current_page_item, .nav-menu > li ul li:hover > a, .nav-menu > li ul li.current-menu-item > a, .nav-menu > li ul li.current-menu-parent > a, .nav-menu > li ul li.current-menu-ancestor > a, .nav-menu > li ul li.current_page_item > a {
   color: #cdaf87; }
 
+body h1 {
+  font-family: Old Standard TT;
+  font-weight: 700;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #283c5a;
+  margin-top: 0;
+  margin-bottom: 15px; }
+
+body h2 {
+  font-family: Old Standard TT;
+  font-weight: 700;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #283c5a;
+  margin-top: 0;
+  margin-bottom: 15px; }
+
+body h3 {
+  font-family: Karla;
+  font-weight: 700;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 15px; }
+
 .btn, button, .button, input[type="submit"] {
   line-height: 1;
   display: inline-block;

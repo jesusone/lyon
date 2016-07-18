@@ -1,6 +1,6 @@
 <?php
 
-class ZO_Base
+class YEAH_Base
 {
     /**
      * Page title
@@ -269,7 +269,36 @@ class ZO_Base
     
         return $buffer;
     }
+    public static function yeah_general_typography($setting = array()){
+        $css = '';
+        // Font
+        if(!empty($setting['font-family'])){
+            $css .= 'font-family: ' . esc_attr($setting['font-family']);
+            // Font backup
+            if(!empty($setting['font-backup']))
+                $css .= ',' . esc_attr($setting['font-backup']) . '';
+            $css .= ';';
+        }
+        if(!empty($setting['font-weight']))
+            $css .= 'font-weight: ' . esc_attr($setting['font-weight']) . ';';
+        if(!empty($setting['font-size']))
+            $css .= 'font-size: ' . esc_attr($setting['font-size']) . ';';
+        if(!empty($setting['text-align']))
+            $css .= 'text-align: ' . esc_attr($setting['text-align']) . ';';
+        if(!empty($setting['text-transform']))
+            $css .= 'text-transform: ' . esc_attr($setting['text-transform']) . ';';
+        if(!empty($setting['font-weight']))
+            $css .= 'font-weight: ' . esc_attr($setting['font-weight']) . ';';
+        if(!empty($setting['line-height']))
+            $css .= 'line-height: ' . esc_attr($setting['line-height']) . ';';
+        if(!empty($setting['color']))
+            $css .= 'color: ' . esc_attr($setting['color']) . ';';
+        if(!empty($setting['letter-spacing']))
+            $css .= 'letter-spacing: ' . esc_attr($setting['letter-spacing']) . ';';
+
+        return $css;
+    }
 }
 
 global $zo_base;
-$zo_base = new ZO_Base();
+$zo_base = new YEAH_Base();

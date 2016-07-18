@@ -5,7 +5,7 @@
  * @author ZoTheme
  * @version 1.0.0
  */
-class ZoTheme_StaticCss
+class YeahTheme_StaticCss
 {
 
     public $scss;
@@ -215,45 +215,43 @@ class ZoTheme_StaticCss
          // TYPOGRAPHY
         if(!empty($smof_data['font_h1'])){
             echo 'body h1{';
-            echo zo_general_typography($smof_data['font_h1']);
+            echo YEAH_Base::yeah_general_typography($smof_data['font_h1']);
             if(!empty($smof_data['font_h1_margin'])){
                 echo 'margin-top:' . $smof_data['font_h1_margin']['margin-top'] . ';';
                 echo 'margin-bottom:' . $smof_data['font_h1_margin']['margin-bottom'] . ';';
             }
             echo '}';
         }
-
-        if(!empty($smof_data['font_h2'])){
+         if(!empty($smof_data['font_h2'])){
             echo 'body h2{';
-            echo zo_general_typography($smof_data['font_h2']);
+            echo YEAH_Base::yeah_general_typography($smof_data['font_h2']);
             if(!empty($smof_data['font_h2_margin'])){
-                echo 'margin-top:' . $smof_data['font_h2_margin']['margin-top'] . ';';
-                echo 'margin-bottom:' . $smof_data['font_h2_margin']['margin-bottom'] . ';';
+                echo 'margin-top:' . $smof_data['font_h1_margin']['margin-top'] . ';';
+                echo 'margin-bottom:' . $smof_data['font_h1_margin']['margin-bottom'] . ';';
             }
             echo '}';
         }
-
-        if(!empty($smof_data['font_h3'])){
+         if(!empty($smof_data['font_h3'])){
             echo 'body h3{';
-            echo zo_general_typography($smof_data['font_h3']);
+            echo YEAH_Base::yeah_general_typography($smof_data['font_h3']);
             if(!empty($smof_data['font_h3_margin'])){
-                echo 'margin-top:' . $smof_data['font_h3_margin']['margin-top'] . ';';
-                echo 'margin-bottom:' . $smof_data['font_h3_margin']['margin-bottom'] . ';';
+                echo 'margin-top:' . $smof_data['font_h1_margin']['margin-top'] . ';';
+                echo 'margin-bottom:' . $smof_data['font_h1_margin']['margin-bottom'] . ';';
             }
             echo '}';
         }
-
         if(!empty($smof_data['font_h4'])){
             echo 'body h4{';
-            echo zo_general_typography($smof_data['font_h4']);
+            echo YEAH_Base::yeah_general_typography($smof_data['font_h4']);
             if(!empty($smof_data['font_h4_margin'])){
-                echo 'margin-top:' . $smof_data['font_h4_margin']['margin-top'] . ';';
-                echo 'margin-bottom:' . $smof_data['font_h4_margin']['margin-bottom'] . ';';
+                echo 'margin-top:' . $smof_data['font_h1_margin']['margin-top'] . ';';
+                echo 'margin-bottom:' . $smof_data['font_h1_margin']['margin-bottom'] . ';';
             }
             echo '}';
         }
+
         return ob_get_clean();
     }
 }
 
-new ZoTheme_StaticCss();
+new YeahTheme_StaticCss();
