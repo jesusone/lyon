@@ -1,0 +1,72 @@
+/*------------------------------------------------------------------
+[All Style Sidebar Widget]
+
+-------------------------------------------------------------------*/
+.secondary,
+.wpb_widgetised_column {
+    .widget {
+        border-bottom: none;
+        margin-bottom: 50px;
+    }
+    .wg-title {
+        margin-bottom: 50px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #141414;
+        @extend .font-second;
+        font-style: italic;
+        font-size: 24px;
+        color: #141414;
+        letter-spacing: 0;
+        &:before {
+            content: '';
+            width: 11px;
+            height: 11px;
+            display: inline-block;
+            background-color: $primary_color;
+            margin-right: 20px;
+            @include transform(rotate(45deg));
+        }
+        span {
+            &:hover {
+                color: $primary_color;
+            }
+        }
+    }
+    .widget_layered_nav ul {
+        margin: -20px 0 0 30px;
+    }
+    ul {
+        margin: -20px 0 0 30px;
+        padding: 0;
+        ul {
+            margin: 0 0 0 15px;
+        }
+        li {
+            list-style: none inside;
+            line-height: 48px;
+            font-size: 13px;
+            a {
+                color: #6f6f6f;
+				text-transform: capitalize;
+                &:hover {
+                    color: $primary_color;
+                }
+            }
+            &.chosen,
+            &.current-cat {
+                a {
+                    color: $primary_color;
+                }
+            }
+        }
+    }
+}
+
+/**
+* RSS Widget
+*/
+.widget_rss {
+    ul li a {
+        color: $primary_color;
+    }
+}

@@ -127,6 +127,18 @@ $this->sections[] = array(
     'subsection' => true,
     'fields' => array(
         array(
+            'title' => esc_html__( 'Menu Item Padding', 'lyon' ),
+            'subtitle' => esc_html__( 'Controls the right padding for menu text (left on RTL). In pixels.', 'lyon' ),
+            'id' => 'menu_padding',
+            'type' => 'spacing',
+            'units' => 'px', 'mode' => 'padding',
+            'default' => array( 'padding-top' => '0',
+            'padding-right' => '30px',
+            'padding-bottom' => '0',
+            'padding-left' => '30px',
+            'units' => 'px', )
+        ),
+        array(
             'id' => 'menu_fontsize_first_level',
             'type' => 'typography',
             'title' => __('Menu Font Size - First Level', 'lyon'),
@@ -158,14 +170,14 @@ $this->sections[] = array(
             'id' => 'menu_color_hover_first_level',
             'type' => 'color',
             'title' => __('Menu Color Hover - First Level', 'artista'),
-            'default' => '#FF3A47'
+            'default' => '#cdaf87'
         ),
         array(
             'subtitle' => __('Controls the text hover color of first level menu items.', 'artista'),
             'id' => 'menu_color_active_first_level',
             'type' => 'color',
             'title' => __('Menu Color Active - First Level', 'artista'),
-            'default' => '#FF3A47'
+            'default' => '#cdaf87'
         ),
         array(
             'id' => 'menu_fontsize_sub_level',
@@ -218,6 +230,20 @@ $this->sections[] = array(
             'type' => 'switch',
             'title' => __('Sub menu Uppercase', 'lyon'),
             'default' => false,
+        ),
+        array(
+            'subtitle' => __('Controls the text color of sub level menu items.', 'artista'),
+            'id' => 'menu_color_sub_level',
+            'type' => 'color',
+            'title' => __('Menu Color - Sub Level', 'artista'),
+            'default' => '#ffffff'
+        ),
+        array(
+            'subtitle' => __('Controls the text hover color of sub level menu items.', 'artista'),
+            'id' => 'menu_color_hover_sub_level',
+            'type' => 'color',
+            'title' => __('Menu Color Hover - Sub Level', 'artista'),
+            'default' => '#cdaf87'
         ),
         array(
             'id' => 'menu_icon_font_size',

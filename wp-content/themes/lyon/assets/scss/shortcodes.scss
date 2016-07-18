@@ -1,0 +1,1306 @@
+/*------------------------------------------------------------------
+[All Style Shortcode]
+
+  1. Shortcode Fancy Box
+  2. Heading
+  3. Shortcode Gird, Carousel
+  4. Shortcode Zo Masonry
+  5. Tab
+  6. Counter
+  7. Accordion
+  8. Progress
+  9. Pricing
+  10. Blog
+  11. Carousel Fancy Box
+  12. Single Fancy Box
+
+-------------------------------------------------------------------*/
+/* ==========================================================================
+   [Start] 1. Shortcode Fancy Box
+========================================================================== */
+.zo-fancy-box-icon i {
+    line-height: normal;
+}
+/*
+----> Fancy Layout 1 Default
+*/
+.zo-fancybox-layout-default {
+    .zo-fancybox-inner {
+        text-align: center;
+        border: 1px solid $primary_color;
+        @include border-radius(10px);
+        padding: 15px 10px;
+        min-height: 230px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        position: relative;
+        &:after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            @include background-opacity($primary_color, 0.2);
+            @include opacity(0);
+            @include transition(opacity 200ms ease);
+        }
+        &:hover:after {
+            @include opacity(1);
+            cursor: pointer;
+        }
+        .zo-fancy-box-content-icon i,
+        .zo-fancy-box-image span {
+            display: inline-block;
+            color: $primary_color;
+            text-align: center;
+            font-size: 40px;
+        }
+        .zo-fancy-box-content-icon,
+        .zo-fancy-box-image {
+            margin-bottom: 20px;
+        }
+        .zo-fancy-box-image span {
+            line-height: 100px;
+        }
+        .zo-fancy-box-title {
+            margin: 0 0 15px;
+            color: #333333;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+    }
+}
+
+/* ==========================================================================
+   [End] 1. Shortcode Fancy Box
+========================================================================== */
+
+/* ==========================================================================
+   [Start] 2. Shortcode Pie Chart
+========================================================================== */
+.heading-1 {
+	font-size: 42px;
+	font-weight: bold;
+	margin: 0;
+	line-height: 1.1;
+	color: #222;
+}
+/* ==========================================================================
+   [End] 2. Shortcode Pie Chart
+========================================================================== */
+
+/* ==========================================================================
+   [Start] 3. Grid And Carousel
+========================================================================== */
+.template-zo_grid--feature-product, .template-zo_carousel--new-product{
+	.yeah-grid-item, .yeah-carousel-item {
+		text-align: center;
+		.yeah-grid-media.has-thumbnail {
+			margin-bottom: 29px;
+			position: relative;	
+			overflow: hidden;
+			.onsale {
+				top: 7px!important;
+				left: 10px!important;
+				color: #404040;
+				line-height: 1.1;
+				position: absolute;
+				text-transform: uppercase;
+				z-index: 10;
+				font-size: 13px;
+				font-weight: 700;
+				@extend .museo_slab_100;
+			}
+			.yeah-add-to-cart {
+				position: absolute;
+				right: 10px;
+				bottom: -30px;
+				height: 30px;
+				overflow: hidden;
+				width: 34px;
+				@include transition(bottom 0.5s ease);
+				a i {
+					float: left;
+					font-size: 26px;
+					margin-left: -1px;
+				}
+				&:hover {
+					i {
+						@include animation(0.5s ease 0s normal forwards 1 running spinAround);
+					}
+				}
+			}
+			&:hover {
+				.yeah-add-to-cart {
+					bottom: 10px;
+				}
+			}
+		}
+		.yeah-grid-title {
+			padding-bottom: 5px;
+			text-transform: uppercase;
+			a{
+				font-size: 18px;
+				line-height: 1.1;
+				font-weight: bold;
+				color: #222;
+				@extend .museo_slab_100;
+				&:hover {
+					color: $primary_color;
+				}
+			}
+		}
+		.yeah-grid-content {
+			color: #404040;
+			padding-bottom: 7px;
+			p { margin: 0; }
+		}
+		.yeah-grid-price {
+			font-size: 20px;
+			padding-bottom: 7px;
+			@extend .museo_slab_300;
+		}
+	}
+}
+div.owl-theme .owl-nav {
+    [class*='owl-'] {
+        background: transparent;
+        width: 46px;
+        height: 46px;
+        border: 1px solid #a1a1a1;
+        @include border-radius(50%);
+        i {
+            font-size: 36px;
+            line-height: 36px;
+            color: #a1a1a1;
+            &.owl-prev & {
+                text-indent: -3px;
+            }
+            &.owl-next & {
+                text-indent: 3px;
+            }
+        }
+        &:hover {
+            background: transparent;
+        }
+    }
+
+}
+.zo-carousel.owl-carousel .owl-item img {
+    width: auto;
+}
+.yeah-carousel {
+	position: relative;
+	.owl-stage-outer {
+		padding-top: 28px;
+	}
+	div.owl-nav {
+		position: absolute;
+		top: 0px;
+		right: 0;
+		@include transform(translateY(-100%));
+		@include breakpoint-max(480px){
+			left: 0;
+			top: 160px;
+			width: 100%;
+			[class*='owl-'] {
+				position: absolute;
+			}
+			.owl-prev {
+				left: 0;
+			}
+			.owl-next {
+				right: 0;
+			}
+		}
+	}
+}
+
+.template-zo_carousel--new-product {
+	.yeah-carousel-item .yeah-grid-title{
+		padding: 0;
+		margin: 0;
+	}
+	.yeah-grid-price p {
+		margin: 0;
+	}
+}
+
+.template-zo_carousel--latest-blog {
+	.yeah-carousel-item {
+		.yeah-carousel-thumb {
+			position: relative;
+			text-align: center;
+			margin-bottom: 25px;
+			.yeah-carousel-date { 
+				position: absolute;
+				right: 8px;
+				bottom: 8px;
+				background: #222222;
+				padding: 10px 25px;
+				color: #fff;
+				line-height: 25px;
+				text-align: center;
+				font-size: 26px;
+				span {
+					@extend .museo_slab_300;
+					display: block;
+					font-size: 18px;
+					text-transform: uppercase;
+				}
+			}
+		}
+		.yeah-carousel-title {
+			h3 {
+				margin-bottom: 10px;
+			}
+			a {
+				color: #222;
+				font-weight: 500;
+				font-size: 24px;
+				@extend .museo_slab_300;
+			}
+		}
+		.yeah-carousel-content {
+			margin-bottom: 20px;
+			p{ margin: 0; }
+		}
+		.btn-readmore {
+			@extend .museo_slab_300;
+			font-size: 18px;
+			line-height: 1.42857143;
+			color: #ee3b24;
+			font-weight: 500;
+			&:hover {
+				color: #222;
+			}
+		}
+	}
+}
+.template-zo_grid--product-rate {
+	a.add_to_wishlist {
+		font-size: 0;
+		position: relative;
+		&:before {
+			font-size: 22px;
+			content: "\e04a";
+			font-family: "fajar";
+			position: absolute;
+		}
+	}
+	.yeah-grid-item  {
+		padding-left: 0;
+		padding-right: 0;
+		display: flex;
+		align-items: center;
+	}
+	.yeah-grid-media, .yeah-grid-detail {
+		display: inline-block;
+		width: 50%;
+		float: left;
+	}
+	.yeah-grid-media.right {
+		float: right;
+		display: flex;
+		flex-grow: 1;
+		order: 2;
+		img {
+			width: 100%;
+		}
+	}
+	.yeah-grid-detail {
+		text-align: center;
+		.yeah-grid-title {
+			font-size: 26px;
+			padding: 5px 0;
+		}
+		.yeah-grid-rate {
+			display: inline-block;
+			margin-top: 10px;
+			margin-bottom: 6px !important;
+			&.woocommerce-product-rating .star-rating {
+				color: #e6ae48;
+				margin: 0;
+				&:before {
+					color: #cecece;
+				}
+			}
+		}
+		.yeah-grid-price {
+			@extend .museo_slab_500;
+			color: #222222;
+			font-size: 20px;
+		}
+	}
+}
+
+.template-zo_grid--lastest-blog {
+	.yeah-grid-item:hover {
+		.yeah-grid-media {
+			&:before {
+				opacity: 0.4;
+			}
+			img{
+				@include transform( scale(1.12) );
+			}
+		}
+	}
+	.yeah-grid-media {
+		position: relative;
+		overflow: hidden;
+		&:before {
+			@include transition(all 500ms ease);
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 100%;
+			background: #000;
+			opacity: 0;
+			z-index: 1;
+		}
+		img {
+			@include transition(all 500ms ease);
+		}
+		.yeah-grid-detail {
+			position: absolute;
+			bottom: 20px;
+			left: 20px;
+			color: #fff;
+			z-index: 2;
+			.yeah-grid-time {
+				display: block;
+				font-size: 16px;
+				font-style: italic;
+				padding-bottom: 10px;
+			}
+			.yeah-grid-title {
+				display: block;
+				text-transform: uppercase;
+				h3 {
+					@extend .museo_slab_300;
+					font-size: 24px;
+					line-height: 1.1;
+					margin-bottom: 0;
+				}
+			}
+			.author, .comment {
+				display: inline-block;
+			}
+			.comment a {
+				color: $primary_color;
+				margin-left: 3px;
+				font-style: italic;
+				font-size: 16px;
+				&:hover {
+					color: #222;
+				}
+			}
+			a {
+				color: #fff;
+				&:hover {
+					color: $primary_color;
+				}
+			}
+		}
+	}
+}
+.template-zo_carousel--team {
+	.yeah-carousel-item {
+		.yeah-carousel-media {
+			&:hover {
+				opacity: 0.7;
+			}
+			margin-bottom: 35px;
+		}
+		.yeah-carousel-title {
+			color: $primary_color;
+			font-size: 24px;
+			@extend .museo_slab_100;
+			margin: 0px;
+		}
+		.yeah-team-position {
+			padding-bottom: 10px;
+			@extend .museo_slab_100;
+		}
+
+	}
+}
+/* ==========================================================================
+   [End] 3. Grid & Carousel
+========================================================================== */
+
+/* ==========================================================================
+   [Start] 4. Zo Masonry
+========================================================================== */
+.template-zo_masonry {
+	.zo-masonry-item{
+		overflow: hidden;
+	}
+	.zo-masonry-inner {
+		color: #fff;
+		padding-top: 30px;
+		padding-left: 30px;
+		position: relative;
+		&:before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: #000;
+			opacity: 0;
+			top: 0;
+			left: 0;
+			z-index: 2;
+			@include transition(all 500ms ease);
+		}
+		&:hover {
+			&:before {
+				opacity: 0.4;
+			}
+			.yeah-masonry-background {
+				@include transform(scale(1.12));
+			}
+			.yeah-masonry-title, .yeah-masonry-content {
+				opacity: 1;
+			}
+		}
+		.yeah-masonry-background {
+			background-size: cover;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			@include transition(all 500ms ease);
+		}
+		.yeah-masonry-title a {
+			display: block;
+			font-size: 24px;
+			font-weight: bold;
+			color: #fff;
+			@extend .museo_slab_300;
+			@include transition(all 500ms ease);
+			&:hover {
+				color: $primary_color;
+			}
+		}
+		.yeah-grid-price {
+			del {
+				display: none;
+			}
+			.amount {
+				background: #fff;
+				color: #222222;
+				bottom: 30px;
+				box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.14);
+				font-size: 16px;
+				left: 30px;
+				padding: 15px 14px 13px;
+				position: absolute;
+				@extend .museo_slab_500;
+				z-index: 3;
+			}
+		}
+		.yeah-masonry-title, .yeah-masonry-content {
+			position: relative;
+			opacity: 0;
+			z-index: 3;
+		}
+	}
+}
+/* ==========================================================================
+   [End] 4. Zo Masonry
+========================================================================== */
+
+/* ==========================================================================
+   [Start] 5. Tabs
+========================================================================== */
+.yeah-feature-product {
+	position: relative;
+	.vc_tta.vc_general{		
+		.vc_tta-tabs-container {
+			display: inline-block;
+			margin: 0;
+			position: absolute;
+			right: 15px;
+			@include breakpoint-min(768px) {
+				.vc_tta-tabs-container {
+					top: 0;	
+				}
+			}
+			ul {
+				margin: 0;
+				li.vc_tta-tab {
+					margin: 0;
+					a {
+						border: 1px solid #222;
+						float: left;
+						margin-left: 10px;
+						padding: 8px 25px;
+						cursor: pointer;
+						font-size: 18px;
+						color: #404040;
+						background: #fff;
+						@include border-radius(0);
+						@extend .museo_slab_500;
+						&:before, &:after {
+							border: 0;
+						}
+					}
+					&.vc_active, &:hover {
+						a {
+							border-color: $primary_color;
+							color: $primary_color;
+						}
+					}
+				}
+			}
+		}
+		.vc_tta-panels-container {
+			.vc_tta-panels {
+				background: #fff;
+				border: 0;
+				&:before, &:after {
+					border: 0;
+				}
+				.vc_tta-panel {
+					margin: 0;
+				}
+			}
+		}
+		@include breakpoint-max(768px) {
+			padding-top: 20px;
+			.vc_tta-panels-container{
+				.vc_tta-panel-title {
+					display: none;
+				}
+			}
+			.vc_tta-tabs-container {
+				position: static;
+				ul li.vc_tta-tab a {
+					padding: 8px 10px;
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   [End] 5. Tabs
+========================================================================== */
+
+/* ==========================================================================
+   [Start] 6. Counter
+========================================================================== */
+.zo-counter-wraper {
+    .zo-counter-box {
+        position: relative;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        .zo-counter-middle {
+            .zo-counter-icon i {
+                color: $primary_color;
+            }
+            .zo-counter {
+                font-size: 48px;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.1em;
+            }
+        }
+
+        .zo-counter-title {
+            margin: 0;
+            font-size: 13px;
+            text-transform: none;
+            @extend .font-second;
+            font-style: italic;
+        }
+    }
+	&.zo-counter-layout-default {
+		.zo-counter-body {
+			.zo-icon {
+				.fa {
+					font-size: 46px;
+					padding-bottom: 20px;
+				}
+			}
+			.zo-counter {
+				font-size: 30px;
+				margin-bottom: 10px;
+			}
+			h3 {
+				@extend .font-second;
+				font-weight: normal;
+				letter-spacing: 0.1em;
+				color: #6f6f6f;
+				font-style: italic;
+			}
+		}
+	}
+}
+/* ==========================================================================
+   [End] 6. Counter
+========================================================================== */
+
+/* ==========================================================================
+   [Start] 7. Accordion
+========================================================================== */
+.wpb_accordion.wpb_content_element {
+	.wpb_accordion_wrapper {
+		.wpb_accordion_section {
+			margin: 0 0 4px;
+		}
+		.wpb_accordion_header {
+			.ui-accordion-header-icon {
+				display: none;
+			}
+			@extend .bg-effect-lg;
+			line-height: 50px;
+			padding: 0;
+			margin: 0;
+			border: 2px solid #1a9eb9;
+			@include border-radius(4px);
+			&.ui-state-active {
+				@include border-radius(4px 4px 0 0);
+			}
+			a {
+				padding: 1em 15px;
+				color: #fff;
+				font-size: 21px;
+				line-height: 25px;
+				font-weight: 700;
+				@include box-shadow(none);
+				i {
+					font-size: 18px;
+					padding-right: 12px;
+					padding-left: 2px;
+				}
+			}
+		}
+		.wpb_accordion_content {
+			padding: 10px 20px !important;
+			border-width: 0 2px 2px 2px;
+			border-style: solid;
+			@include border-radius(0 0 4px 4px);
+		}
+	}
+}
+/* ==========================================================================
+   [End] 7. Accordion
+========================================================================== */
+
+/* ==========================================================================
+   [Start] 8. Progress
+========================================================================== */
+.zo-progress-wraper {
+    .progress .progress-bar {
+        transition-duration: 1s;
+    }
+}
+.zo-progress-layout-default {
+    padding-top: 40px;
+    .zo-progress-main {
+        &.bar-icon {
+            padding-left: 50px;
+            position: relative;
+        }
+        .zo-progress-icon {
+            position: absolute;
+            left: 0;
+            i {
+                color: #8f8f8f;
+                font-size: 34px;
+            }
+        }
+        .zo-progress {
+            overflow: visible;
+            background-color: $primary_color;
+            border: 2px solid $primary_color;
+            height: 38px;
+            width: 100%;
+            position: relative;
+            margin: 0 0 10px;
+            @include box-shadow(none);
+            @include border-radius(3px);
+            .zo-progress-title {
+                position: absolute;
+                top: 50%;
+                left: 15px;
+                font-size: 18px;
+                font-weight: 700;
+                color: #fff;
+                z-index: 1;
+                @include transform(translate(0px, -50%));
+            }
+            .progress-bar {
+                width: 20%;
+                overflow: visible;
+                @extend .bg-effect-lg;
+                @include box-shadow(none);
+                background-color: $primary_color;
+                line-height: 40px;
+                text-align: right;
+                padding: 0 15px;
+                span {
+                    color: #fff;
+                    font-size: 15px;
+                    font-weight: 700;
+                    position: absolute;
+                    right: -44px;
+                    top: -39px;
+                    height: 29px;
+                    line-height: 28px;
+                    padding: 0 8px;
+                    @include border-radius(4px);
+                    &:before {
+                        position: absolute;
+                        height: 0;
+                        width: 0;
+                        content: "";
+                        border-width: 5px;
+                        border-style: solid;
+                        bottom: -10px;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   [End] 8. Progress
+========================================================================== */
+
+/* ==========================================================================
+   [Start] 9. Pricing
+========================================================================== */
+.zo-grid-pricing {
+    .zo-pricing-item {
+        .zo-pricing-inner {
+            text-align: center;
+            border: 1px solid #ececec;
+            @include transition(all 200ms ease-in-out);
+            .zo-pricing-meta-wrap {
+                .option-item {
+                    font-size: 12px;
+                    line-height: 48px;
+                    .fa {
+                        padding-left: 20px;
+                        color: $primary_color;
+                    }
+                }
+                margin-bottom: 40px;
+            }
+            .zo-pricing-price-wrap {
+                color: #141414;
+                margin-bottom: 40px;
+                .price {
+                    font-size: 50px;
+                }
+                sup {
+                    font-size: 18px;
+                    top: -25px;
+                }
+                sub {
+                    font-size: 14px;
+                    font-style: italic;
+                    text-transform: lowercase;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   [End] 9. Pricing
+========================================================================== */
+
+/* ==========================================================================
+   [Start] 10. Zo Grid
+========================================================================== */
+.zo-grid-wraper {
+    .yeah-grid-filter {
+        margin-bottom: 40px;
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none inside;
+            text-align: center;
+            li {
+                display: inline-block;
+                margin-bottom: 16px;
+                a {
+                    border: 1px solid #dedede;
+					font-size: 10px;
+					font-weight: 600;
+					padding: 5px 25px;
+					text-transform: uppercase;
+					letter-spacing: 0.1em;
+                    &.active, &:hover {
+                        border-color: $primary_color;
+                    }
+                }
+				+ li{
+					margin-left: 16px;
+				}
+            }
+        }
+    }
+    &.no-padding {
+        .zo-grid {
+            .zo-grid-item {
+                padding: 0;
+                margin: 0;
+				.zo-team-wrap {
+					padding-bottom: 0;
+				}
+            }
+        }
+    }
+}
+/* ==========================================================================
+   [End] 10. Zo Grid
+========================================================================== */
+
+/* ==========================================================================
+   [Start] 10. Zo Masonry
+========================================================================== */
+.zo-masonry-wrapper {
+    .zo-masonry-filter {
+        margin-bottom: 40px;
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none inside;
+            text-align: center;
+            li {
+                display: inline-block;
+                margin-right: 16px;
+                margin-top: 15px;
+                a {
+                    display: block;
+                    font-size: 10px;
+                    padding: 5px 25px;
+                    border: 1px solid #DEDEDE;
+                    text-transform: uppercase;
+                    font-weight: normal;
+                    &.active, &:hover {
+                        border-color: $primary_color;
+                    }
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   [End] 10. Zo Masonry
+========================================================================== */
+
+/* ==========================================================================
+   [Start] 11. Carousel
+========================================================================== */
+.template-zo_carousel--latest-blog
+/* ==========================================================================
+   [End] 11. Carousel
+========================================================================== */
+
+
+/** [Start]Heading page
+============================*/
+.heading{
+    h1, h2, h3, h4, h5, h6{
+        text-transform: uppercase;
+    }
+}
+/** [End]Heading page
+============================*/
+
+/** [Start]List shortcode page
+============================*/
+.list{
+    a{
+        color: #868686;
+        padding-left: 20px;
+    }
+    li{
+        list-style: none inside;
+        &:before {
+            content: "\f067";
+            height: 1px;
+            color: $primary_color;
+            font: FontAwesome;
+        }
+    }
+}
+.list-right{
+    a{
+        color: #868686;
+        padding-left: 20px;
+    }
+    li{
+        list-style: none inside;
+        &:before {
+            content: "\f111";
+            height: 1px;
+            color: $primary_color;
+            font-size: 10px ! important;
+            font: FontAwesome;
+        }
+    }
+}
+/** [End]List shortcode page*/
+
+/** [Start]Heading Accordion Toggle page*/
+.wpb_accordion_section {
+    .wpb_accordion_header {
+        background: #f8f8f8;
+        border: none ! important;
+        border-radius: 0 ! important;
+        &:hover{
+            background: $primary_color ! important;
+        }
+        a {
+            font-weight: 400;
+            letter-spacing: 2px;
+            font-size: 14px ! important;
+            color:#333 ! important;
+            text-transform: uppercase ! important;
+        }
+
+        &.ui-state-active {
+            background: $primary_color ! important;
+            border-radius: 0 ! important;
+        }
+    }
+
+    .wpb_accordion_content {
+        border: none ! important;
+        padding: 0 ! important;
+    }
+}
+
+/** [End]Heading Accordion Toggle page*/
+
+/** [Start] charts page*/
+.vc_pie_chart {
+    .vc_pie_wrapper {
+        margin-bottom: 40px ! important;
+    }
+}
+
+.vc_progress_bar {
+    .vc_single_bar {
+        margin-bottom: 60px;
+        border-radius: 0;
+        background: none!important;
+        box-shadow: none!important;
+        .vc_bar_wrap {
+            background: #909090 none repeat scroll 0 0;
+            border-radius: 3px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+            width: 100%;
+            height: 15px;
+            position: relative;
+            .vc_bar {
+                border-radius: 0;
+            }
+        }
+        .vc_label {
+            font-size: 11px;
+            padding-left: 0 !important;
+			padding-right: 0 !important;
+            color: #333333 ! important;
+            .vc_percent{
+                float: right;
+                font-size: 11px;
+				&:after {
+					color: #909090;
+					content: "\f0d7";
+					font-family: FontAwesome;
+					font-size: 16px;
+					margin-left: 10px;
+				}
+            }
+        }
+    }
+}
+/** [End]charts page*/
+
+/** [Start] text highlight page*/
+.highlight1{
+    mark{
+        background: $primary_color;
+    }
+}
+.highlight2{
+    mark{
+        background: $primary_color;
+        color: #fff;
+    }
+}
+.highlight3{
+    mark{
+        background: #fff;
+        color: #808080;
+    }
+}
+.highlight4{
+    mark{
+        background: $primary_color;
+        color: #333;
+    }
+}
+/** [End]charthighlights page*/
+
+
+/** Custome Heading
+================================================*/
+.zo-custom-heading {
+	.center {
+		text-align: center;
+	}
+	.left {
+		text-align: left;
+	}
+	.right {
+        float: none;
+		text-align: right;
+	}
+}
+
+
+/** Carousel Wrap
+================================================*/
+.zo-carousel-purchase {
+	.vc_btn3-container {
+		.vc_btn3 {
+			background: #fff;
+			display: inline-block;
+			width: 100%;
+			@include breakpoint-in(768px,800px){
+				padding: 16px 26px !important;
+			}
+			@include breakpoint-in(800px,980px){
+				padding: 16px 30px !important;
+			}
+			&:hover {
+				color: #fff !important;
+				background: $primary_color;
+			}
+		}
+	}
+}
+.zo-carousel-wrap {
+	.yeah-carousel {
+		display: none;
+		&.owl-loaded {
+			display: block;
+			@include animation(0.7s ease fadeIn);
+		}
+	}
+	.zo-carousel-filter {
+		ul {
+			margin-bottom: 40px;
+			text-align: center;
+			padding: 0;
+			list-style: none;
+			li {
+				border: 1px solid #696969;
+				display: inline-block;
+				margin-right: 16px;
+				margin-bottom: 5px;
+				@include breakpoint-max(768px){
+					margin-right: 0;
+				}
+				a {
+					padding: 5px 15px;
+					text-transform: uppercase;
+                    display: block;
+					color: #fff;
+					&:hover {
+						color: $primary_color;
+					}
+				}
+			}
+		}
+	}
+}
+/** Features
+================================================*/
+.list-icon, .list-primary, .list-number {
+	li{
+		font-size: 12px;
+		margin-bottom: 15px;
+		.fa {
+			font-size: 18px;
+		}
+	}
+}
+
+.list-icon {
+	list-style: none;
+	padding-left: 0;
+	.fa {
+		background: #909090;
+		border-radius: 50%;
+		color: #fff;
+		font-size: 15px;
+		height: 25px;
+		line-height: 22px;
+		text-align: center;
+		vertical-align: middle;
+		width: 25px;
+		margin-right: 14px;
+	}
+}
+.list-primary {
+	list-style: none;
+	padding-left: 0;
+	.fa {
+		color: $primary_color;
+		margin-right: 24px;
+	}
+}
+.list-number {
+	list-style: none;
+	padding-left: 0;
+	counter-reset: numList;
+	overflow: hidden;
+	li{
+		padding-left: 48px;
+		&:before {
+			border: 1px solid #ededed;
+			border-radius: 50%;
+			color: #141414;
+			content: counter(numList);
+			counter-increment: numList;
+			height: 25px;
+			left: 17px;
+			line-height: 25px;
+			position: absolute;
+			text-align: center;
+			width: 25px;
+		}
+	}
+}
+
+.main-category-content {
+	text-align: center;
+	background: #eeeeee;
+    padding: 30px;
+	h3 {
+		text-transform: uppercase;
+		padding-bottom: 14px;
+		font-size: 24px;
+		margin: 0;
+		line-height: 1.1;
+		color: #222222;
+		@extend .museo_slab_100;
+	}
+	p {
+		border-top: 1px solid #959595;
+		padding: 10px 0 22px;
+	}
+}
+
+/*==========================================*
+* 11. Carousel Fancy Box                    *
+*===========================================*/
+.yeah-carousel-fancyboxes-wraper {
+	.yeah-carousel-fancyboxes-body {
+		display: none;
+		&.owl-loaded {
+			display: block;
+			@include animation(0.7s ease fadeIn);
+		}
+	}
+}
+.template-zo_carousel_fancybox {
+	position: relative;
+	.yeah-fancybox-item {
+		.yeah-fancybox-details {
+			position: absolute;
+			left: 40px;
+			top: 25%;
+			.yeah-fancybox-content {				
+				font-size: 48px;
+				color: #fff;
+				max-width: 380px;
+				line-height: 50px;
+				padding-bottom: 10px;
+				@extend .museo_slab_100;
+				strong {
+					@extend .museo_slab_500;
+				}
+			}
+		}
+	}
+	.owl-theme .owl-dots{
+		position: absolute;
+		bottom: 22px;
+		left: 40px;
+		.owl-dot {
+			span {
+				margin: 0 4px 0 0;
+				display: block;
+				width: 11px;
+				height: 11px;
+				background: #fff;
+				border-radius: 100%;
+			}
+			&.active {
+				span {
+					width: 15px;
+					height: 16px;
+					top: 2px;
+					position: relative;
+					background: url(../images/selected-bullet.png) no-repeat;
+				}
+			}
+		}
+	}
+}
+/*==========================================*
+* 11. End Carousel Fancy Box                    *
+*===========================================*/
+
+
+/* ==========================================================================
+   [Start] 12. Single Fancy Box
+========================================================================== */
+.yeah-fancyboxes-wraper {
+  &.content-align-center {
+    text-align: center;
+  }
+  .yeah-fancyboxes-body {
+    padding: 65px 30px 70px;
+    .yeah-fancybox-item {
+      color: #ffffff;
+      .fancybox-icon {
+        i{ font-size: 55px;
+          display: inline-block;}
+        margin-bottom: 25px;
+      }
+      .fancybox-title {
+        font-size: 28px;
+        margin-bottom: 13px;
+        color: #ffffff;
+      }
+      .yeah-fancybox-content {
+        p{
+          font-size: 18px;
+          line-height: 24px;
+          font-weight: 300;
+        }
+      }
+    }
+
+  }
+}
+/* ==========================================================================
+   [End] 12. Single Fancy Box
+========================================================================== */

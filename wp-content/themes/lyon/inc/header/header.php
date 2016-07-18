@@ -19,47 +19,49 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="yeah-header-main">
-			<div id="yeah-header-find-hotel" class="yeah-header-find-hotel yeah-header-sidebar">
+			<div id="yeah-header-find-hotel" class="col-md-2 yeah-header-sidebar">
 				<?php if(is_active_sidebar('header-find-hotel')){ dynamic_sidebar('header-find-hotel'); } ?>
 			</div><!--End find-hotel-->
-			<div class="hidden-xs hidden-sm yeah-header-navigation left-menu">
-				<nav id="site-navigation" class="main-navigation">
-					<?php
-					$attr = array(
-						'theme_location' => 'left_menu',
-						'menu_class' => 'nav-menu menu-main-menu',
-					);
+			<div class="yeah-header-navigations col-md-8">
+				<div class="hidden-xs hidden-sm yeah-header-navigation left-menu">
+					<nav id="site-navigation" class="main-navigation">
+						<?php
+						$attr = array(
+							'theme_location' => 'left_menu',
+							'menu_class' => 'nav-menu menu-main-menu',
+						);
 
-					/* enable mega menu. */
-					if (class_exists('HeroMenuWalker')) {
-						$attr['walker'] = new HeroMenuWalker();
-					}
+						/* enable mega menu. */
+						if (class_exists('HeroMenuWalker')) {
+							$attr['walker'] = new HeroMenuWalker();
+						}
 
-					/* main nav. */
-					wp_nav_menu($attr); ?>
-				</nav>
-			</div>
-			<div id="yeah-header-logo" class="yeah-header-logo">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img alt="" src="<?php echo esc_url(zo_page_header_logo()); ?>"></a>
-			</div>
-			<div class="hidden-xs hidden-sm yeah-header-navigation right-menu">
-				<nav id="site-navigation" class="main-navigation">
-					<?php
-					$attr = array(
-						'theme_location' => 'right_menu',
-						'menu_class' => 'nav-menu menu-main-menu',
-					);
+						/* main nav. */
+						wp_nav_menu($attr); ?>
+					</nav>
+				</div>
+				<div id="yeah-header-logo" class="yeah-header-logo">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img alt="" src="<?php echo esc_url(zo_page_header_logo()); ?>"></a>
+				</div>
+				<div class="hidden-xs hidden-sm yeah-header-navigation right-menu">
+					<nav id="site-navigation" class="main-navigation">
+						<?php
+						$attr = array(
+							'theme_location' => 'right_menu',
+							'menu_class' => 'nav-menu menu-main-menu',
+						);
 
-					/* enable mega menu. */
-					if (class_exists('HeroMenuWalker')) {
-						$attr['walker'] = new HeroMenuWalker();
-					}
+						/* enable mega menu. */
+						if (class_exists('HeroMenuWalker')) {
+							$attr['walker'] = new HeroMenuWalker();
+						}
 
-					/* main nav. */
-					wp_nav_menu($attr); ?>
-				</nav>
-			</div>
-			<div id="yeah-header-language" class="yeah-header-sidebar">
+						/* main nav. */
+						wp_nav_menu($attr); ?>
+					</nav>
+				</div>
+			</div><!--yeah-header-navigations-->
+			<div id="yeah-header-language" class="col-md-2 yeah-header-sidebar">
 				<?php if(is_active_sidebar('sidebar-language')){ dynamic_sidebar('sidebar-language'); } ?>
 			</div>
 			</div>

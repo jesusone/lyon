@@ -1,0 +1,221 @@
+@media screen and (min-width: 1200px) {
+	body .zo-boxed {
+		margin: auto;
+		width: 1200px;
+	}
+}
+@media screen and (min-width: 992px) {
+	.vc_row.vc_row-no-padding .vc_column_container.custom-col-6 {
+		max-width: calc(1170px / 2);
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+	.vc_row.vc_row-no-padding .wpb_column .zo-grid-item[class*="-2-zo"],{
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
+
+@media (min-width: 992px)and (max-width: 1400px) {
+	.vertical-align-middle {
+		> .container , > .container-fluid{
+			> .row{
+				> div[class^="col"],> div[class^="vc_col"]{
+					float: none;
+					display: inline-block;
+					vertical-align: middle;
+				}
+				> .vc_col-sm-6,
+				> .vc_col-md-6 {
+					width: calc(50% - 2px);
+				}
+				> .vc_col-sm-8,
+				> .vc_col-md-8  {
+					width: calc(66.6667% - 2px);
+				}
+				> .vc_col-sm-4,
+				> .vc_col-md-4  {
+					width: calc(33.33333333% - 2px);
+				}
+				> .vc_col-sm-7,
+				> .vc_col-md-7  {
+					width: calc(58.3333% - 2px);
+				}
+				> .vc_col-sm-5,
+				> .vc_col-md-5 {
+					width: calc(41.6667% - 2px);
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1024px) {
+	body .container {
+		width: 100%;
+	}
+	.wpb_column.padding-30 {
+		padding: 0 30px !important;
+	}
+	.zo-row-full-width > .no-container {
+		margin-left: 0;
+		margin-right: 0;
+		> .row {
+			margin-left: 0;
+			margin-right: 0;
+			> .wpb_column {
+				padding: 0;
+			}
+		}
+	}
+
+}
+@media screen and (max-width: 991px) {
+	body .container {
+		width: 100%;
+	}
+	/* ==========================================================================
+			Header Mobile
+	========================================================================== */
+	body.fixed-margin-top #yeah-header-menu.header-fixed #yeah-header-navigation .main-navigation .menu-main-menu > li {
+		line-height: normal;
+	}
+	/* ==========================================================================
+	   End Header Mobile
+	========================================================================== */
+
+	/* ==========================================================================
+	   Shortcode
+	========================================================================== */
+	/* Shortcode Priccing */
+	.zo-grid-pricing .zo-grid-item {
+		margin-bottom: 80px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	body #yeah-header-menu.sticky-tablets {
+		position: fixed;
+	}
+
+	.wpb_single_image .vc_single_image-wrapper {
+		img {
+			width: 100%;
+		}
+	}
+
+	/**Fancybox**/
+	.template-zo_fancybox--process .zo-fancybox-item:nth-child(2n) .zo-fancybox-inner::after {
+		content: none;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+	/* Header Sticky */
+	body #yeah-header-menu.sticky-mobile {
+		position: fixed;
+	}
+
+	/* Start Form Comment */
+	#comments .comment-list ul.children {
+		padding: 0;
+		&:before {
+			height: 0;
+		}
+		.comment-main .comment-content:before {
+			height: 0;
+		}
+	}
+	/* End Comment */
+
+	/* Tab */
+	.wpb_tabs .ui-tabs.wpb_tour_tabs_wrapper .wpb_tabs_nav .ui-state-default a {
+		line-height: 40px;
+		padding: 0 20px;
+	}
+	.wpb_tabs .ui-tabs.wpb_tour_tabs_wrapper .wpb_tabs_nav .ui-state-default a span {
+		display: none;
+	}
+	.ui-tabs-panel img {
+		width: 100%;
+	}
+	/* End Tab */
+
+	/* Footer Bottom */
+	#yeah-footer-bottom {
+		[class^="col-"] {
+			text-align: center;
+			.text-left, .text-right, .align-right, .align-left {
+				text-align: center;
+			}
+		}
+	}
+	/* End Footer Bottom */
+
+	/* Sidebar
+	=================*/
+	#secondary {
+		margin-top: 50px;
+	}
+
+	.zo-pricing-default .zo-pricing-item.pricing-feature-item .zo-pricing-inner {
+		@include transform(scale(1));
+	}
+
+	/**Fancybox**/
+	.template-zo_fancybox--process .zo-fancybox-item .zo-fancybox-inner::after {
+		content: none;
+	}
+
+}
+@media screen and (max-width: 640px) {
+	/* Footer Scroll Top */
+	#zo-site-map a {
+		padding: 0 20px 0 55px;
+		i {
+			left: 21px;
+		}
+	}
+	/* End Footer Scroll Top */
+	/* Tab Custom Color */
+	.vc_tta-container {
+		.vc_tta-tabs.custom-color {
+			border: none;
+		}
+	}
+	/* End Tab Custom Color */
+}
+@media screen and (max-width: 480px) {
+	/* Start Form Comment */
+	#comments .comment-list li .comment-body {
+		.comment-author-image {
+			padding: 0;
+			float: none;
+			max-width: inherit;
+			text-align: center;
+		}
+		.comment-main {
+			padding: 10px;
+		}
+	}
+	.single-post .post-navigation a {
+		float: left;
+		margin-top: 20px;
+	}
+	.navigation.post-navigation {
+		text-align: center;
+		a {
+			float: none;
+			margin-bottom: 10px;
+		}
+	}
+	/* End Comment */
+
+}
+@media screen and (max-width: 360px) {
+
+}
+@media screen and (max-width: 332px) {
+
+}

@@ -118,21 +118,90 @@ class ZoTheme_StaticCss
         /* End Header Main */
 
         /* Main Menu */
+        if(!empty($smof_data['menu_padding'])){
+            echo ".yeah-header-navigation .main-navigation .nav-menu > li {";
+			 if(!empty($smof_data['menu_padding']['padding-top']))
+                    echo 'padding-top: ' . esc_attr($smof_data['menu_padding']['padding-top']) . ';';
+                if(!empty($smof_data['menu_padding']['padding-left']))
+                    echo 'padding-left: ' . esc_attr($smof_data['menu_padding']['padding-left']) . ';';
+                if(!empty($smof_data['menu_padding']['padding-bottom']))
+                    echo 'padding-bottom: ' . esc_attr($smof_data['menu_padding']['padding-bottom']) . ';';
+                if(!empty($smof_data['menu_padding']['padding-right']))
+                    echo 'padding-right: ' . esc_attr($smof_data['menu_padding']['padding-right']) . ';';
+              echo "}";
+        }
 		if($smof_data['menu_first_level_uppercase']){
 			echo "#yeah-header-navigation .main-navigation .menu-main-menu > li > a,
 			#yeah-header-navigation .main-navigation .menu-main-menu > ul > li > a {
 				text-transform: uppercase;
 			}";
+
 		}
 		 //MENU HEIGHT
         if(!empty($smof_data['menu_height'])){
 
-            echo '#yeah-header .yeah-header-navigation .main-navigation .nav-menu ul > li > a {';
+            echo '#yeah-header .yeah-header-navigation .main-navigation .nav-menu > li > a {';
             echo 	'height: ' . esc_attr($smof_data['menu_height']) . 'px;';
             echo 	'line-height: ' . esc_attr($smof_data['menu_height']) . 'px;';
             echo '}';
 
         }
+         /* Color - Main Menu */
+		if(!empty($smof_data['menu_color_first_level'])) {
+			echo ".nav-menu > li,
+			.nav-menu > li > a,
+			.widget_cart_search_wrap a {
+				color:".esc_attr($smof_data['menu_color_first_level']).";
+			}";
+		}
+		if(!empty($smof_data['menu_color_hover_first_level'])) {
+			echo ".nav-menu > li:hover,
+			.nav-menu > li:hover > a,
+			.widget_cart_search_wrap a:hover {
+				color:".esc_attr($smof_data['menu_color_hover_first_level']).";
+			}";
+			echo ".nav-menu > li:hover {
+				border-bottom-color: ".esc_attr($smof_data['menu_color_hover_first_level']).";
+			}";
+		}
+		if(!empty($smof_data['menu_color_active_first_level'])){
+			echo ".nav-menu ul > li.current-menu-item,
+			.nav-menu ul > li.current-menu-ancestor,
+			.nav-menu ul > li.current_page_item,
+			.nav-menu ul > li.current_page_ancestor,
+			.nav-menu ul > li.current-menu-parent,
+			.nav-menu ul > li.current-menu-item > a,
+			.nav-menu ul > li.current-menu-ancestor > a,
+			.nav-menu ul > li.current_page_item > a,
+			.nav-menu ul > li.current_page_ancestor > a,
+			.nav-menu ul > li.current-menu-parent > a,
+			 {
+				color:".esc_attr($smof_data['menu_color_active_first_level']).";
+			}";
+
+		}
+        	/* Sub Menu */
+		if(!empty($smof_data['menu_color_sub_level'])){
+			echo ".nav-menu > li ul li,
+			.nav-menu > li ul li > a {
+				color:".esc_attr($smof_data['menu_color_sub_level']).";
+			}";
+		}
+		if(!empty($smof_data['menu_color_hover_sub_level'])){
+			echo ".nav-menu > li ul a:focus,
+			.nav-menu > li ul li:hover,
+			.nav-menu > li ul li.current-menu-item,
+			.nav-menu > li ul li.current-menu-parent,
+			.nav-menu > li ul li.current-menu-ancestor,
+			.nav-menu > li ul li.current_page_item,
+			.nav-menu > li ul li:hover > a,
+			.nav-menu > li ul li.current-menu-item > a,
+			.nav-menu > li ul li.current-menu-parent > a,
+			.nav-menu > li ul li.current-menu-ancestor > a,
+			.nav-menu > li ul li.current_page_item > a {
+				color:".esc_attr($smof_data['menu_color_hover_sub_level']).";
+			}";
+		}
 		if(!empty($smof_data['sub_menu_uppercase'])){
 			echo "#yeah-header-navigation .main-navigation .menu-main-menu li ul a {
 				text-transform: uppercase;
