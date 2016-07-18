@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b625b242-6e1c-401a-b383-adb841f87fd4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/assets/css/static.css" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/assets/css/static.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/assets/scss/options.scss" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/assets/scss/options.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/inc/dynamic/static.css.php" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/inc/dynamic/static.css.php" />
     </list>
     <ignored path="lyon.iws" />
@@ -41,8 +39,8 @@
       <file leaf-file-name="static.css.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/inc/dynamic/static.css.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9389587">
-              <caret line="249" column="9" selection-start-line="249" selection-start-column="9" selection-end-line="249" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.7558348">
+              <caret line="253" column="9" selection-start-line="253" selection-start-column="9" selection-end-line="253" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -994,8 +992,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/inc/dynamic/static.css.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9389587">
-          <caret line="249" column="9" selection-start-line="249" selection-start-column="9" selection-end-line="249" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.7558348">
+          <caret line="253" column="9" selection-start-line="253" selection-start-column="9" selection-end-line="253" selection-end-column="9" />
           <folding />
         </state>
       </provider>
