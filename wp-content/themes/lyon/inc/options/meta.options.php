@@ -26,11 +26,12 @@ class ZOMetaOptions
 	/* add meta boxs */
 	public function add_meta_boxes()
 	{
-		$this->add_meta_box('template_page_options', __('Setting', 'fajar'), 'page');
-		$this->add_meta_box('testimonial_options', __('Testimonial about', 'fajar'), 'testimonial');
-		$this->add_meta_box('pricing_options', __('Pricing Option', 'fajar'), 'pricing');
-		$this->add_meta_box('team_options', __('Team About', 'fajar'), 'ourteam');
-		$this->add_meta_box('portfolio_options', __('Portfolio About', 'fajar'), 'portfolio');
+		$this->add_meta_box('template_page_options', __('Setting', 'lyon'), 'page');
+		$this->add_meta_box('testimonial_options', __('Testimonial about', 'lyon'), 'testimonial');
+		$this->add_meta_box('pricing_options', __('Pricing Option', 'lyon'), 'pricing');
+		$this->add_meta_box('team_options', __('Team About', 'lyon'), 'ourteam');
+		$this->add_meta_box('portfolio_options', __('Portfolio About', 'lyon'), 'portfolio');
+		$this->add_meta_box('room_options', __('Room settinng', 'lyon'), 'room');
 	}
 
 	public function add_meta_box($id, $label, $post_type, $context = 'advanced', $priority = 'default')
@@ -42,16 +43,16 @@ class ZOMetaOptions
 		?>
 		<div class="tab-container clearfix">
 			<ul class='etabs clearfix'>
-				<li class="tab"><a href="#tabs-general"><i class="fa fa-server"></i><?php _e('General', 'fajar'); ?></a></li>
-				<li class="tab"><a href="#tabs-header"><i class="fa fa-diamond"></i><?php _e('Header', 'fajar'); ?></a></li>
-				<li class="tab"><a href="#tabs-page-title"><i class="fa fa-connectdevelop"></i><?php _e('Page Title', 'fajar'); ?></a></li>
+				<li class="tab"><a href="#tabs-general"><i class="fa fa-server"></i><?php _e('General', 'lyon'); ?></a></li>
+				<li class="tab"><a href="#tabs-header"><i class="fa fa-diamond"></i><?php _e('Header', 'lyon'); ?></a></li>
+				<li class="tab"><a href="#tabs-page-title"><i class="fa fa-connectdevelop"></i><?php _e('Page Title', 'lyon'); ?></a></li>
 			</ul>
 			<div class='panel-container'>
 				<div id="tabs-general">
 					<?php
 					zo_options(array(
 						'id' => 'full_width',
-						'label' => __('Full Width','fajar'),
+						'label' => __('Full Width','lyon'),
 						'type' => 'switch',
 						'options' => array('on'=>'1','off'=>''),
 					));
@@ -62,7 +63,7 @@ class ZOMetaOptions
 					/* header. */
 					zo_options(array(
 						'id' => 'header',
-						'label' => __('Header','fajar'),
+						'label' => __('Header','lyon'),
 						'type' => 'switch',
 						'options' => array('on'=>'1','off'=>''),
 						'follow' => array('1'=>array('#page_header_enable'))
@@ -71,7 +72,7 @@ class ZOMetaOptions
 					<div id="page_header_enable"><?php
 						zo_options(array(
 							'id' => 'header_layout',
-							'label' => __('Layout','fajar'),
+							'label' => __('Layout','lyon'),
 							'type' => 'imegesselect',
 							'options' => array(
 								'' => get_template_directory_uri().'/inc/options/images/header/header-1.png',
@@ -80,7 +81,7 @@ class ZOMetaOptions
 						));
 						zo_options(array(
 							'id' => 'header_logo',
-							'label' => __('Logo','fajar'),
+							'label' => __('Logo','lyon'),
 							'type' => 'image'
 						));
 						/*
@@ -88,7 +89,7 @@ class ZOMetaOptions
 						 */
 						zo_options(array(
 							'id' => 'enable_header_menu',
-							'label' => __('Custom Header Menu Color','fajar'),
+							'label' => __('Custom Header Menu Color','lyon'),
 							'type' => 'switch',
 							'options' => array('on'=>'1','off'=>''),
 							'follow' => array('1'=>array('#page_header_menu_enable'))
@@ -97,19 +98,19 @@ class ZOMetaOptions
 							<div id="page_header_menu_enable"><?php
 								zo_options(array(
 									'id' => 'header_menu_color',
-									'label' => __('Menu Color - First Level','fajar'),
+									'label' => __('Menu Color - First Level','lyon'),
 									'type' => 'color',
 									'default' => ''
 								));
 								zo_options(array(
 									'id' => 'header_menu_color_hover',
-									'label' => __('Menu Hover - First Level','fajar'),
+									'label' => __('Menu Hover - First Level','lyon'),
 									'type' => 'color',
 									'default' => ''
 								));
 								zo_options(array(
 									'id' => 'header_menu_color_active',
-									'label' => __('Menu Active - First Level','fajar'),
+									'label' => __('Menu Active - First Level','lyon'),
 									'type' => 'color',
 									'default' => ''
 								));
@@ -139,7 +140,7 @@ class ZOMetaOptions
 					/* page title. */
 					zo_options(array(
 						'id' => 'page_title',
-						'label' => __('Page Title','fajar'),
+						'label' => __('Page Title','lyon'),
 						'type' => 'switch',
 						'options' => array('on'=>'1','off'=>''),
 						'follow' => array('1'=>array('#page_title_enable'))
@@ -147,27 +148,27 @@ class ZOMetaOptions
 					?>  <div id="page_title_enable"><?php
 						zo_options(array(
 							'id' => 'page_title_text',
-							'label' => __('Title','fajar'),
+							'label' => __('Title','lyon'),
 							'type' => 'text',
 						));
 						zo_options(array(
 							'id' => 'page_title_sub_text',
-							'label' => __('Sub Title','fajar'),
+							'label' => __('Sub Title','lyon'),
 							'type' => 'text',
 						));
 						zo_options(array(
 							'id' => 'page_title_margin',
-							'label' => __('Page Title Margin','fajar'),
+							'label' => __('Page Title Margin','lyon'),
 							'type' => 'text',
 						));
 						zo_options(array(
 							'id' => 'page_title_background',
-							'label' => __('Page Title Background','fajar'),
+							'label' => __('Page Title Background','lyon'),
 							'type' => 'image',
 						));
 						zo_options(array(
 							'id' => 'page_title_type',
-							'label' => __('Layout','fajar'),
+							'label' => __('Layout','lyon'),
 							'type' => 'imegesselect',
 							'options' => array(
 								'' => get_template_directory_uri().'/inc/options/images/pagetitle/pt-s-0.png',
@@ -193,7 +194,7 @@ class ZOMetaOptions
 			<?php
 			zo_options(array(
 				'id' => 'testimonial_position',
-				'label' => __('Client Position','fajar'),
+				'label' => __('Client Position','lyon'),
 				'type' => 'text',
 			));
 			?>
@@ -211,13 +212,13 @@ class ZOMetaOptions
 						<?php
 						zo_options(array(
 							'id' => 'price',
-							'label' => __('Price','fajar'),
+							'label' => __('Price','lyon'),
 							'type' => 'text',
 						));
 
 						zo_options(array(
 							'id' => 'value',
-							'label' => __('Value','fajar'),
+							'label' => __('Value','lyon'),
 							'type' => 'select',
 							'options' => array(
 								'Monthly' => 'Monthly',
@@ -227,7 +228,7 @@ class ZOMetaOptions
 
 						zo_options(array(
 							'id' => 'color',
-							'label' => __('Header Color','fajar'),
+							'label' => __('Header Color','lyon'),
 							'type' => 'color',
 							'default' => ''
 						));
@@ -238,20 +239,20 @@ class ZOMetaOptions
 						<?php
 						zo_options(array(
 							'id' => 'is_feature',
-							'label' => __('Is feature','fajar'),
+							'label' => __('Is feature','lyon'),
 							'type' => 'switch',
 							'options' => array('on'=>'1','off'=>''),
 						));
 
 						zo_options(array(
 							'id' => 'button_url',
-							'label' => __('Button Url','fajar'),
+							'label' => __('Button Url','lyon'),
 							'type' => 'text',
 						));
 
 						zo_options(array(
 							'id' => 'button_text',
-							'label' => __('Button Text','fajar'),
+							'label' => __('Button Text','lyon'),
 							'type' => 'text',
 						));
 						?>
@@ -269,14 +270,14 @@ class ZOMetaOptions
 
 		<div class="tab-container clearfix">
 			<ul class='etabs clearfix'>
-				<li class="tab"><a href="#tabs-position"><i class="fa fa-server"></i><?php _e('Position', 'fajar'); ?></a></li>
+				<li class="tab"><a href="#tabs-position"><i class="fa fa-server"></i><?php _e('Position', 'lyon'); ?></a></li>
 			</ul>
 			<div class='panel-container'>
 				<div id="tabs-position">
 					<?php
 					zo_options(array(
 						'id' => 'team_position',
-						'label' => __('Position', 'fajar'),
+						'label' => __('Position', 'lyon'),
 						'type' => 'text',
 						'placeholder' => '',
 					));
@@ -284,8 +285,84 @@ class ZOMetaOptions
 					<?php
 					zo_options(array(
 						'id' => 'socials',
-						'label' => __('Socials of team','fajar'),
+						'label' => __('Socials of team','lyon'),
 						'type' => 'social',
+					));
+					?>
+				</div>
+			</div>
+		</div>
+	<?php
+	}
+	/*-----------------------Room-----------------------------*/
+	function room_options(){
+		global  $post;
+		?>
+
+		<div class="tab-container clearfix">
+			<ul class='etabs clearfix'>
+				<li class="tab"><a href="#tabs-about"><i class="fa fa-server"></i><?php _e('Room Option', 'lyon'); ?></a></li>
+			</ul>
+			<div class='panel-container'>
+				<div id="tabs-about">
+					<div class="col-md-6">
+						<?php $bed = get_post_meta($post->ID, 'yeah_room_bed' ,true)?>
+						<label class="field-title" for="yeah_room_bed"><?php echo esc_html__('Bed','lyon') ?></label>
+						<div class="field">
+							<input type="text" name="yeah_room_bed" id="_yeah_room_bed" class="xvalue " value="<?php echo $bed ? esc_attr($bed):'';?>" placeholder="">
+						</div>
+						<?php $max = get_post_meta($post->ID, 'yeah_room_max' ,true)?>
+						<label class="field-title" for="yeah_room_max"><?php echo esc_html__('Max People','lyon') ?></label>
+						<div class="field">
+							<input type="text" name="yeah_room_max" id="_yeah_room_max" class="xvalue " value="<?php echo $max ? esc_attr($max):'';?>" placeholder="">
+						</div>
+						<?php $view = get_post_meta($post->ID, 'yeah_room_view' ,true)?>
+						<label class="field-title" for="yeah_room_view"><?php echo esc_html__('View','lyon') ?></label>
+						<div class="field">
+							<input type="text" name="yeah_room_view" id="yeah_room_view" class="xvalue " value="<?php echo $max ? esc_attr($view):'';?>" placeholder="">
+						</div>
+						<?php $room = get_post_meta($post->ID, 'yeah_room_size' ,true)?>
+						<label class="field-title" for="yeah_room_size"><?php echo esc_html__('Room size','lyon') ?></label>
+						<div class="field">
+							<input type="text" name="yeah_room_size" id="yeah_room_size" class="xvalue " value="<?php echo $room ? esc_attr($room) : '' ;?>" placeholder="">
+						</div>
+						<?php $roomnumber = get_post_meta($post->ID, 'yeah_room_number' ,true)?>
+						<label class="field-title" for="yeah_room_number"><?php echo esc_html__('Room','lyon') ?></label>
+						<div class="field">
+							<input type="text" name="yeah_room_number" id="yeah_room_number" class="xvalue " value="<?php echo $roomnumber ? esc_attr($roomnumber):'';?>" placeholder="">
+						</div>
+						<?php $bathroom = get_post_meta($post->ID, 'yeah_room_bathroom' ,true)?>
+						<label class="field-title" for="yeah_room_bathroom"><?php echo esc_html__('Bathroom','lyon') ?></label>
+						<div class="field">
+							<input type="text" name="yeah_room_bathroom" id="yeah_room_bathroom" class="xvalue " value="<?php echo $bathroom ? esc_attr($bathroom):''; ?>" placeholder="">
+						</div>
+						<?php $wifi = get_post_meta($post->ID, 'yeah_room_wifi' ,true)?>
+						<label class="field-title" for="yeah_room_wifi"><?php echo esc_html__('Free wifi','lyon') ?></label>
+						<div class="field">
+							<div class="select-field csfield">
+								<select name="yeah_room_wifi" id="yeah_room_wifi">
+									<option <?php echo $wifi=='' ? 'selected' : '' ?> value=""><?php echo esc_html__('Yes','lyon')?></option>
+									<option <?php echo $wifi=='no' ? 'selected' : '' ?> value="no"><?php echo esc_html__('No','lyon')?></option>
+								</select>
+							</div>
+						</div>
+						<?php $tivi = get_post_meta($post->ID, 'yeah_room_tv' ,true)?>
+						<label class="field-title" for="yeah_room_tv"><?php echo esc_html__('TV in room','lyon') ?></label>
+						<div class="field">
+							<div class="select-field csfield">
+								<select name="yeah_room_tv" id="yeah_room_tv">
+									<option <?php echo $tivi=='' ? 'selected' : '' ?> value=""><?php echo esc_html__('Yes','lyon')?></option>
+									<option <?php echo $tivi=='no' ? 'selected' : '' ?>  value="no"><?php echo esc_html__('No','lyon')?></option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<?php
+
+					zo_options(array(
+						'id' => 'portfolio_images',
+						'label' => __('Gallery', 'lyon'),
+						'type' => 'images',
 					));
 					?>
 				</div>
@@ -298,39 +375,39 @@ class ZOMetaOptions
 		?>
 		<div class="tab-container clearfix">
 			<ul class='etabs clearfix'>
-				<li class="tab"><a href="#tabs-about"><i class="fa fa-server"></i><?php _e('About', 'fajar'); ?></a></li>
-				<li class="tab"><a href="#tabs-layout"><i class="fa fa-server"></i><?php _e('Layout', 'fajar'); ?></a></li>
+				<li class="tab"><a href="#tabs-about"><i class="fa fa-server"></i><?php _e('About', 'lyon'); ?></a></li>
+				<li class="tab"><a href="#tabs-layout"><i class="fa fa-server"></i><?php _e('Layout', 'lyon'); ?></a></li>
 			</ul>
 			<div class='panel-container'>
 				<div id="tabs-about">
 					<?php
 					zo_options(array(
 						'id' => 'portfolio_client',
-						'label' => __('Client', 'fajar'),
+						'label' => __('Client', 'lyon'),
 						'type' => 'text',
 						'placeholder' => '',
 					));
 					zo_options(array(
 						'id' => 'portfolio_date',
-						'label' => __('Date', 'fajar'),
+						'label' => __('Date', 'lyon'),
 						'type' => 'date',
 						'placeholder' => '',
 					));
 					zo_options(array(
 						'id' => 'portfolio_skills',
-						'label' => __('Skills', 'fajar'),
+						'label' => __('Skills', 'lyon'),
 						'type' => 'text',
 						'placeholder' => '',
 					));
 					zo_options(array(
 						'id' => 'portfolio_url',
-						'label' => __('URL', 'fajar'),
+						'label' => __('URL', 'lyon'),
 						'type' => 'text',
 						'value' => '#',
 					));
 					zo_options(array(
 						'id' => 'portfolio_images',
-						'label' => __('Gallery', 'fajar'),
+						'label' => __('Gallery', 'lyon'),
 						'type' => 'images',
 					));
 					?>
@@ -339,7 +416,7 @@ class ZOMetaOptions
 					<?php
 					zo_options(array(
 						'id' => 'portfolio_layout',
-						'label' => __('Layout', 'fajar'),
+						'label' => __('Layout', 'lyon'),
 						'type' => 'select',
 						'options' => array(
 							'' => 'Default',

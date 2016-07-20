@@ -621,6 +621,13 @@ class ZoCoreControl
 		if(defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) {
 			return;
 		}
+        foreach($_POST as $key => $value) {
+            if(strstr($key, 'yeah_')) {
+                update_post_meta($post_id, $key ,$value);
+            }
+        }
+
+        /**/
 		/* array zo meta */
         $zo_meta = array();
         /* find zo meta key. */
