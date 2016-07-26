@@ -50,6 +50,6 @@ if( basename($template) === 'blog-classic.php') {
 	
 	<!-- Detail -->
     <div class="yeah-blog-detail">
-        <div class="yeah-blog-meta"><?php zo_archive_detail(); ?></div>
+        <div class="yeah-blog-meta"><?php yeah_archive_detail(); ?></div>
     </div>
 </article>

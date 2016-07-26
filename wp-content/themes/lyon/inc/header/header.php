@@ -6,11 +6,11 @@
  */
 ?>
 
-<div id="yeah-header" class="yeah-main-header header-default  <?php if (!zo_get_data_theme_options('menu_sticky')) {
+<div id="yeah-header" class="yeah-main-header header-default  <?php if (!yeah_get_data_theme_options('menu_sticky')) {
 	echo 'no-sticky';
-} ?> <?php if (zo_get_data_theme_options('menu_sticky_tablets')) {
+} ?> <?php if (yeah_get_data_theme_options('menu_sticky_tablets')) {
 	echo 'sticky-tablets';
-} ?> <?php if (zo_get_data_theme_options('menu_sticky_mobile')) {
+} ?> <?php if (yeah_get_data_theme_options('menu_sticky_mobile')) {
 	echo 'sticky-mobile';
 } ?> <?php if (!empty($zo_meta->_zo_enable_header_menu)) {
 	echo 'header-menu-custom';

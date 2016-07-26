@@ -1,12 +1,8 @@
-@include font-face(museo_slab_100, 'http://localhost/lyon/wp-content/themes/lyon/assets/fonts/museo_slab_100.eot', 'http://localhost/lyon/wp-content/themes/lyon/assets/fonts/museo_slab_100.woff','http://localhost/lyon/wp-content/themes/lyon/assets/fonts/museo_slab_100.ttf');
-.museo_slab_100{font-family:'museo_slab_100';}
-@include font-face(museo_slab_300, 'http://localhost/lyon/wp-content/themes/lyon/assets/fonts/museo_slab_300.eot', 'http://localhost/lyon/wp-content/themes/lyon/assets/fonts/museo_slab_300.woff','http://localhost/lyon/wp-content/themes/lyon/assets/fonts/museo_slab_300.ttf');
-.museo_slab_300, #yeah-header-menu{font-family:'museo_slab_300';}
-@include font-face(museo_slab_500, 'http://localhost/lyon/wp-content/themes/lyon/assets/fonts/museo_slab_500.eot', 'http://localhost/lyon/wp-content/themes/lyon/assets/fonts/museo_slab_500.woff','http://localhost/lyon/wp-content/themes/lyon/assets/fonts/museo_slab_500.ttf');
-.museo_slab_500{font-family:'museo_slab_500';}
-body, .body_font{font-family:'Lato', Arial, Helvetica, sans-serif;font-weight:400;color:#404040;font-size:16px;}.google-font-1{font-family:'Source Sans Pro', Arial, Helvetica, sans-serif;font-weight:400;}$primary_color:#ee3b24;
-$link_color:#333;
-$link_color_hover:#ee3b24;
+@include font-face(Material-Design-Iconic-Font, 'http://localhost/lyon/wp-content/themes/lyon/assets/fonts/Material-Design-Iconic-Font.eot', 'http://localhost/lyon/wp-content/themes/lyon/assets/fonts/Material-Design-Iconic-Font.woff','http://localhost/lyon/wp-content/themes/lyon/assets/fonts/Material-Design-Iconic-Font.ttf');
+.zo_local_font1{font-family:'Material-Design-Iconic-Font';}
+body, .body_font{font-family:'Lato', Arial, Helvetica, sans-serif;font-weight:400;color:#404040;font-size:16px;}.google-font-1{font-family:'Old Standard TT', Arial, Helvetica, sans-serif;font-weight:400;}$primary_color:#283c5a;
+$link_color:#252525;
+$link_color_hover:#283c5a;
 $main_logo_height:90px;
 #yeah-header-logo a img { max-height: $main_logo_height; }#yeah-header { background-color:rgba(40, 60, 90, 1); }.yeah-header-navigation .main-navigation .nav-menu > li {padding-left: 30px;padding-right: 30px;}#yeah-header-navigation .main-navigation .menu-main-menu > li > a,
 			#yeah-header-navigation .main-navigation .menu-main-menu > ul > li > a {
@@ -48,4 +44,4 @@ $main_logo_height:90px;
 			.nav-menu > li ul li.current-menu-ancestor > a,
 			.nav-menu > li ul li.current_page_item > a {
 				color:#cdaf87;
-			}body h1{font-family: Old Standard TT;font-weight: 700;font-size: 48px;font-weight: 700;line-height: 60px;color: #283c5a;margin-top:0;margin-bottom:15px;}body h2{font-family: Old Standard TT;font-weight: 700;font-size: 36px;font-weight: 700;line-height: 60px;color: #283c5a;margin-top:0;margin-bottom:15px;}body h3{font-family: Karla;font-weight: 700;font-size: 24px;font-weight: 700;line-height: 30px;color: #000000;margin-top:0;margin-bottom:15px;}body h4{font-family: Karla;font-weight: 700;font-size: 20px;font-weight: 700;line-height: 30px;color: #000000;margin-top:0;margin-bottom:15px;}
+			}body h1{font-family: Old Standard TT;font-weight: 700;font-size: 48px;font-weight: 700;line-height: 60px;color: #252525;margin-top:0;margin-bottom:15px;}body h2{font-family: Old Standard TT;font-weight: 700;font-size: 36px;font-weight: 700;line-height: 60px;color: #252525;margin-top:0;margin-bottom:15px;}body h3{font-family: Old Standard TT;font-weight: 700;font-size: 24px;font-weight: 700;line-height: 30px;color: #252525;margin-top:0;margin-bottom:15px;}body h4{font-family: Karla;font-weight: 700;font-size: 20px;font-weight: 700;line-height: 30px;color: #252525;margin-top:0;margin-bottom:15px;}

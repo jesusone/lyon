@@ -278,7 +278,7 @@ vc_map(
                 ),
 	        ),
 			array(
-	            "type" => "zo_template_img",
+	            "type" => "zo_template",
 	            "param_name" => "zo_template",
 	            "admin_label" => true,
 	            "heading" => __("Template",'cmstheme'),

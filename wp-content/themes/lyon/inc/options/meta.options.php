@@ -32,7 +32,9 @@ class ZOMetaOptions
 		$this->add_meta_box('team_options', __('Team About', 'lyon'), 'ourteam');
 		$this->add_meta_box('portfolio_options', __('Portfolio About', 'lyon'), 'portfolio');
 		$this->add_meta_box('room_options', __('Room settinng', 'lyon'), 'room');
+		add_meta_box( 'room_price', esc_html__('Price / night' , 'lyon'),array($this,'room_price'), 'room', 'side', 'high');
 	}
+
 
 	public function add_meta_box($id, $label, $post_type, $context = 'advanced', $priority = 'default')
 	{
@@ -295,6 +297,17 @@ class ZOMetaOptions
 	<?php
 	}
 	/*-----------------------Room-----------------------------*/
+	function room_price(){
+		global $post;
+		$_regular_price = get_post_meta($post->ID, 'yeah_regular_price', true);
+		?>
+		<div>
+			<label for=""><?php esc_html_e('Regular Price', 'pro-car-dealer'); ?></label>
+			<input id="" name="yeah_regular_price" type="number" min="0"  value="<?php echo esc_attr($_regular_price); ?>">
+		</div>
+		<?php
+
+	}
 	function room_options(){
 		global  $post;
 		?>
@@ -316,7 +329,7 @@ class ZOMetaOptions
 						<div class="field">
 							<input type="text" name="yeah_room_max" id="_yeah_room_max" class="xvalue " value="<?php echo $max ? esc_attr($max):'';?>" placeholder="">
 						</div>
-						<?php $view = get_post_meta($post->ID, 'yeah_room_view' ,true)?>
+						<?php $view = get_post_meta($post->ID, 'yeah_room_view' ,true);?>
 						<label class="field-title" for="yeah_room_view"><?php echo esc_html__('View','lyon') ?></label>
 						<div class="field">
 							<input type="text" name="yeah_room_view" id="yeah_room_view" class="xvalue " value="<?php echo $max ? esc_attr($view):'';?>" placeholder="">
@@ -331,12 +344,12 @@ class ZOMetaOptions
 						<div class="field">
 							<input type="text" name="yeah_room_number" id="yeah_room_number" class="xvalue " value="<?php echo $roomnumber ? esc_attr($roomnumber):'';?>" placeholder="">
 						</div>
-						<?php $bathroom = get_post_meta($post->ID, 'yeah_room_bathroom' ,true)?>
+						<?php $bathroom = get_post_meta($post->ID, 'yeah_room_bathroom' ,true);?>
 						<label class="field-title" for="yeah_room_bathroom"><?php echo esc_html__('Bathroom','lyon') ?></label>
 						<div class="field">
 							<input type="text" name="yeah_room_bathroom" id="yeah_room_bathroom" class="xvalue " value="<?php echo $bathroom ? esc_attr($bathroom):''; ?>" placeholder="">
 						</div>
-						<?php $wifi = get_post_meta($post->ID, 'yeah_room_wifi' ,true)?>
+						<?php $wifi = get_post_meta($post->ID, 'yeah_room_wifi' ,true);?>
 						<label class="field-title" for="yeah_room_wifi"><?php echo esc_html__('Free wifi','lyon') ?></label>
 						<div class="field">
 							<div class="select-field csfield">

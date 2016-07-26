@@ -63,18 +63,38 @@
             }
             ?>
             <div class="zo-grid-item <?php echo esc_attr($atts['item_class']);?>" data-groups='[<?php echo implode(',', $groups);?>]'>
-                <div class="col-md-6">
-                <?php
-                    if(has_post_thumbnail() && !post_password_required() && !is_attachment() &&  wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), $size, false)):
-                        $class = ' has-thumbnail';
-                        $thumbnail = get_the_post_thumbnail(get_the_ID(),$size);
-                    else:
-                        $class = ' no-image';
-                        $thumbnail = '<img src="'.ZO_IMAGES.'no-image.jpg" alt="'.get_the_title().'" />';
-                    endif;
-                    echo '<div class="zo-grid-media '.esc_attr($class).'">'.$thumbnail.'</div>';
-                ?>
-                </div>
+                <article id="post-<?php the_ID(); ?>" <?php post_class('post-item'); ?>>
+                    <div class="post-inner">
+                        <div class="flx-entry-thumb">
+                            <?php
+                                switch(get_post_format(get_the_ID())){
+                                    case  'video':
+                                         echo yeah_archive_video();
+                                    break;
+                                }
+                            ?>
+                        </div>
+                        <div class="entry-content">
+                            <header>
+                                <h2 class="entry-title">
+                                    <a rel="bookmark" href=" <?php the_permalink();?>"> <?php the_title();?></a>
+                                </h2>
+                            </header>
+                            <p class="excerpt">
+                               <?php echo yeah_limit_words(get_the_excerpt(),50); ?>
+                            </p>
+                            <div class="footer-content">
+                                <a href="<?php the_permalink(); ?>" class="more-link btn-ripple"><?php echo esc_html__('LEARN MORE','lyon'); ?></a>
+                            </div>
+                        </div>
+                        <div class="k2t-blog-social pull-left">
+                            <div class="k2t-social-share post">
+                                <?php echo yeah_social_share(); ?>
+                            </div>
+                        </div>
+                    <div>
+                </article>
+
                 <div class="col-md-6">
                     <div class="zo-grid-title">
                         <?php the_title();?>

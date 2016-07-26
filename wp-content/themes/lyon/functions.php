@@ -160,6 +160,7 @@ function fajar_setup() {
 	register_nav_menu( 'primary', __( 'Primary Menu', 'lyon' ) );
 	register_nav_menu( 'left_menu', __( 'Left Menu', 'lyon' ) );
 	register_nav_menu( 'right_menu', __( 'Right Menu', 'lyon' ) );
+	register_nav_menu( 'footer_menu', __( 'Footer Menu', 'lyon' ) );
 
 	/*
 	 * This theme supports custom background color and image,
@@ -271,11 +272,17 @@ function fajar_scripts_styles() {
     /* Fancy box */
     wp_register_script('fancybox', get_template_directory_uri() . '/assets/libs/fancybox/jquery.fancybox.pack.js', array( 'jquery' ), '2.1.5', true);
     wp_register_style('fancybox', get_template_directory_uri() . '/assets/libs/fancybox/jquery.fancybox.css');
-    /* Slick Slider */
+
+    /* Owl-carousel Slider */
+    wp_register_script('owl-carousel', get_template_directory_uri(). '/assets/js/owl.carousel.min.js', array('jquery'), '2.0.0b', true);
+	wp_register_style('owl-carousel', get_template_directory_uri(). '/assets/css/popular.css');
+	/** --------------------------custom------------------------------- */
+
+	/* Slick Slider */
     wp_register_script('slick-js', get_template_directory_uri(). '/assets/js/slick.min.js', array('jquery'), '1.5.7', true);
     wp_register_style('slick-css', get_template_directory_uri(). '/assets/css/slick.css');
 	/** --------------------------custom------------------------------- */
-	
+
 	/* Add main.js */
 	wp_register_script('fajar-main', get_template_directory_uri() . '/assets/js/main.js', array( 'jquery'), '1.0.0', true);
 	wp_localize_script('fajar-main', 'ZOOptions', $script_options);
@@ -307,7 +314,8 @@ function fajar_scripts_styles() {
 	
 	/* Loads Font Awesome. */
 	wp_enqueue_style('font-awesome', get_template_directory_uri() . '/assets/css/font-awesome.min.css', array(), '4.5.0');
-	
+	wp_enqueue_style('material-design-iconic', get_template_directory_uri() . '/assets/css/material-design-iconic-font.min.css', array(), '4.5.0');
+
 	/** --------------------------custom------------------------------- */
 	
 	/* Loads our main stylesheet. */
@@ -423,111 +431,12 @@ function zo_widgets_init() {
     	'before_title' => '<h3 class="wg-title">',
     	'after_title' => '</h3>',
 	) );
-	
+
+
 	register_sidebar( array(
-    	'name' => __( 'Footer 1 left', 'lyon' ),
-    	'id' => 'footer-1-left',
-    	'description' => __( 'Appears when using the optional Footer with a page set as Footer 1 left', 'lyon' ),
-    	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-    	'after_widget' => '</aside>',
-    	'before_title' => '<h3 class="wg-title">',
-    	'after_title' => '</h3>',
-	) );
-	
-	register_sidebar( array(
-    	'name' => __( 'Footer 1 Right', 'lyon' ),
-    	'id' => 'footer-1-right',
-    	'description' => __( 'Appears when using the optional Footer with a page set as Footer 1 Right', 'lyon' ),
-    	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-    	'after_widget' => '</aside>',
-    	'before_title' => '<h3 class="wg-title">',
-    	'after_title' => '</h3>',
-	) );
-	
-	register_sidebar( array(
-    	'name' => __( 'Footer 2 Item 1', 'lyon' ),
-    	'id' => 'footer-2-item-1',
-    	'description' => __( 'Appears when using the optional Footer with a page set as Footer 2 Item 1', 'lyon' ),
-    	'before_widget' => '<aside class="widget %2$s">',
-    	'after_widget' => '</aside>',
-    	'before_title' => '<h3 class="wg-title">',
-    	'after_title' => '</h3>',
-	) );
-	
-	register_sidebar( array(
-    	'name' => __( 'Footer 2 Item 2', 'lyon' ),
-    	'id' => 'footer-2-item-2',
-    	'description' => __( 'Appears when using the optional Footer with a page set as Footer 2 Item 2', 'lyon' ),
-    	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-    	'after_widget' => '</aside>',
-    	'before_title' => '<h3 class="wg-title">',
-    	'after_title' => '</h3>',
-	) );
-	
-	register_sidebar( array(
-    	'name' => __( 'Footer 2 Item 3', 'lyon' ),
-    	'id' => 'footer-2-item-3',
-    	'description' => __( 'Appears when using the optional Footer with a page set as Footer 2 Item 3', 'lyon' ),
-    	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-    	'after_widget' => '</aside>',
-    	'before_title' => '<h3 class="wg-title">',
-    	'after_title' => '</h3>',
-	) );
-	
-	register_sidebar( array(
-    	'name' => __( 'Footer 3 Item 1', 'lyon' ),
-    	'id' => 'footer-3-item-1',
-    	'description' => __( 'Appears when using the optional Footer with a page set as Footer 3 Item 1', 'lyon' ),
-    	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-    	'after_widget' => '</aside>',
-    	'before_title' => '<h3 class="wg-title">',
-    	'after_title' => '</h3>',
-	) );
-	
-	register_sidebar( array(
-    	'name' => __( 'Footer 3 Item 2', 'lyon' ),
-    	'id' => 'footer-3-item-2',
-    	'description' => __( 'Appears when using the optional Footer with a page set as Footer 3 Item 2', 'lyon' ),
-    	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-    	'after_widget' => '</aside>',
-    	'before_title' => '<h3 class="wg-title">',
-    	'after_title' => '</h3>',
-	) );
-	
-	register_sidebar( array(
-    	'name' => __( 'Footer 3 Item 3', 'lyon' ),
-    	'id' => 'footer-3-item-3',
-    	'description' => __( 'Appears when using the optional Footer with a page set as Footer 3 Item 3', 'lyon' ),
-    	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-    	'after_widget' => '</aside>',
-    	'before_title' => '<h3 class="wg-title">',
-    	'after_title' => '</h3>',
-	) );
-	
-	register_sidebar( array(
-    	'name' => __( 'Footer 3 Item 4', 'lyon' ),
-    	'id' => 'footer-3-item-4',
-    	'description' => __( 'Appears when using the optional Footer with a page set as Footer 3 Item 4', 'lyon' ),
-    	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-    	'after_widget' => '</aside>',
-    	'before_title' => '<h3 class="wg-title">',
-    	'after_title' => '</h3>',
-	) );
-	
-	register_sidebar( array(
-    	'name' => __( 'Footer Banners', 'lyon' ),
-    	'id' => 'footer-banners',
-    	'description' => __( 'Appears when using the optional Footer with a page set as Footer Banners', 'lyon' ),
-    	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-    	'after_widget' => '</aside>',
-    	'before_title' => '<h3 class="wg-title">',
-    	'after_title' => '</h3>',
-	) );
-	
-	register_sidebar( array(
-    	'name' => __( 'Footer Bottom Text', 'lyon' ),
-    	'id' => 'footer-bottom-text',
-    	'description' => __( 'Appears when using the optional Footer Bottom with a page set as Footer Bottom Text', 'lyon' ),
+    	'name' => __( 'Footer Copy right', 'lyon' ),
+    	'id' => 'footer-copyright',
+    	'description' => __( 'Appears when using the optional Footer Copyright with a page set as Footer Bottom Text', 'lyon' ),
     	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
     	'after_widget' => '</aside>',
     	'before_title' => '<h3 class="wg-title">',
@@ -849,7 +758,8 @@ function zo_set_count_view(){
         update_post_meta($post->ID, '_zo_post_views' , $views);
 
         /* set cookie. */
-        setcookie('zo_post_view_'. $post->ID, $post->ID, time() * 20, '/');
+        setcookie('zo_post_view_'. $post->ID, $post->ID);
+      //  setcookie('zo_post_view_'. $post->ID, $post->ID, time()*20,'/');
     }
 }
 
@@ -966,8 +876,8 @@ if( function_exists('zo_image_resize')) {
 	 */
 	function zo_post_thumbnail($id = null, $width = null, $height = null, $crop = null, $single = true, $upscale = false) {
 		$image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $id ), 'full' );
-		$url = zo_image_resize($image_url[0], $width, $height, $crop, $single, $upscale);
-		return do_shortcode('<img src="'.esc_url($url).'" alt="' . get_the_title() . '" />');
+			$url = zo_image_resize($image_url[0], $width, $height, $crop, $single, $upscale);
+		return '<img src="'.esc_url($url).'" alt="' . get_the_title() . '" />';
 	}
 }
 

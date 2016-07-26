@@ -2,7 +2,7 @@
 /**
  * Page title template
  * @since 1.0.0
- * @author ZoTheme
+ * @author YeahTheme
  */
 /* Set Variable For Scss */
 function zo_setvariablescss($var, $output, $var_default, $var_empty = null) {
@@ -88,7 +88,7 @@ function zo_page_title_content($page_title_layout){
 /**
  * Get sub page title.
  *
- * @author ZoTheme
+ * @author YeahTheme
  */
 function zo_page_sub_title(){
     global $zo_meta, $post;
@@ -103,7 +103,7 @@ function zo_page_sub_title(){
 /**
  * Get Header Layout.
  *
- * @author ZoTheme
+ * @author YeahTheme
  */
 function zo_header(){
     global $smof_data, $zo_meta;
@@ -120,7 +120,7 @@ function zo_header(){
 /**
  * Get Header Layout.
  *
- * @author ZoTheme
+ * @author YeahTheme
  */
 function zo_footer(){
     global $smof_data, $zo_meta;
@@ -156,7 +156,7 @@ if (!function_exists('zo_footer_logo')) {
 		if (isset($zo_meta->_zo_footer_logo) && !empty($zo_meta->_zo_footer_logo) && !empty($zo_meta->_zo_footer)) {
 			$logo = wp_get_attachment_url($zo_meta->_zo_footer_logo);
         }else {
-			$logo = isset($smof_data['footer_logo']['url']) ? $smof_data['footer_logo']['url'] : get_template_directory_uri() . '/footer-logo.png';
+			$logo = isset($smof_data['footer_logo']['url']) ? $smof_data['footer_logo']['url'] : get_template_directory_uri() . '/assets/images/logo-footer.png';
 		}
         return $logo;
     }
@@ -194,7 +194,7 @@ function zo_get_page_loading() {
 /**
  * Add page class
  *
- * @author ZoTheme
+ * @author YeahTheme
  * @since 1.0.0
  */
 function zo_page_class(){
@@ -214,7 +214,7 @@ function zo_page_class(){
 /**
  * Add main class
  *
- * @author ZoTheme
+ * @author YeahTheme
  * @since 1.0.0
  */
 function zo_main_class(){
@@ -252,25 +252,35 @@ function zo_get_post_like(){
 /**
  * Archive detail
  *
- * @author ZoTheme
+ * @author YeahTheme
  * @since 1.0.0
  */
-function zo_archive_detail(){
+function yeah_archive_detail(){
     ?>
-    <ul>
-		<li class="author vcard"><?php echo get_avatar( get_the_author_meta('ID'), 42); ?><?php the_author_posts_link(); ?></li>
-		<li class="yeah-blog-date">
-            <span><i class="icon-clock"></i><?php echo get_the_date("M d, Y"); ?></span>
-        </li>
-        <li class="yeah-blog-comment"><i class="icon-chat-1"></i><a href="<?php the_permalink(); ?>"><?php echo comments_number('0','1','%'); ?> <?php esc_html_e('Comments','fajar');?></a></li>
-    </ul>
+    <div class="yeah-meta">
+        	<span class="entry-date">
+                <i class="zmdi zmdi-time"></i>
+                <span data-time="2012-03-15T15:36:32+00:00"><?php echo get_the_date("M d, Y"); ?></span>
+            </span>
+            <span class="entry-author">
+                <i class="zmdi zmdi-account-o"></i><?php echo the_author_posts_link(); ?>
+            </span>
+            <?php if(has_category()): ?>
+            <span class="entry-categories">
+                <i class="zmdi zmdi-layers"></i>
+                <?php the_terms( get_the_ID(), 'category', '', ' , ' );  ?>
+            </span>
+            <?php endif; ?>
+
+
+    </div>
 <?php
 }
 
 /**
  * Archive readmore
  *
- * @author ZoTheme
+ * @author YeahTheme
  * @since 1.0.0
  */
 function zo_archive_readmore(){
@@ -299,7 +309,7 @@ function zo_archive_audio() {
  * Media Video.
  * @return bool|string
  */
-function zo_archive_video() {
+function yeah_archive_video() {
 
     global $wp_embed, $zo_base, $smof_data;
     /* Get Local Video */
@@ -323,7 +333,7 @@ function zo_archive_video() {
 /**
  * Gallerry Images
  *
- * @author ZoTheme
+ * @author YeahTheme
  * @since 1.0.0
  * @param string $image_size
  * @return bool|string
@@ -376,7 +386,7 @@ function zo_archive_gallery($image_size = 'full'){
 /**
  * Quote Text.
  *
- * @author ZoTheme
+ * @author YeahTheme
  * @since 1.0.0
  */
 function zo_archive_quote() {
@@ -409,7 +419,7 @@ function zo_archive_link() {
  * Get icon from post format.
  *
  * @return multitype:string Ambigous <string, mixed>
- * @author ZoTheme
+ * @author YeahTheme
  * @since 1.0.0
  */
 function zo_archive_post_icon() {
@@ -451,13 +461,40 @@ function zo_archive_post_icon() {
  * @since 1.0.0
  */
 
-function zo_social_share() {
+function yeah_social_share() {
     ?>
-	<p><?php esc_html_e('Share Detail:','fajar');?></p>
-    <ul class="social-list">
-        <li class="box"><a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_the_permalink(); ?>" onclick="javascript:void window.open(this.href,'','width=600,height=300,resizable=true,left=200px,top=200px');return false;" class="facebook"><?php esc_html_e('Facebook','fajar');?></a></li>
-        <li class="box"><a href="https://twitter.com/intent/tweet?text=<?php echo get_the_title(); ?>&url=<?php echo get_the_permalink(); ?>" onclick="javascript:void window.open(this.href,'','width=600,height=300,resizable=true,left=200px,top=200px');return false;" class="twitter"><?php esc_html_e('Twitter','fajar');?></a></li>
-        <li class="box"><a href="https://www.pinterest.com/pin/create/extension/?url=<?php echo get_the_permalink(); ?>&media=<?php echo esc_url(wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'full' )[0])?>" onclick="javascript:void window.open(this.href,'','width=600,height=300,resizable=true,left=200px,top=200px');return false;" class="pinterest"><?php esc_html_e('Pinterest','fajar');?></a></li>
+    <ul class="social">
+        <li class="post_share"><?php echo esc_html__('Share:','lyon');?></li>
+        <li>
+            <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_the_permalink(); ?>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+                <i class="fa fa-facebook"></i>
+                <span><?php echo esc_html__('Facebook','lyon') ?></span>
+            </a>
+        </li>
+        <li>
+            <a class="twitter" href="https://twitter.com/intent/tweet?text=<?php echo get_the_title(); ?>&url=<?php echo get_the_permalink(); ?>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+                <i class="fa fa-twitter"></i>
+                <span><?php echo esc_html__('Twitter','lyon') ?></span>
+            </a>
+        </li>
+        <li>
+            <a class="google" href="https://plus.google.com/share?url=<?php echo get_the_permalink(); ?>" title="<?php echo esc_html__('Google Plus','lyon') ?>">
+                <i class="fa fa-google-plus"></i>
+                <span><?php echo esc_html__('Google Plus','lyon') ?></span>
+            </a>
+        </li>
+        <li>
+            <a class="tumblr" href="https://www.tumblr.com/share/link?url=<?php echo get_the_permalink(); ?>" title="<?php echo esc_html__('Tumblr','lyon'); ?>">
+                <i class="fa fa-tumblr"></i>
+                <span><?php echo esc_html__('Tumblr','lyon') ?></span>
+            </a>
+        </li>
+        <li>
+            <a class="em" href="https://www.pinterest.com/pin/create/extension/?url=<?php echo get_the_permalink(); ?>&media=<?php echo esc_url(wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'full' )[0])?>" onclick="javascript:void window.open(this.href,'','width=600,height=300,resizable=true,left=200px,top=200px');return false;" class="pinterest">
+                <i class="fa fa-pinterest-p"></i>
+                <span><?php echo esc_html__('Pinterest','lyon') ?></span>
+            </a>
+        </li>
     </ul>
 <?php
 }
@@ -541,8 +578,8 @@ function zo_comment_nav() {
 	endif;
 }
 
-if( !function_exists('zo_get_data_theme_options') ) {
-	function zo_get_data_theme_options($key) {
+if( !function_exists('yea_get_data_theme_options') ) {
+	function yeah_get_data_theme_options($key) {
 		global $smof_data;
 		return isset($smof_data[$key]) && !empty($smof_data[$key]) ? $smof_data[$key] : NULL;
 	}
@@ -555,3 +592,22 @@ function update_wishlist_count(){
 }
 add_action( 'wp_ajax_update_wishlist_count', 'update_wishlist_count' );
 add_action( 'wp_ajax_nopriv_update_wishlist_count', 'update_wishlist_count' );
+//Load social links
+function yeah_footer_social(){
+    global $smof_data;
+    $socials = $smof_data['social_link_footer'];
+    ?>
+    <ul class="footer-social">
+        <?php
+        foreach($socials as $social => $key) {
+            if(!empty($smof_data[$social]) && $key){
+                echo '<li class="' . esc_attr($social) . '">';
+                echo '<a href="' . esc_attr($smof_data[$social]) . '" title="' . esc_attr($social) . '">';
+                echo '<i class="fa fa-' . esc_attr($social) . '"></i>';
+                echo '</a></li>';
+            }
+        }
+        ?>
+    </ul>
+    <?php
+}

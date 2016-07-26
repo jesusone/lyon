@@ -1,6 +1,6 @@
 <?php 
     /* get categories */
-        $taxo = 'category';
+        $taxo = 'room-category';
         $_category = array();
         if(!isset($atts['cat']) || $atts['cat']==''){
             $terms = get_terms($taxo);
@@ -11,6 +11,7 @@
             $_category  = explode(',', $atts['cat']);
         }
         $atts['categories'] = $_category;
+        $currency = "$";
 ?>
 <div class="yeah-grid-wrapper <?php echo esc_attr($atts['template']);?>" id="<?php echo esc_attr($atts['html_id']);?>">
 
@@ -50,7 +51,7 @@
         </div>
     <?php endif; ?>
 	
-    <div class="row zo-grid <?php echo esc_attr($atts['grid_class']);?>">
+    <div class="row  <?php echo esc_attr($atts['grid_class']);?>">
         <?php
         $posts = $atts['posts'];
         $size = ( isset($atts['layout']) && $atts['layout']=='basic')?'thumbnail':'medium';
@@ -62,8 +63,9 @@
                 $groups[] = '"category-'.$category->slug.'"';
             }
             ?>
-            <div class="zo-grid-item <?php echo esc_attr($atts['item_class']);?>" data-groups='[<?php echo implode(',', $groups);?>]'>
-                <?php 
+            <div class="<?php echo esc_attr($atts['item_class']);?>" data-groups='[<?php echo implode(',', $groups);?>]'>
+
+                <?php
                     if(has_post_thumbnail() && !post_password_required() && !is_attachment() &&  wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), $size, false)):
                         $class = ' has-thumbnail';
                         $thumbnail = get_the_post_thumbnail(get_the_ID(),'full');
@@ -72,16 +74,23 @@
                         $class = ' no-image';
                         $thumbnail = '<img src="'.ZO_IMAGES.'no-image.jpg" alt="'.get_the_title().'" />';
                     endif;
-                    echo '<div class="zo-grid-media '.esc_attr($class).'">'.$thumbnail.'</div>';
+                    $_regular_price = get_post_meta(get_the_ID(), 'yeah_regular_price' ,true);
                 ?>
-                <div class="zo-grid-title">
-                    <?php the_title();?>
-                </div>
-                <div class="zo-grid-time">
-                    <?php the_time('l, F jS, Y');?>
-                </div>
-                <div class="zo-grid-categories">
-                    <?php echo get_the_term_list( get_the_ID(), $taxo, 'Category: ', ', ', '' ); ?>
+                <div class="yeah-grid-media <?php  echo esc_attr($class);?>">
+                    <?php echo '<a href="'.get_permalink().'"> '.$thumbnail.'</a><div class="yeah-light-box"></div>'; ?>
+                    <div class="yeah-info-classic">
+                        <div class="product-price">
+                            <span class="price">
+                                <span class="amount"><?php echo $currency.' '.number_format(esc_attr($_regular_price),0,".","."); ?></span>
+                            </span>
+                        </div>
+                        <div class="title">
+                            <a href="<?php the_permalink();?>" title="<?php the_title();?>"><?php the_title(); ?></a>
+                        </div>
+                        <div class="classic-read-more">
+                            <a href="<?php the_permalink();?>" title="<?php the_title(); ?>"><?php echo esc_html__('Detail','lyon'); ?> <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <?php

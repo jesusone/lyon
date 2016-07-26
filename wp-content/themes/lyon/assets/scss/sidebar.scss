@@ -9,23 +9,11 @@
         margin-bottom: 50px;
     }
     .wg-title {
-        margin-bottom: 50px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #141414;
-        @extend .font-second;
-        font-style: italic;
-        font-size: 24px;
-        color: #141414;
-        letter-spacing: 0;
-        &:before {
-            content: '';
-            width: 11px;
-            height: 11px;
-            display: inline-block;
-            background-color: $primary_color;
-            margin-right: 20px;
-            @include transform(rotate(45deg));
-        }
+        color: #252525;
+        font-weight: 700;
+        font-family: "Old Standard TT";
+        font-size: 18px;
+        margin-bottom: 20px;
         span {
             &:hover {
                 color: $primary_color;

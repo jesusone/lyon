@@ -20,7 +20,6 @@ get_header(); ?>
 
                     <?php //zo_post_nav(); ?>
 
-                    <?php comments_template( '', true ); ?>
 
                 <?php endwhile; // end of the loop. ?>
 

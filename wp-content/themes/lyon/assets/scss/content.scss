@@ -77,6 +77,10 @@
 * ----> Single Post
 */
 .single {
+    background: #f5f5f5 ;
+    #zo-page-element-wrap {
+      margin-bottom: 60px;
+    }
     .social-share {
 		border: 1px solid #c7c7c7;
 		padding: 26px;
@@ -88,43 +92,60 @@
 			color: #222222;
 			font-size: 24px;
 			margin: 10px 0 0;
-			@extend .museo_slab_300;
 		}
     }
-    .social-list {
+    .social {
 		padding: 0;
 		margin: 0;
-		float: right;
-		width: 78%;
+        list-style: disc outside none;
         li {
-			float: left;
-			list-style: none;
-			font-size: 16px;
-			width: 33%;
-			text-align: center;
+
+            margin-bottom: 10px;
+            list-style: none;
+            display: inline-block;
+            margin-left: 11px;
 			a {
-			    display: block;
-				border: 1px solid #b1b1b1;
-				color: #929191;
-				text-transform: uppercase;
-				width: 90%;
-				padding: 13px 14px 12px;
-				float: right;
-			}
-			a.facebook:hover {
-				background: #456098;
-				color: #fff;
-				border-color: #456098;
-			}
-			a.twitter:hover {
-				background: #07a2dc;
-				color: #fff;
-				border-color: #07a2dc;
-			}
-			a.pinterest:hover {
-				background: #a92020;
-				color: #fff;
-				border-color: #a92020;
+                width: 15px;
+                height: 15px;
+                display: block;
+                color: #fff;
+                text-align: center;
+                position: relative;
+                background: transparent;
+                color: #959595;
+                line-height: 15px;
+                font-size: 14px;
+              &:hover {
+                color: #283c5a;
+                span {
+                  opacity: 1;
+                  visibility: visible;
+                  top: -35px;
+                }
+              }
+              span {
+                background: rgba(0, 0, 0, .7);
+                position: absolute;
+                opacity: 0;
+                visibility: hidden;
+                width: 80px;
+                color: #fff;
+                left: 50%;
+                margin-left: -40px;
+                line-height: 24px;
+                font-size: 80%;
+                top: 0;
+                @include transition(all .3s ease-in-out 0s);
+                &:after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    border: 5px solid transparent;
+                    border-top: 5px solid rgba(0, 0, 0, .7);
+                   @include transform(translate3d(-50%,100%,0));
+                }
+              }
 			}
         }
     }
@@ -134,14 +155,16 @@
         border-bottom: 1px solid #141414;
     }
 	.post-item {
-		margin-bottom: 50px;
+        background: #fff;
+        padding: 30px 30px 23px;
+		margin-bottom: 30px;
+
         .yeah-blog-detail {
 			text-align: left;
         }
 		.yeah-blog-title {
 			font-size: 32px;
 			font-weight: bold;
-			@extend .museo_slab_300;
 		}
     }
 }
@@ -216,14 +239,6 @@
 			}
 		}
 	}
-	.yeah-blog-content , .yeah-blog-content p {
-		line-height: 1.42857143;
-		.blog &, .archive &, .search & { 
-			font-size: 20px;
-			line-height: 30px;
-			text-align: center;
-		}
-	}
     .yeah-blog-detail {
 		text-align: center;
 		.zo-blog-readmore {
@@ -231,38 +246,20 @@
 		}
 	}
 	.yeah-blog-meta {
-		margin-bottom: 27px;
-		ul {
-			padding-left: 0;
-			position: relative;
-			width: 100%;
-			.blog &, .archive &, .search & { 
-				margin: 40px 0 0;
-			}
-			li {
-				display: inline-block;
-				margin: 0 10px;
-				font-size: 20px;
-				color: #727272;
-				&.author {
-					img {
-						@include border-radius(100%);
-						margin-right: 10px;
-					}
-				}
-				a {
-					color: #727272;
-					&:hover {
-						color: $primary_color;
-					}
-				}
-				i {
-					font-size: 25px;
-					margin-right: 10px;
-				}
-			}
-		}
+      margin-bottom: 32px;
+      span {
+        margin-right: 20px;
+        font-style: italic;
+        i{
+          font-size: 100%;
+          margin-right: 5px;
+        }
+      }
 	}
+    .yeah-blog-content {
+      font-size: 16px;
+      line-height: 30.4px;
+    }
 	.yeah-blog-video,
     .yeah-blog-audio {
 		text-align: center;
@@ -355,6 +352,21 @@
 			padding-top: 20px;
 		}
 	}
+  .yeah-social-share.post {
+    margin: 15px 0;
+    float: right;
+    position: relative;
+    z-index: 9;
+  }
+  .yeah-border-tag {
+    border-top: 1px solid #e5e5e5;
+    position: relative;
+    .widget_tag_cloud.tag_post_current {
+      margin: 15px 0;
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
 }
 /* ==========================================================================
    [End] Blog Classic
@@ -577,4 +589,83 @@ body.error404{
 	#zo-page-element-wrap{
 		margin-bottom: 0;
 	}
+}
+/*Single Room*/
+.single-room {
+  .yeah-room-gallery {
+    .k2t-thumb-gallery {
+      .item {
+        img {
+          margin-bottom: 0px;
+        }
+      }
+      .owl-controls {
+        display: inline-block;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        height: 100%;
+        right: 0px;
+        width: 100%;
+        div.owl-prev > i{
+          top: 30%;
+          position: absolute;
+          left: 3%;
+        }
+        div.owl-next > i {
+          top: 30%;
+          position: absolute;
+          right: 3%;
+        }
+        .k2t.k2t-arrow-next{
+          background: url('../images/next.png') no-repeat;
+          width: 30px;
+          height: 150px;
+        }
+        .k2t.k2t-arrow-prev{
+          background: url('../images/prev.png') no-repeat;
+          width: 30px;
+          height: 150px;
+        }
+      }
+      .owl-pagination {
+        position: absolute;
+        bottom: 3px;
+        text-align: center;
+        width: 100%;
+        z-index: 999;
+      }
+    }
+    #inavigation {
+      margin-top: 10px;
+      .owl-wrapper-outer {
+      }
+      .owl-item{
+        width: 132px !important;
+        &.synced  {
+          // width: 140px !important;
+        }
+        .item {
+          margin-right: 10px;
+          cursor: pointer;
+          .img {
+            margin-bottom: 0px;
+          }
+          &:hover {
+            opacity: 0.2;
+          }
+        }
+      }
+    }
+  }
+  .yeah-blog-image {
+    margin-bottom: 30px;
+  }
+  .yeah-description{
+    margin-top: 45px;
+    font-size: 16px;
+    h3 {
+      margin-bottom: 24px;
+    }
+  }
 }

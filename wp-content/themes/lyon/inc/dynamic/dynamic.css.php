@@ -85,6 +85,24 @@ class ZoTheme_DynamicCss
         /* ==========================================================================
            End Header
         ========================================================================== */
+        /*Footer Style*/
+
+        if(!empty($zo_meta->_zo_footer_padding)){
+            $zo_meta['footer_main_padding'] =$zo_meta-> _zo_footer_padding;
+        }
+         if(!empty($smof_data['footer_main_padding'])){
+            echo "#yeah-footer .yeah-footer-main {";
+			 if(!empty($smof_data['footer_main_padding']['padding-top']))
+                    echo 'padding-top: ' . esc_attr($smof_data['footer_main_padding']['padding-top']) . ';';
+                if(!empty($smof_data['footer_main_padding']['padding-left']))
+                    echo 'padding-left: ' . esc_attr($smof_data['footer_main_padding']['padding-left']) . ';';
+                if(!empty($smof_data['footer_main_padding']['padding-bottom']))
+                    echo 'padding-bottom: ' . esc_attr($smof_data['footer_main_padding']['padding-bottom']) . ';';
+                if(!empty($smof_data['footer_main_padding']['padding-right']))
+                    echo 'padding-right: ' . esc_attr($smof_data['footer_main_padding']['padding-right']) . ';';
+              echo "}";
+        }
+        /*End Footer*/
         return ob_get_clean();
     }
 }

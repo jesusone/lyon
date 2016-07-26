@@ -22,7 +22,7 @@
     </div>
 	
 	<!-- Meta -->
-	<div class="yeah-blog-meta"><?php zo_archive_detail(); ?></div>
+	<div class="yeah-blog-meta"><?php yeah_archive_detail(); ?></div>
 	
 	<!-- Title -->
 	<h2 class="yeah-blog-title"><?php the_title(); ?></h2>

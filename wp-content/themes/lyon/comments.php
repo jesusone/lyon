@@ -57,7 +57,7 @@ if ( post_password_required() ) {
 	$args = array(
         'id_form'           => 'commentform',
         'id_submit'         => 'submit',
-        'title_reply'       => wp_kses(__( '<span>Post to Reply</span>','fajar'), $allowed_html),
+        'title_reply'       => wp_kses(__( '<span>Leave a Comment</span>','fajar'), $allowed_html),
         'title_reply_to'    => __( 'Post to Reply %s','fajar'),
         'cancel_reply_link' => __( 'Cancel Reply','fajar'),
         'label_submit'      => __( 'Submit','fajar'),
@@ -75,10 +75,6 @@ if ( post_password_required() ) {
                     '<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
                     '" size="30"' . esc_attr($aria_req) . ' placeholder="'.__('Email','fajar').'"/></p>',
 
-                'url' =>
-                    '<p class="comment-form-url">'.
-                    '<input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) .
-                    '" size="30"' . esc_attr($aria_req) . ' placeholder="'.__('Website','fajar').'"/></p>',
             )
         ),
         'comment_field' =>  '<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" placeholder="'.__('Comment','fajar').'" aria-required="true"></textarea></p>',

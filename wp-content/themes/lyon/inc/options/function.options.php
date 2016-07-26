@@ -400,13 +400,13 @@ $this->sections[] = array(
             'units' => 'px',
             'subtitle' => __('Typography option with title text.', 'lyon'),
             'default' => array(
-                'color' => '#fff',
+                'color' => '#283c5a',
                 'font-style' => 'normal',
                 'font-weight' => '700',
-                'font-family' => 'Montserrat',
+                'font-family' => 'Old Standard TT',
                 'google' => true,
-                'font-size' => '48px',
-                'line-height' => '60px',
+                'font-size' => '36px',
+                'line-height' => '57.6px',
                 'text-align' => 'center'
             )
         ),
@@ -626,7 +626,7 @@ $this->sections[] = array(
             'default' => '',
             'type' => 'image_select',
             'options' => array(
-                '' => get_template_directory_uri().'/inc/options/images/footer/footer-layout.png',
+                '' => get_template_directory_uri().'/assets/images/f-default.jpg',
             )
         ),
 		array(
@@ -636,7 +636,7 @@ $this->sections[] = array(
             'type' => 'media',
             'url' => true,
             'default' => array(
-                'url'=>get_template_directory_uri().'/footer-logo.png'
+                'url'=>get_template_directory_uri().'/assets/images/logo-footer.png'
             )
         )
 	)
@@ -649,35 +649,116 @@ $this->sections[] = array(
     'subsection' => true,
     'fields' => array(
         array(
-            'id' => 'footer_row_1',
+            'id' => 'footer_main',
             'type' => 'switch',
-            'title' => __('Enable Footer Row 1', 'lyon'),
+            'title' => __('Enable Footer Main', 'lyon'),
             'default' => true,
         ),
         array(
-            'id' => 'footer_row_2',
+            'title' => esc_html__( 'Menu Main footer', 'lyon' ),
+            'subtitle' => esc_html__( 'Controls the right padding for menu text (left on RTL). In pixels.', 'lyon' ),
+            'id' => 'footer_main_padding',
+            'type' => 'spacing',
+            'units' => 'px', 'mode' => 'padding',
+            'default' => array(
+                'padding-top' => '150px',
+                'padding-right' => '15px',
+                'padding-bottom' => '150px',
+                'padding-left' => '15px',
+                'units' => 'px', ),
+            'required' => array( 0 => 'footer_main', 1 => '=', 2 => 1 )
+        ),
+        array(
+            'id'       => 'footer_background',
+            'type'     => 'background',
+            'title'    => __( 'Footer Main Background', 'labella' ),
+            'subtitle' => __( 'Controls the background of the page title.', 'lyon' ),
+            'output'  =>'#yeah-footer .yeah-footer-main',
+            'default'   => array(
+                'background-color'=>'#252525',
+                'background-image'=> get_template_directory_uri().'/assets/images/footer-background.png',
+                'background-repeat'=>'',
+                'background-size'=>'',
+                'background-attachment'=>'',
+                'background-position'=>''
+            ),
+            'required' => array( 0 => 'footer_main', 1 => '=', 2 => 1 )
+        ),
+        array(
+            'subtitle' => __('set color main color.', 'lyon'),
+            'id' => 'footer_color',
+            'type' => 'color',
+            'output'  =>'#yeah-footer .yeah-footer-main,#yeah-footer .yeah-footer-main div,.yeah-footer-copyright ',
+            'title' => __('Footer Color', 'lyon'),
+            'default' => '#fff'
+        ),
+        array(
+            'title' => __('Phone For Contact Info', 'labella'),
+            'id' => 'contact_phone',
+            'type' => 'text',
+            'default' => '+123 868 6868',
+            'subtitle' => __('This content will display if you have "Contact Info" selected for the Header Content Left or Right option above.', 'labella'),
+        ),
+        array(
+            'title' => __('Email For Contact Info', 'labella'),
+            'id' => 'contact_email',
+            'type' => 'text',
+            'default' => 'admin@lyonhotel.com',
+            'subtitle' => __('This content will display if you have "Contact Info" selected for the Header Content Left or Right option above.', 'labella'),
+        ),
+        array(
+            'id' => 'footer_copyright',
             'type' => 'switch',
-            'title' => __('Enable Footer Row 2', 'lyon'),
+            'title' => __('Enable Footer Copyright', 'lyon'),
             'default' => true,
         ),
         array(
-            'id' => 'footer_row_3',
-            'type' => 'switch',
-            'title' => __('Enable Footer Row 3', 'lyon'),
-            'default' => true,
+            'title' => esc_html__( 'Copy right footer', 'lyon' ),
+            'subtitle' => esc_html__( 'Controls the right padding for copy right footer.', 'lyon' ),
+            'id' => 'footer_copyright_padding',
+            'type' => 'spacing',
+            'units' => 'px', 'mode' => 'padding',
+            'output'=>array('#yeah-footer .yeah-footer-copyright'),
+            'default' => array(
+                'padding-top' => '40px',
+                'padding-right' => '0px',
+                'padding-bottom' => '40x',
+                'padding-left' => '0px',
+                'units' => 'px', ),
+            'required' => array( 0 => 'footer_copyright', 1 => '=', 2 => 1 )
         ),
         array(
-            'id' => 'footer_banners',
-            'type' => 'switch',
-            'title' => __('Enable Footer Banners', 'lyon'),
-            'default' => true,
+            'id'=>'footer_copyright_text',
+            'type' => 'textarea',
+            'title' => __('Copyright Text', 'lyon'),
+            'subtitle' => __('Enter the text that displays in the copyright bar. HTML markup can be used.', 'lyon'),
+            'validate' => 'html_custom',
+            'default' => '© Copyright 2015. Powered by WordPress. LYON HOTEL by <a href="ohyeahtheme.com">OhYeah Themes</a>',
+            'allowed_html' => array(
+                'a' => array(
+                    'href' => array(),
+                    'title' => array(),
+                    'target' => array(),
+                ),
+                'br' => array(),
+                'em' => array(),
+                'strong' => array(),
+                'script' => array()
+            ),
+            'required' => array( 0 => 'footer_copyright', 1 => '=', 2 => 1 )
         ),
-		array(
-            'subtitle' => __('Enable footer bottom.', 'lyon'),
-            'id' => 'footer_bottom',
-            'type' => 'switch',
-            'title' => __('Enable Footer Bottom', 'lyon'),
-            'default' => true,
+        array(
+            'id'       => 'footer_copyright_background',
+            'type'     => 'color_rgba',
+            'title'    => __( 'Footer Copyright Background', 'labella' ),
+            'subtitle' => __( 'Controls the background of the page title.', 'lyon' ),
+            'output'  => array('background-color' => '#yeah-footer .yeah-footer-copyright'),
+            'default'   => array(
+                'color'     => '#1f1f1f',
+                'alpha'     => 1,
+                'rgba' 		=> 'rgba(251, 229, 229, 1)'
+            ),
+            'required' => array( 0 => 'footer_copyright', 1 => '=', 2 => 1 )
         ),
         array(
             'subtitle' => __('enable button back to top.', 'lyon'),
@@ -688,6 +769,137 @@ $this->sections[] = array(
         )
     )
 );
+/* Social Links */
+$this->sections[] = array(
+    'title' => __('Social Media', 'labella'),
+    'icon' => 'el el-share-alt',
+    'fields' => array(
+        array(
+            'id'       => 'social_link_footer',
+            'type'     => 'sortable',
+            'mode'     => 'checkbox',
+            'title'    => __('Show in Footer', 'labella'),
+            'subtitle' => __('Select Socials to show in Footer', 'labella'),
+            'options'  => array(
+                'facebook' => 'Facebook',
+                'twitter' => 'Twitter',
+                'youtube' => 'Youtube',
+                'vimeo' => 'Vimeo',
+                'instagram' => 'Instagram',
+                'google' => 'Google Plus',
+                'skype' => 'Skype',
+                'linkedin' => 'LinkedIn',
+                'rss' => 'RSS',
+                'yahoo' => 'Yahoo',
+            ),
+            'default' => array(
+                'facebook' => '1',
+                'twitter' => '1',
+                'youtube' => '1',
+                'vimeo' => '1',
+            )
+        ),
+        array(
+            'id'       => 'social_link_blog',
+            'type'     => 'sortable',
+            'mode'     => 'checkbox',
+            'title'    => __('Social Share Box', 'labella'),
+            'subtitle' => __('Controls the social share box on the blog post', 'labella'),
+            'options'  => array(
+                'facebook' => 'Facebook',
+                'twitter' => 'Twitter',
+                'pinterest' => 'Pinterest',
+                'google' => 'Google Plus',
+                'linkedin' => 'LinkedIn',
+            ),
+            'default' => array(
+                'facebook' => '1',
+                'twitter' => '1',
+                'pinterest' => '1',
+                'google' => '1',
+                'linkedin' => '1',
+            )
+        ),
+    )
+);
+$this->sections[] = array(
+    'title' => __('Social Links', 'labella'),
+    'subsection' => true,
+    'fields' => array(
+        array(
+            'subtitle' => __('Input the Facebook Link', 'labella'),
+            'id' => 'facebook',
+            'type' => 'text',
+            'title' => __('Facebook Link', 'labella'),
+            'default' => '#',
+        ),
+        array(
+            'subtitle' => __('Input the Twitter Link', 'labella'),
+            'id' => 'twitter',
+            'type' => 'text',
+            'title' => __('Twitter Link', 'labella'),
+            'default' => '#',
+        ),
+        array(
+            'subtitle' => __('Input the Youtube Link', 'labella'),
+            'id' => 'youtube',
+            'type' => 'text',
+            'title' => __('Youtube Link', 'labella'),
+            'default' => '#',
+        ),
+        array(
+            'subtitle' => __('Input the Vimeo Link', 'labella'),
+            'id' => 'vimeo',
+            'type' => 'text',
+            'title' => __('Vimeo Link', 'labella'),
+            'default' => '#',
+        ),
+        array(
+            'subtitle' => __('Input the Instagram Link', 'labella'),
+            'id' => 'instagram',
+            'type' => 'text',
+            'title' => __('Instagram Link', 'labella'),
+            'default' => '#',
+        ),
+        array(
+            'subtitle' => __('Input the Google Plus Link', 'labella'),
+            'id' => 'google',
+            'type' => 'text',
+            'title' => __('Google+ Link', 'labella'),
+            'default' => '#',
+        ),
+        array(
+            'subtitle' => __('Input the Skype Link', 'labella'),
+            'id' => 'skype',
+            'type' => 'text',
+            'title' => __('Skype Link', 'labella'),
+            'default' => '',
+        ),
+        array(
+            'subtitle' => __('Input the LinkedIn Link', 'labella'),
+            'id' => 'linkedin',
+            'type' => 'text',
+            'title' => __('LinkedIn Link', 'labella'),
+            'default' => '',
+        ),
+        array(
+            'subtitle' => __('Input the RSS Link', 'labella'),
+            'id' => 'rss',
+            'type' => 'text',
+            'title' => __('RSS Link', 'labella'),
+            'default' => '',
+        ),
+        array(
+            'subtitle' => __('Input the Yahoo Link', 'labella'),
+            'id' => 'yahoo',
+            'type' => 'text',
+            'title' => __('Yahoo Link', 'labella'),
+            'default' => '',
+        ),
+    )
+);
+
+/**
 
 /**
  * Styling
@@ -704,7 +916,7 @@ $this->sections[] = array(
             'id' => 'primary_color',
             'type' => 'color',
             'title' => __('Primary Color', 'lyon'),
-            'default' => '#ee3b24'
+            'default' => '#283c5a'
         ),
         array(
             'subtitle' => __('set color for tags <a></a>.', 'lyon'),
@@ -713,9 +925,9 @@ $this->sections[] = array(
             'title' => __('Link Color', 'lyon'),
             'output'  => array('a'),
             'default' => array(
-				'regular'  => '#333',
-				'hover'    => '#ee3b24',
-				'active'    => '#ee3b24',
+				'regular'  => '#252525',
+				'hover'    => '#283c5a',
+				'active'    => '#283c5a',
 			)
         ),
     )
@@ -829,7 +1041,7 @@ $this->sections[] = array(
                 'font-weight' => '700',
                 'font-size' => '48px',
                 'line-height' => '60px',
-                'color' => '#283c5a'
+                'color' => '#252525'
             )
         ),
         array(
@@ -843,7 +1055,7 @@ $this->sections[] = array(
             'right' => false,
             'default' => array(
                 'margin-top'     => '0',
-                'margin-bottom'  => '15px',
+                'margin-bottom'  => '12px',
                 'units'          => 'px',
             )
         ),
@@ -862,7 +1074,7 @@ $this->sections[] = array(
                 'font-weight' => '700',
                 'font-size' => '36px',
                 'line-height' => '60px',
-                'color' => '#283c5a'
+                'color' => '#252525'
             )
         ),
         array(
@@ -876,7 +1088,7 @@ $this->sections[] = array(
             'right' => false,
             'default' => array(
                 'margin-top'     => '0',
-                'margin-bottom'  => '15px',
+                'margin-bottom'  => '12px',
                 'units'          => 'px',
             )
         ),
@@ -891,11 +1103,11 @@ $this->sections[] = array(
             'letter-spacing' => true,
             'units' => 'px',
             'default' => array(
-                'font-family' => 'Karla',
+                'font-family' => 'Old Standard TT',
                 'font-weight' => '700',
-                'font-size' => '24px',
-                'line-height' => '30px',
-                'color' => '#000000'
+                'font-size' => '30px',
+                'line-height' => '51px',
+                'color' => '#252525'
             )
         ),
         array(
@@ -909,7 +1121,7 @@ $this->sections[] = array(
             'right' => false,
             'default' => array(
                 'margin-top'     => '0',
-                'margin-bottom'  => '15px',
+                'margin-bottom'  => '12px',
                 'units'          => 'px',
             )
         ),
@@ -924,11 +1136,11 @@ $this->sections[] = array(
             'letter-spacing' => true,
             'units' => 'px',
             'default' => array(
-                'font-family' => 'Karla',
+                'font-family' => 'Old Standard TT',
                 'font-weight' => '700',
                 'font-size' => '20px',
                 'line-height' => '30px',
-                'color' => '#000000'
+                'color' => '#252525'
             )
         ),
         array(

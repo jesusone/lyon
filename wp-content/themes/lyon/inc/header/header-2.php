@@ -7,7 +7,7 @@
 ?>
 <div id="header-two">
 	<!-- Header Top -->
-	<?php if(zo_get_data_theme_options('header_top')){ ?>
+	<?php if(yeah_get_data_theme_options('header_top')){ ?>
 		<div id="yeah-header-top" class="header-two">
 			<div class="container-fluid">
 				<div class="left"><?php if(is_active_sidebar('header-top-2-left')){ dynamic_sidebar('header-top-2-left'); } ?></div>
@@ -17,11 +17,11 @@
 	<?php }?>
 
 	<!-- Header Navigation -->
-	<div id="yeah-header-menu" class="yeah-main-header header-two <?php if (!zo_get_data_theme_options('menu_sticky')) {
+	<div id="yeah-header-menu" class="yeah-main-header header-two <?php if (!yeah_get_data_theme_options('menu_sticky')) {
 		echo 'no-sticky';
-	} ?> <?php if (zo_get_data_theme_options('menu_sticky_tablets')) {
+	} ?> <?php if (yeah_get_data_theme_options('menu_sticky_tablets')) {
 		echo 'sticky-tablets';
-	} ?> <?php if (zo_get_data_theme_options('menu_sticky_mobile')) {
+	} ?> <?php if (yeah_get_data_theme_options('menu_sticky_mobile')) {
 		echo 'sticky-mobile';
 	} ?> <?php if (!empty($zo_meta->_zo_enable_header_menu)) {
 		echo 'header-menu-custom';
