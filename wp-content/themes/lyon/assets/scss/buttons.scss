@@ -68,6 +68,18 @@
 		}
 	}
 }
+.btn-primary {
+  background: $primary_color;
+  padding: 13px 40.9px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24.5px;
+  color: #fff;
+  &:hover {
+    background: #cdaf87;
+    color: #fff;
+  }
+}
 .btn-default.btn-white {
   color: #fff ;
   border-color: #fff;

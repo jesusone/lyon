@@ -74,14 +74,12 @@
                     endif;
                     echo '<div class="zo-grid-media '.esc_attr($class).'">'.$thumbnail.'</div>';
                 ?>
-                <div class="zo-grid-title">
+                <div class="yeah-grid-title">
                     <?php the_title();?>
                 </div>
-                <div class="zo-grid-time">
-                    <?php the_time('l, F jS, Y');?>
-                </div>
-                <div class="zo-grid-categories">
-                    <?php echo get_the_term_list( get_the_ID(), $taxo, 'Category: ', ', ', '' ); ?>
+
+                <div class="yeah-grid-description">
+                    <?php echo  yeah_limit_words(get_the_excerpt(),50); ?>
                 </div>
             </div>
             <?php

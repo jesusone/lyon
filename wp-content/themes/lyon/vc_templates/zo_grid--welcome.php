@@ -84,7 +84,7 @@
                                <?php echo yeah_limit_words(get_the_excerpt(),50); ?>
                             </p>
                             <div class="footer-content">
-                                <a href="<?php the_permalink(); ?>" class="more-link btn-ripple"><?php echo esc_html__('LEARN MORE','lyon'); ?></a>
+                                <a href="<?php the_permalink(); ?>" class="btn-primary more-link btn-ripple"><?php echo esc_html__('LEARN MORE','lyon'); ?></a>
                             </div>
                         </div>
                         <div class="k2t-blog-social pull-left">
@@ -94,18 +94,6 @@
                         </div>
                     <div>
                 </article>
-
-                <div class="col-md-6">
-                    <div class="zo-grid-title">
-                        <?php the_title();?>
-                    </div>
-                    <div class="zo-grid-time">
-                        <?php the_time('l, F jS, Y');?>
-                    </div>
-                    <div class="zo-grid-categories">
-                        <?php echo get_the_term_list( get_the_ID(), $taxo, 'Category: ', ', ', '' ); ?>
-                    </div>
-                </div>
             </div>
             <?php
         }
