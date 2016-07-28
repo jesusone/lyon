@@ -74,12 +74,12 @@
                     endif;
                     echo '<div class="zo-grid-media '.esc_attr($class).'">'.$thumbnail.'</div>';
                 ?>
-                <div class="yeah-grid-title">
-                    <?php the_title();?>
-                </div>
+                <h2 class="yeah-grid-title">
+                    <a href="<?php the_permalink();?>"><?php the_title();?></a>
+                </h2>
 
                 <div class="yeah-grid-description">
-                    <?php echo  yeah_limit_words(get_the_excerpt(),50); ?>
+                    <?php echo  yeah_limit_words(get_the_excerpt(),15); ?>
                 </div>
             </div>
             <?php

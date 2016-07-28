@@ -885,7 +885,7 @@
   font-family: "Material-Design-Iconic-Font";
   src: url('http://localhost/lyon/wp-content/themes/lyon/assets/fonts/Material-Design-Iconic-Font.eot') format('eot'), url('http://localhost/lyon/wp-content/themes/lyon/assets/fonts/Material-Design-Iconic-Font.woff') format('woff'), url('http://localhost/lyon/wp-content/themes/lyon/assets/fonts/Material-Design-Iconic-Font.ttf') format('truetype'); }
 
-.zo_local_font1, #comments #commentform p.comment-form-author:before, #comments #commentform p.comment-form-email:before, #comments #commentform p.comment-form-comment:before, .template-zo_grid {
+.zo_local_font1, #comments #commentform p.comment-form-author:before, #comments #commentform p.comment-form-email:before, #comments #commentform p.comment-form-comment:before {
   font-family: 'Material-Design-Iconic-Font'; }
 
 body, .body_font {
@@ -3399,7 +3399,7 @@ body .wpb_content_element, body .wpb_button {
     /* W3C */
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
     /* IE6-8 */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000',GradientType=0); }
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000', GradientType=0); }
   .template-zo_grid--room .yeah-grid-item .yeah-grid-media .yeah-info-classic .title {
     font-size: 18px;
     font-style: italic;
@@ -3603,14 +3603,24 @@ div.owl-theme .owl-nav [class*='owl-'] {
     color: #222;
     font-size: 20px; }
 
-.template-zo_grid {
-  -webkit-border-radius: 50%;
-  -khtml-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  /* BACKGROUND GRADIENT */ }
+.template-zo_grid .yeah-grid-item .yeah-grid-title {
+  text-align: center;
+  margin-bottom: 10px;
+  background: url('../images/line-title.jpg') no-repeat bottom center;
+  padding-bottom: 11px; }
+  .template-zo_grid .yeah-grid-item .yeah-grid-title a {
+    text-transform: capitalize;
+    margin-top: 30px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px; }
+  .template-zo_grid .yeah-grid-item .yeah-grid-description {
+    text-align: center;
+    color: #ccc;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.8; }
 
 .template-zo_grid--lastest-blog .yeah-grid-item:hover .yeah-grid-media:before {
   opacity: 0.4; }
