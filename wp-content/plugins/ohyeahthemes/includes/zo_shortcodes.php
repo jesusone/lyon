@@ -10,7 +10,7 @@ require_once ZO_DIR . '/shortcodes/zo_base.php';
 //Start adding shortcode
 require_once ZO_DIR . '/shortcodes/zo_carousel.php';
 require_once ZO_DIR . '/shortcodes/zo_carousel_fancybox.php';
-require_once ZO_DIR . '/shortcodes/zo_grid.php';
+require_once ZO_DIR . '/shortcodes/yeah_grid.php';
 require_once ZO_DIR . '/shortcodes/zo_fancybox.php';
 require_once ZO_DIR . '/shortcodes/zo_fancybox_single.php';
 require_once ZO_DIR . '/shortcodes/zo_counter.php';

@@ -2,7 +2,7 @@
 vc_map(
 	array(
 		"name" => __("Grid", 'ohyeahthemes'),
-	    "base" => "zo_grid",
+	    "base" => "yeah_grid",
 	    "class" => "vc-zo-grid",
 	    "category" => __("Ohyeahthemes Shortcodes", 'ohyeahthemes'),
 	    "params" => array(
@@ -87,7 +87,7 @@ vc_map(
 	    	array(
 	            "type" => "zo_template",
 	            "param_name" => "zo_template",
-	            "shortcode" => "zo_grid",
+	            "shortcode" => "yeah_grid",
 	            "admin_label" => true,
 	            "heading" => __("Shortcode Template",'ohyeahthemes'),
 	            "group" => __("Template", 'ohyeahthemes'),
@@ -95,7 +95,7 @@ vc_map(
 	    )
 	)
 );
-class WPBakeryShortCode_zo_grid extends ZoShortcode{
+class WPBakeryShortCode_yeah_grid extends ZoShortcode{
 	protected function content($atts, $content = null){
 		wp_enqueue_script('zo-grid-pagination',ZO_JS.'zogrid.pagination.js',array('jquery'),'1.0.0',true);
         $html_id = zoHtmlID('zo-grid');
@@ -117,7 +117,7 @@ class WPBakeryShortCode_zo_grid extends ZoShortcode{
             'col_sm' => 2,
             'col_xs' => 1,
             'layout' => 'basic',
-	        'zo_template' => 'zo_grid.php'
+	        'zo_template' => 'yeah_grid.php'
                 ), $atts);
         $col_lg = $grid['col_lg'] == 5 ? '2-zo' : 12 / $grid['col_lg'];
         $col_md = $grid['col_md'] == 5 ? '2-zo' : 12 / $grid['col_md'];

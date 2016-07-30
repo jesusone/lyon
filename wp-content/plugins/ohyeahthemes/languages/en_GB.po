@@ -18,8 +18,8 @@ msgstr ""
 #: ../zotheme.php:73 ../shortcodes/zo_carousel.php:169
 #: ../shortcodes/zo_carousel.php:175 ../shortcodes/zo_counter.php:420
 #: ../shortcodes/zo_counter.php:426 ../shortcodes/zo_fancybox.php:346
-#: ../shortcodes/zo_fancybox.php:352 ../shortcodes/zo_grid.php:81
-#: ../shortcodes/zo_grid.php:87 ../shortcodes/zo_progressbar.php:139
+#: ../shortcodes/zo_fancybox.php:352 ../shortcodes/yeah_grid.php:81
+#: ../shortcodes/yeah_grid.php:87 ../shortcodes/zo_progressbar.php:139
 #: ../shortcodes/zo_progressbar.php:145
 msgid "Template"
 msgstr ""
@@ -40,16 +40,16 @@ msgid "ZO Carousel"
 msgstr ""
 
 #: ../shortcodes/zo_carousel.php:7 ../shortcodes/zo_counter.php:7
-#: ../shortcodes/zo_fancybox.php:7 ../shortcodes/zo_grid.php:7
+#: ../shortcodes/zo_fancybox.php:7 ../shortcodes/yeah_grid.php:7
 #: ../shortcodes/zo_progressbar.php:7
 msgid "ZoTheme Shortcodes"
 msgstr ""
 
-#: ../shortcodes/zo_carousel.php:11 ../shortcodes/zo_grid.php:11
+#: ../shortcodes/zo_carousel.php:11 ../shortcodes/yeah_grid.php:11
 msgid "Source"
 msgstr ""
 
-#: ../shortcodes/zo_carousel.php:17 ../shortcodes/zo_grid.php:17
+#: ../shortcodes/zo_carousel.php:17 ../shortcodes/yeah_grid.php:17
 msgid "Source Settings"
 msgstr ""
 
@@ -139,7 +139,7 @@ msgid "Right Arrow"
 msgstr ""
 
 #: ../shortcodes/zo_carousel.php:165 ../shortcodes/zo_counter.php:416
-#: ../shortcodes/zo_fancybox.php:342 ../shortcodes/zo_grid.php:77
+#: ../shortcodes/zo_fancybox.php:342 ../shortcodes/yeah_grid.php:77
 #: ../shortcodes/zo_progressbar.php:135
 msgid "Extra Class"
 msgstr ""
@@ -412,37 +412,37 @@ msgstr ""
 msgid "Link"
 msgstr ""
 
-#: ../shortcodes/zo_grid.php:4
+#: ../shortcodes/yeah_grid.php:4
 msgid "ZO Grid"
 msgstr ""
 
-#: ../shortcodes/zo_grid.php:21
+#: ../shortcodes/yeah_grid.php:21
 msgid "Layout Type"
 msgstr ""
 
-#: ../shortcodes/zo_grid.php:27 ../shortcodes/zo_grid.php:36
-#: ../shortcodes/zo_grid.php:45 ../shortcodes/zo_grid.php:54
-#: ../shortcodes/zo_grid.php:63 ../shortcodes/zo_grid.php:73
+#: ../shortcodes/yeah_grid.php:27 ../shortcodes/yeah_grid.php:36
+#: ../shortcodes/yeah_grid.php:45 ../shortcodes/yeah_grid.php:54
+#: ../shortcodes/yeah_grid.php:63 ../shortcodes/yeah_grid.php:73
 msgid "Grid Settings"
 msgstr ""
 
-#: ../shortcodes/zo_grid.php:31
+#: ../shortcodes/yeah_grid.php:31
 msgid "Columns XS Devices"
 msgstr ""
 
-#: ../shortcodes/zo_grid.php:40
+#: ../shortcodes/yeah_grid.php:40
 msgid "Columns SM Devices"
 msgstr ""
 
-#: ../shortcodes/zo_grid.php:49
+#: ../shortcodes/yeah_grid.php:49
 msgid "Columns MD Devices"
 msgstr ""
 
-#: ../shortcodes/zo_grid.php:58
+#: ../shortcodes/yeah_grid.php:58
 msgid "Columns LG Devices"
 msgstr ""
 
-#: ../shortcodes/zo_grid.php:67
+#: ../shortcodes/yeah_grid.php:67
 msgid "Filter on Masonry"
 msgstr ""
 

@@ -2,8 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b625b242-6e1c-401a-b383-adb841f87fd4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/assets/css/static.css" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/templates/yeah_grid.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_grid--events.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/shortcodes/zo_grid.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/includes/zo_shortcodes.php" afterPath="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/includes/zo_shortcodes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/languages/en_GB.po" afterPath="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/languages/en_GB.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/assets/scss/shortcodes.scss" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/assets/scss/shortcodes.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/languages/en_GB.po" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/languages/en_GB.po" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/shortcodes/zo_grid.php" afterPath="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/shortcodes/yeah_grid.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/templates/zo_grid.php" afterPath="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/templates/yeah_grid.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/zo_grid--feature-product.php" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_grid--feature-product.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/zo_grid--lastest-blog.php" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_grid--lastest-blog.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/zo_grid--portfolio.php" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_grid--portfolio.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/zo_grid--pricing.php" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_grid--pricing.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/zo_grid--product-rate.php" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_grid--product-rate.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/zo_grid--room.php" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_grid--room.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/zo_grid--testimonial.php" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_grid--testimonial.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/zo_grid--welcome.php" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_grid--welcome.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/zo_grid.php" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_grid.php" />
     </list>
     <ignored path="lyon.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,25 +42,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="shortcodes.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="shortcodes.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/assets/scss/shortcodes.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.878049">
-              <caret line="428" column="7" selection-start-line="428" selection-start-column="7" selection-end-line="428" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.7547893">
+              <caret line="352" column="0" selection-start-line="352" selection-start-column="0" selection-end-line="352" selection-end-column="0" />
               <folding>
                 <element signature="e#591#617#0" expanded="false" />
                 <element signature="e#682#1731#0" expanded="false" />
                 <element signature="e#2123#2214#0" expanded="false" />
-                <element signature="e#2617#5810#0" expanded="false" />
-                <element signature="e#6085#6331#0" expanded="false" />
-                <element signature="e#6421#6581#0" expanded="false" />
-                <element signature="e#7248#7650#0" expanded="false" />
-                <element signature="e#7692#7710#0" expanded="false" />
-                <element signature="e#7727#8157#0" expanded="false" />
-                <element signature="e#8194#8315#0" expanded="false" />
-                <element signature="e#8352#9413#0" expanded="false" />
-                <element signature="e#9447#10493#0" expanded="false" />
-                <element signature="e#12507#12871#0" expanded="false" />
+                <element signature="e#2619#5812#0" expanded="false" />
+                <element signature="e#5880#7221#0" expanded="false" />
+                <element signature="e#6089#6335#0" expanded="false" />
+                <element signature="e#6425#6585#0" expanded="false" />
+                <element signature="e#7252#7654#0" expanded="false" />
+                <element signature="e#7696#7714#0" expanded="false" />
+                <element signature="e#7731#8161#0" expanded="false" />
+                <element signature="e#8198#8319#0" expanded="false" />
+                <element signature="e#8356#9417#0" expanded="false" />
+                <element signature="e#9453#10499#0" expanded="false" />
+                <element signature="e#13223#13587#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -59,16 +77,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vc_row.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/vc_row.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="88" column="4" selection-start-line="88" selection-start-column="4" selection-end-line="88" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="function.options.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/inc/options/function.options.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -79,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="static.css.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="static.css.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/inc/dynamic/static.css.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33213645">
-              <caret line="61" column="33" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="49" column="33" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -92,7 +100,7 @@
       <file leaf-file-name="dynamic.css.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/inc/dynamic/dynamic.css.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
+            <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -119,11 +127,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zo_grid.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/zo_grid.php">
+      <file leaf-file-name="yeah_grid.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_grid.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.4363637">
+            <state vertical-scroll-proportion="0.0">
               <caret line="81" column="69" selection-start-line="81" selection-start-column="69" selection-end-line="81" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="yeah_grid--events.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_grid--events.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="80" column="39" selection-start-line="80" selection-start-column="39" selection-end-line="80" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -143,7 +161,6 @@
         <option value="$PROJECT_DIR$/wp-content/themes/lyon/inc/options/require.plugins.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/lyon/assets/scss/navigation.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/lyon/assets/scss/header.scss" />
-        <option value="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/includes/zo_shortcodes.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/lyon/inc/base.class.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/lyon/inc/metacore/core.options.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/lyon/single-templates/content/content-link.php" />
@@ -152,7 +169,6 @@
         <option value="$PROJECT_DIR$/wp-content/themes/lyon/comments.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/lyon/assets/scss/comment.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/lyon/assets/scss/sidebar.scss" />
-        <option value="$PROJECT_DIR$/wp-content/themes/lyon/inc/dynamic/static.css.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/lyon/inc/header/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/lyon/inc/dynamic/dynamic.css.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/lyon/inc/footer/footer.php" />
@@ -172,7 +188,10 @@
         <option value="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/zo_grid--welcome.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/lyon/assets/css/static.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/zo_grid.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/lyon/inc/dynamic/static.css.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/zo_grid--events.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/lyon/assets/scss/shortcodes.scss" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/includes/zo_shortcodes.php" />
       </list>
     </option>
   </component>
@@ -183,10 +202,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="-7" />
     <option name="width" value="1378" />
-    <option name="height" value="744" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -213,6 +231,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -360,67 +379,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="inc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dynamic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lyon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lyon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lyon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lyon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lyon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lyon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -442,9 +401,56 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lyon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lyon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ohyeahthemes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lyon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lyon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ohyeahthemes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -455,8 +461,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\xamp\htdocs\lyon\wp-content\themes\lyon\assets\images" />
       <recent name="F:\xamp\htdocs\lyon\wp-content\themes\lyon\vc_templates" />
+      <recent name="F:\xamp\htdocs\lyon\wp-content\themes\lyon\assets\images" />
       <recent name="F:\xamp\htdocs\lyon\wp-content\themes\lyon\assets\css" />
       <recent name="F:\xamp\htdocs\lyon\wp-content\themes\lyon\assets\js" />
       <recent name="F:\xamp\htdocs\lyon\wp-content\themes\lyon" />
@@ -515,13 +521,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
-    <editor active="false" />
+    <frame x="-7" y="0" width="1378" height="735" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24355084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2511381" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31840795" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -532,7 +539,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31862745" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -566,18 +572,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/single-room.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.5">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-includes/post-thumbnail-template.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="60" column="60" selection-start-line="60" selection-start-column="55" selection-end-line="60" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -599,26 +597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="750" column="9" selection-start-line="750" selection-start-column="9" selection-end-line="750" selection-end-column="9" />
-          <folding>
-            <marker date="1468157231650" expanded="true" signature="63550:63908" placeholder="..." />
-            <marker date="1468157231650" expanded="true" signature="63568:63592" placeholder="{...}" />
-            <marker date="1468157231650" expanded="true" signature="63623:63722" placeholder="{...}" />
-            <marker date="1468157231650" expanded="true" signature="63743:63780" placeholder="{...}" />
-            <marker date="1468157231650" expanded="true" signature="63814:63840" placeholder="{...}" />
-            <marker date="1468157231650" expanded="true" signature="65732:65743" placeholder="..." />
-            <marker date="1468157231650" expanded="false" signature="65845:65856" placeholder="..." />
-            <marker date="1468157231650" expanded="true" signature="114283:114390" placeholder="SELECT ID FR... ${$wpdb-&gt;posts}" />
-            <marker date="1468157231650" expanded="true" signature="114431:114538" placeholder="SELECT ID FR... ${$wpdb-&gt;posts}" />
-            <marker date="1468157231650" expanded="true" signature="114596:114735" placeholder="SELECT DISTI... " />
-            <marker date="1468157231650" expanded="true" signature="131338:131430" placeholder="SELECT post_... ${$wpdb-&gt;postmeta}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/includes/zo_shortcodes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -748,7 +726,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/zo_grid--room.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_grid--room.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="86" column="43" selection-start-line="86" selection-start-column="43" selection-end-line="86" selection-end-column="43" />
@@ -759,7 +737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="180" column="27" selection-start-line="180" selection-start-column="27" selection-end-line="180" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -767,7 +744,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="317" column="29" selection-start-line="317" selection-start-column="28" selection-end-line="317" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -778,7 +754,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/zo_grid--welcome.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_grid--welcome.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="95" column="26" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
@@ -789,7 +765,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.2692308">
           <caret line="22" column="28" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -797,10 +772,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.8461537">
           <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
-          <folding>
-            <element signature="e#6#973#0#PHP" expanded="false" />
-            <marker date="1469323310769" expanded="true" signature="19690:19718" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -864,7 +835,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -915,36 +885,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/zo_grid.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.4363637">
-          <caret line="81" column="69" selection-start-line="81" selection-start-column="69" selection-end-line="81" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/assets/scss/shortcodes.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.878049">
-          <caret line="428" column="7" selection-start-line="428" selection-start-column="7" selection-end-line="428" selection-end-column="7" />
-          <folding>
-            <element signature="e#591#617#0" expanded="false" />
-            <element signature="e#682#1731#0" expanded="false" />
-            <element signature="e#2123#2214#0" expanded="false" />
-            <element signature="e#2617#5810#0" expanded="false" />
-            <element signature="e#6085#6331#0" expanded="false" />
-            <element signature="e#6421#6581#0" expanded="false" />
-            <element signature="e#7248#7650#0" expanded="false" />
-            <element signature="e#7692#7710#0" expanded="false" />
-            <element signature="e#7727#8157#0" expanded="false" />
-            <element signature="e#8194#8315#0" expanded="false" />
-            <element signature="e#8352#9413#0" expanded="false" />
-            <element signature="e#9447#10493#0" expanded="false" />
-            <element signature="e#12507#12871#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/inc/dynamic/dynamic.css.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -955,9 +895,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/inc/dynamic/static.css.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33213645">
-          <caret line="61" column="33" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="33" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="33" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_grid.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="81" column="69" selection-start-line="81" selection-start-column="69" selection-end-line="81" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_grid--events.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="80" column="39" selection-start-line="80" selection-start-column="39" selection-end-line="80" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/includes/zo_shortcodes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3715847">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_grid--testimonial.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/assets/scss/shortcodes.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7547893">
+          <caret line="352" column="0" selection-start-line="352" selection-start-column="0" selection-end-line="352" selection-end-column="0" />
+          <folding>
+            <element signature="e#591#617#0" expanded="false" />
+            <element signature="e#682#1731#0" expanded="false" />
+            <element signature="e#2123#2214#0" expanded="false" />
+            <element signature="e#2619#5812#0" expanded="false" />
+            <element signature="e#5880#7221#0" expanded="false" />
+            <element signature="e#6089#6335#0" expanded="false" />
+            <element signature="e#6425#6585#0" expanded="false" />
+            <element signature="e#7252#7654#0" expanded="false" />
+            <element signature="e#7696#7714#0" expanded="false" />
+            <element signature="e#7731#8161#0" expanded="false" />
+            <element signature="e#8198#8319#0" expanded="false" />
+            <element signature="e#8356#9417#0" expanded="false" />
+            <element signature="e#9453#10499#0" expanded="false" />
+            <element signature="e#13223#13587#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

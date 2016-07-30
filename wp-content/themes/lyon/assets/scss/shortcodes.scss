@@ -95,7 +95,7 @@
 /* ==========================================================================
    [Start] 3. Grid And Carousel
 ========================================================================== */
-.template-zo_grid--room {
+.template-yeah_grid--room {
   .yeah-grid-item {
     .yeah-grid-media {
       position: relative;
@@ -170,7 +170,7 @@
   }
 }
 
-.template-zo_grid--welcome {
+.template-yeah_grid--welcome {
   .yeah-grid-item {
     .post-item {
       padding-bottom: 15px;
@@ -351,7 +351,7 @@ div.owl-theme .owl-nav {
   }
 }
 
-.template-zo_grid--product-rate {
+.template-yeah_grid--product-rate {
   a.add_to_wishlist {
     font-size: 0;
     position: relative;
@@ -409,7 +409,7 @@ div.owl-theme .owl-nav {
 }
 
 /*Service Grid*/
-.template-zo_grid {
+.template-yeah_grid {
   .yeah-grid-item {
     .yeah-grid-title {
       text-align: center;
@@ -420,8 +420,8 @@ div.owl-theme .owl-nav {
         text-transform: capitalize;
         margin-top: 30px;
         text-align: center;
-        color: #fff;
         font-weight: 700;
+        color: #ffffff;
         font-size: 24px;
       }
     }
@@ -434,8 +434,39 @@ div.owl-theme .owl-nav {
     }
   }
 }
-
-.template-zo_grid--lastest-blog {
+.template-yeah_grid--events {
+  .yeah-grid-item {
+    .yeah-grid-title {
+      text-align: center;
+      a {
+        text-transform: capitalize;
+        margin-top: 30px;
+        text-align: center;
+        color: #252525;
+        font-weight: 700;
+        font-size: 24px;
+        width: 100%;
+        @extend .google-font-1;
+      }
+    }
+      .yeah-grid-description{
+        text-align: center;
+        font-style: italic;
+        font-size: 18px;
+        color: #252525;
+        @extend .google-font-1;
+        margin-bottom: 30px;
+    }
+    a.yeah-read-more {
+      font-size: 14px;
+      color: #636363;
+      text-transform: uppercase;
+      text-align: center;
+      display: block;
+    }
+  }
+}
+.template-yeah_grid--lastest-blog {
   .yeah-grid-item:hover {
     .yeah-grid-media {
       &:before {
