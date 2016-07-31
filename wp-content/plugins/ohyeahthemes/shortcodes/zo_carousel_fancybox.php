@@ -2,7 +2,7 @@
 vc_map(
 	array(
 		"name" => __("Yeah Carousel Fancy Box", 'cmstheme'),
-	    "base" => "zo_carousel_fancybox",
+	    "base" => "yeah_carousel_fancybox",
 	    "class" => "vc-zo-carousel-fancy-boxes",
 	    "category" => __("ZoTheme Shortcodes", 'cmstheme'),
 	    "params" => array(
@@ -1095,16 +1095,16 @@ vc_map(
 	            "param_name" => "zo_template",
 	            "admin_label" => true,
 	            "heading" => __("Shortcode Template",'cmstheme'),
-	            "shortcode" => "zo_carousel_fancybox",
+	            "shortcode" => "yeah_carousel_fancybox",
 	            "group" => __("Template", 'cmstheme'),
 	        ),
 		)
 	)
 );
 
-global $zo_carousel_fancybox;
-$zo_carousel_fancybox = array();
-class WPBakeryShortCode_zo_carousel_fancybox extends ZoShortcode{
+global $yeah_carousel_fancybox;
+$yeah_carousel_fancybox = array();
+class WPBakeryShortCode_yeah_carousel_fancybox extends ZoShortcode{
 	protected function content($atts, $content = null){
 		//default value
         $atts_extra = shortcode_atts(array(
@@ -1132,9 +1132,9 @@ class WPBakeryShortCode_zo_carousel_fancybox extends ZoShortcode{
             'right_arrow' => 'fa fa-arrow-right',
             'filter' => "false",
             'class' => '',
-            'zo_template' => 'zo_carousel_fancybox.php',
+            'zo_template' => 'yeah_carousel_fancybox.php',
         ), $atts);
-		global $zo_carousel_fancybox;
+		global $yeah_carousel_fancybox;
 		$atts = array_merge($atts_extra,$atts);
         $html_id = zoHtmlID('zo-carousel-fancybox');
 		
@@ -1151,7 +1151,7 @@ class WPBakeryShortCode_zo_carousel_fancybox extends ZoShortcode{
 		wp_enqueue_script('owl-animate',ZO_JS.'owl.animate.js',array('jquery'),'2.0.0b', true);
 		wp_enqueue_script('owl-carousel-yeahcarouselfancybox',ZO_JS.'owl.carousel.zocarouselfancybox.js',array('jquery'),'1.0.0', true);
 
-		$zo_carousel_fancybox[$html_id] = array(
+		$yeah_carousel_fancybox[$html_id] = array(
 			'margin' => (int)$atts['margin'],
             'loop' => $atts['loop'] == 1 ? true : false,
             'mouseDrag' => $atts['mousedrag'] == 1 ? true : false,
@@ -1181,7 +1181,7 @@ class WPBakeryShortCode_zo_carousel_fancybox extends ZoShortcode{
                 )
             )
 		);
-		wp_localize_script('owl-carousel-yeahcarouselfancybox', "zoCarouselFancyBox", $zo_carousel_fancybox);
+		wp_localize_script('owl-carousel-yeahcarouselfancybox', "zoCarouselFancyBox", $yeah_carousel_fancybox);
 		
         $atts['template'] = 'template-'.str_replace('.php','',$atts['zo_template']). ' content-align-' . $atts['content_align'] . ' '. $atts['class'];
         $atts['html_id'] = $html_id;

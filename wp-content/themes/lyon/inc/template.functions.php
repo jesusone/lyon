@@ -472,7 +472,7 @@ function yeah_social_share() {
             </a>
         </li>
         <li>
-            <a class="twitter" href="https://twitter.com/intent/tweet?text=<?php echo get_the_title(); ?>&url=<?php echo get_the_permalink(); ?>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+            <a class="twitter" href="https://twitter.com/intent/tweet?text=<?php echo wp_strip_all_tags(get_the_title()); ?>&url=<?php echo get_the_permalink(); ?>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
                 <i class="fa fa-twitter"></i>
                 <span><?php echo esc_html__('Twitter','lyon') ?></span>
             </a>

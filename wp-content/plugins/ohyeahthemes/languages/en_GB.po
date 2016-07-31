@@ -15,8 +15,8 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../zotheme.php:73 ../shortcodes/zo_carousel.php:169
-#: ../shortcodes/zo_carousel.php:175 ../shortcodes/zo_counter.php:420
+#: ../zotheme.php:73 ../shortcodes/yeah_carousel.php:169
+#: ../shortcodes/yeah_carousel.php:175 ../shortcodes/zo_counter.php:420
 #: ../shortcodes/zo_counter.php:426 ../shortcodes/zo_fancybox.php:346
 #: ../shortcodes/zo_fancybox.php:352 ../shortcodes/yeah_grid.php:81
 #: ../shortcodes/yeah_grid.php:87 ../shortcodes/zo_progressbar.php:139
@@ -35,96 +35,96 @@ msgid ""
 "your theme folder."
 msgstr ""
 
-#: ../shortcodes/zo_carousel.php:4
+#: ../shortcodes/yeah_carousel.php:4
 msgid "ZO Carousel"
 msgstr ""
 
-#: ../shortcodes/zo_carousel.php:7 ../shortcodes/zo_counter.php:7
+#: ../shortcodes/yeah_carousel.php:7 ../shortcodes/zo_counter.php:7
 #: ../shortcodes/zo_fancybox.php:7 ../shortcodes/yeah_grid.php:7
 #: ../shortcodes/zo_progressbar.php:7
 msgid "ZoTheme Shortcodes"
 msgstr ""
 
-#: ../shortcodes/zo_carousel.php:11 ../shortcodes/yeah_grid.php:11
+#: ../shortcodes/yeah_carousel.php:11 ../shortcodes/yeah_grid.php:11
 msgid "Source"
 msgstr ""
 
-#: ../shortcodes/zo_carousel.php:17 ../shortcodes/yeah_grid.php:17
+#: ../shortcodes/yeah_carousel.php:17 ../shortcodes/yeah_grid.php:17
 msgid "Source Settings"
 msgstr ""
 
-#: ../shortcodes/zo_carousel.php:21
+#: ../shortcodes/yeah_carousel.php:21
 msgid "XSmall Devices"
 msgstr ""
 
-#: ../shortcodes/zo_carousel.php:26 ../shortcodes/zo_carousel.php:35
-#: ../shortcodes/zo_carousel.php:44 ../shortcodes/zo_carousel.php:53
-#: ../shortcodes/zo_carousel.php:61 ../shortcodes/zo_carousel.php:71
-#: ../shortcodes/zo_carousel.php:81 ../shortcodes/zo_carousel.php:91
-#: ../shortcodes/zo_carousel.php:101 ../shortcodes/zo_carousel.php:111
-#: ../shortcodes/zo_carousel.php:119 ../shortcodes/zo_carousel.php:127
-#: ../shortcodes/zo_carousel.php:137 ../shortcodes/zo_carousel.php:149
-#: ../shortcodes/zo_carousel.php:161
+#: ../shortcodes/yeah_carousel.php:26 ../shortcodes/yeah_carousel.php:35
+#: ../shortcodes/yeah_carousel.php:44 ../shortcodes/yeah_carousel.php:53
+#: ../shortcodes/yeah_carousel.php:61 ../shortcodes/yeah_carousel.php:71
+#: ../shortcodes/yeah_carousel.php:81 ../shortcodes/yeah_carousel.php:91
+#: ../shortcodes/yeah_carousel.php:101 ../shortcodes/yeah_carousel.php:111
+#: ../shortcodes/yeah_carousel.php:119 ../shortcodes/yeah_carousel.php:127
+#: ../shortcodes/yeah_carousel.php:137 ../shortcodes/yeah_carousel.php:149
+#: ../shortcodes/yeah_carousel.php:161
 msgid "Carousel Settings"
 msgstr ""
 
-#: ../shortcodes/zo_carousel.php:30
+#: ../shortcodes/yeah_carousel.php:30
 msgid "Small Devices"
 msgstr ""
 
-#: ../shortcodes/zo_carousel.php:39
+#: ../shortcodes/yeah_carousel.php:39
 msgid "Medium Devices"
 msgstr ""
 
-#: ../shortcodes/zo_carousel.php:48
+#: ../shortcodes/yeah_carousel.php:48
 msgid "Large Devices"
 msgstr ""
 
-#: ../shortcodes/zo_carousel.php:57
+#: ../shortcodes/yeah_carousel.php:57
 msgid "Margin Items"
 msgstr ""
 
-#: ../shortcodes/zo_carousel.php:65
+#: ../shortcodes/yeah_carousel.php:65
 msgid "Loop Items"
 msgstr ""
 
-#: ../shortcodes/zo_carousel.php:75
+#: ../shortcodes/yeah_carousel.php:75
 msgid "Mouse Drag"
 msgstr ""
 
-#: ../shortcodes/zo_carousel.php:85
+#: ../shortcodes/yeah_carousel.php:85
 msgid "Show Nav"
 msgstr ""
 
-#: ../shortcodes/zo_carousel.php:95
+#: ../shortcodes/yeah_carousel.php:95
 msgid "Show Dots"
 msgstr ""
 
-#: ../shortcodes/zo_carousel.php:105
+#: ../shortcodes/yeah_carousel.php:105
 msgid "Auto Play"
 msgstr ""
 
-#: ../shortcodes/zo_carousel.php:115
+#: ../shortcodes/yeah_carousel.php:115
 msgid "Auto Play TimeOut"
 msgstr ""
 
-#: ../shortcodes/zo_carousel.php:123
+#: ../shortcodes/yeah_carousel.php:123
 msgid "Smart Speed"
 msgstr ""
 
-#: ../shortcodes/zo_carousel.php:126
+#: ../shortcodes/yeah_carousel.php:126
 msgid "Speed scroll of each item"
 msgstr ""
 
-#: ../shortcodes/zo_carousel.php:131
+#: ../shortcodes/yeah_carousel.php:131
 msgid "Pause On Hover"
 msgstr ""
 
-#: ../shortcodes/zo_carousel.php:141
+#: ../shortcodes/yeah_carousel.php:141
 msgid "Left Arrow"
 msgstr ""
 
-#: ../shortcodes/zo_carousel.php:148 ../shortcodes/zo_carousel.php:160
+#: ../shortcodes/yeah_carousel.php:148 ../shortcodes/yeah_carousel.php:160
 #: ../shortcodes/zo_counter.php:76 ../shortcodes/zo_counter.php:147
 #: ../shortcodes/zo_counter.php:233 ../shortcodes/zo_counter.php:314
 #: ../shortcodes/zo_counter.php:386 ../shortcodes/zo_fancybox.php:66
@@ -134,11 +134,11 @@ msgstr ""
 msgid "Select icon from library."
 msgstr ""
 
-#: ../shortcodes/zo_carousel.php:153
+#: ../shortcodes/yeah_carousel.php:153
 msgid "Right Arrow"
 msgstr ""
 
-#: ../shortcodes/zo_carousel.php:165 ../shortcodes/zo_counter.php:416
+#: ../shortcodes/yeah_carousel.php:165 ../shortcodes/zo_counter.php:416
 #: ../shortcodes/zo_fancybox.php:342 ../shortcodes/yeah_grid.php:77
 #: ../shortcodes/zo_progressbar.php:135
 msgid "Extra Class"

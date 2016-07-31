@@ -68,6 +68,11 @@
                         <div class="flx-entry-thumb">
                             <?php
                                 switch(get_post_format(get_the_ID())){
+                                    case  '':
+                                        ?>
+                                        <a title="<?php echo wp_strip_all_tags(get_the_title()); ?>" href="<?php the_permalink() ?>" rel=""><?php the_post_thumbnail( 'full' ); ?></a>
+                                        <?php
+                                        break;
                                     case  'video':
                                          echo yeah_archive_video();
                                     break;

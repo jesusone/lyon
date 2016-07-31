@@ -199,6 +199,18 @@ class ZOMetaOptions
 				'label' => __('Client Position','lyon'),
 				'type' => 'text',
 			));
+				zo_options(array(
+					'id' => 'rating',
+					'label' => __('Rate','lyon'),
+					'type' => 'select',
+					'options' => array(
+						'5' => '5 Rate',
+						'4' => '4 Rate',
+						'3' => '3 Rate',
+						'2' => '2 Rate',
+						'1' => '1 Rate',
+					)
+				));
 			?>
 		</div>
 	<?php

@@ -2,7 +2,7 @@
 vc_map(
 	array(
 		"name" => __("Zo Heading", 'cmstheme'),
-	    "base" => "zo_heading",
+	    "base" => "yeah_heading",
 	    "class" => "zo-heading",
 		"content_element" => true,
 	    "category" => __("ZoTheme Shortcodes", 'cmstheme'),
@@ -282,14 +282,14 @@ vc_map(
 	            "param_name" => "zo_template",
 	            "admin_label" => true,
 	            "heading" => __("Template",'cmstheme'),
-	            "shortcode" => "zo_heading",
+	            "shortcode" => "yeah_heading",
 	            "group" => __("Template", 'cmstheme'),
 	        ),
 	    )
 	)
 );
 
-class WPBakeryShortCode_zo_heading extends ZoShortcode{
+class WPBakeryShortCode_yeah_heading extends ZoShortcode{
 	protected function content($atts, $content = null){
 		$atts_extra = shortcode_atts(array(
 			'class' => '',
@@ -314,7 +314,7 @@ class WPBakeryShortCode_zo_heading extends ZoShortcode{
             'link_button' => 'no',
             'link_button_align' => 'left',
             'link_button_class' => '',
-			'zo_template' => 'zo_heading.php'
+			'zo_template' => 'yeah_heading.php'
 		), $atts);
 		$atts = array_merge($atts_extra,$atts);
 		$html_id = zoHtmlID('zo-heading');

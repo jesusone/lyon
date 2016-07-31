@@ -12,7 +12,7 @@
     <?php if(has_post_thumbnail()) : ?>
 	<!-- Thumb -->
     <div class="yeah-blog-image">
-        <a title="<?php the_title(); ?>" href="<?php the_permalink() ?>" rel=""><?php the_post_thumbnail( 'full' ); ?></a>
+        <a title="<?php echo wp_strip_all_tags(get_the_title()); ?>" href="<?php the_permalink() ?>" rel=""><?php the_post_thumbnail( 'full' ); ?></a>
     </div>
     <?php endif; ?>
 	<!-- Title -->

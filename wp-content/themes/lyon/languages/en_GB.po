@@ -2693,7 +2693,7 @@ msgstr ""
 msgid "Read More >"
 msgstr ""
 
-#: vc_params/zo_carousel.php:5 vc_params/zo_counter.php:144
+#: vc_params/yeah_carousel.php:5 vc_params/zo_counter.php:144
 #: vc_params/zo_fancybox.php:5 vc_params/yeah_grid.php:5
 msgid "Title Size"
 msgstr ""

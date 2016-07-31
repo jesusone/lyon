@@ -2,7 +2,7 @@
 vc_map(
     array(
         "name" => __("Carousel", 'ohyeahthemes'),
-        "base" => "zo_carousel",
+        "base" => "yeah_carousel",
         "class" => "vc-zo-carousel",
         "category" => __("Ohyeahthemes Shortcodes", 'ohyeahthemes'),
         "params" => array(
@@ -219,7 +219,7 @@ vc_map(
             array(
                 "type" => "zo_template",
                 "param_name" => "zo_template",
-                "shortcode" => "zo_carousel",
+                "shortcode" => "yeah_carousel",
                 "admin_label" => true,
                 "heading" => __("Shortcode Template",'ohyeahthemes'),
                 "group" => __("Template", 'ohyeahthemes'),
@@ -227,9 +227,9 @@ vc_map(
         )
     )
 );
-global $zo_carousel;
-$zo_carousel = array();
-class WPBakeryShortCode_zo_carousel extends ZoShortcode{
+global $yeah_carousel;
+$yeah_carousel = array();
+class WPBakeryShortCode_yeah_carousel extends ZoShortcode{
     protected function content($atts, $content = null){
         //default value
         $atts_extra = shortcode_atts(array(
@@ -252,9 +252,9 @@ class WPBakeryShortCode_zo_carousel extends ZoShortcode{
             'right_arrow' => 'fa fa-arrow-right',
             'filter' => "false",
             'class' => '',
-            'zo_template' => 'zo_carousel.php'
+            'zo_template' => 'yeah_carousel.php'
         ), $atts);
-        global $zo_carousel;
+        global $yeah_carousel;
         $atts = array_merge($atts_extra,$atts);
         wp_enqueue_style('owl-carousel',ZO_CSS.'owl.carousel.css','','2.0.0b','all');
         wp_enqueue_script('owl-carousel',ZO_JS.'owl.carousel.js',array('jquery'),'2.0.0b', true);
@@ -273,7 +273,7 @@ class WPBakeryShortCode_zo_carousel extends ZoShortcode{
         $left_arrow = isset($atts['left_arrow'])?$atts['left_arrow']:'fa fa-arrow-left';
         $right_arrow = isset($atts['right_arrow'])?$atts['right_arrow']:'fa fa-arrow-right';
 
-        $zo_carousel[$html_id] = array(
+        $yeah_carousel[$html_id] = array(
             'margin' => (int)$atts['margin'],
             'loop' => $atts['loop'] == 1 ? true : false,
             'mouseDrag' => $atts['mousedrag'] == 1 ? true : false,
@@ -303,7 +303,7 @@ class WPBakeryShortCode_zo_carousel extends ZoShortcode{
                 )
             )
         );
-        wp_localize_script('owl-carousel-zo', "zocarousel", $zo_carousel);
+        wp_localize_script('owl-carousel-zo', "zocarousel", $yeah_carousel);
         $atts['template'] = 'template-'.str_replace('.php','',$atts['zo_template']). ' '. $atts['class'];
         $atts['html_id'] = $html_id;
         return parent::content($atts, $content);

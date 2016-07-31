@@ -10,12 +10,12 @@
 * Copyright 2016 Ohyeahthemes. All rights reserved.
 */
 
-define( 'ZO_DIR', plugin_dir_path(__FILE__) );
+define( 'YEAH_DIR', plugin_dir_path(__FILE__) );
 define( 'ZO_URL', plugin_dir_url(__FILE__) );
-define( 'ZO_LIBRARIES', ZO_DIR  . "libraries" . DIRECTORY_SEPARATOR );
-define( 'ZO_LANGUAGES', ZO_DIR . "languages" . DIRECTORY_SEPARATOR );
-define( 'ZO_TEMPLATES', ZO_DIR . "templates" . DIRECTORY_SEPARATOR );
-define( 'ZO_INCLUDES', ZO_DIR . "includes" . DIRECTORY_SEPARATOR );
+define( 'ZO_LIBRARIES', YEAH_DIR  . "libraries" . DIRECTORY_SEPARATOR );
+define( 'ZO_LANGUAGES', YEAH_DIR . "languages" . DIRECTORY_SEPARATOR );
+define( 'ZO_TEMPLATES', YEAH_DIR . "templates" . DIRECTORY_SEPARATOR );
+define( 'YEAH_INCLUDES', YEAH_DIR . "includes" . DIRECTORY_SEPARATOR );
 
 define( 'ZO_CSS', ZO_URL . "assets/css/" );
 define( 'ZO_JS', ZO_URL . "assets/js/" );
@@ -23,7 +23,7 @@ define( 'ZO_IMAGES', ZO_URL . "assets/images/" );
 /**
 * Require functions on plugin
 */
-require_once ZO_INCLUDES . "functions.php";
+require_once YEAH_INCLUDES . "functions.php";
 /**
 * Use ZoThemeCore class
 */
@@ -66,7 +66,7 @@ class ZoThemeCore{
 	}
 	function zoShortcodeRegister() {
 	    //Load required libararies
-	    require_once ZO_INCLUDES . 'zo_shortcodes.php';
+	    require_once YEAH_INCLUDES . 'zo_shortcodes.php';
 	}
 
     /**

@@ -21,7 +21,7 @@ if(!function_exists('zoDummyData')){
 			}
 		}
 		if(!class_exists('WP_Import')){
-			$class_wp_import = ZO_INCLUDES. 'wordpress-importer/wordpress-importer.php';
+			$class_wp_import = YEAH_INCLUDES. 'wordpress-importer/wordpress-importer.php';
 			if(file_exists($class_wp_import)){
 				require_once($class_wp_import);	
 			}else{

@@ -852,8 +852,8 @@ function zo_prettyphoto_style_loader_tag($tag){
   return preg_replace("/id='prettyphoto-css'/", "property='stylesheet' id='prettyphoto-css'", $tag);
 }
 
-add_filter('style_loader_tag', 'zo_carousel_style_loader_tag');
-function zo_carousel_style_loader_tag($tag){  
+add_filter('style_loader_tag', 'yeah_carousel_style_loader_tag');
+function yeah_carousel_style_loader_tag($tag){
   return preg_replace("/id='vc_carousel_css-css'/", "property='stylesheet' id='vc_carousel_css-css'", $tag);
 }
 

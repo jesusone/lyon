@@ -78,21 +78,6 @@
 ========================================================================== */
 
 /* ==========================================================================
-   [Start] 2. Shortcode Pie Chart
-========================================================================== */
-.heading-1 {
-  font-size: 42px;
-  font-weight: bold;
-  margin: 0;
-  line-height: 1.1;
-  color: #222;
-}
-
-/* ==========================================================================
-   [End] 2. Shortcode Pie Chart
-========================================================================== */
-
-/* ==========================================================================
    [Start] 3. Grid And Carousel
 ========================================================================== */
 .template-yeah_grid--room {
@@ -169,7 +154,6 @@
 
   }
 }
-
 .template-yeah_grid--welcome {
   .yeah-grid-item {
     .post-item {
@@ -287,7 +271,7 @@ div.owl-theme .owl-nav {
   }
 }
 
-.template-zo_carousel--new-product {
+.template-yeah_carousel--new-product {
   .yeah-carousel-item .yeah-grid-title {
     padding: 0;
     margin: 0;
@@ -297,7 +281,7 @@ div.owl-theme .owl-nav {
   }
 }
 
-.template-zo_carousel--latest-blog {
+.template-yeah_carousel--latest-blog {
   .yeah-carousel-item {
     .yeah-carousel-thumb {
       position: relative;
@@ -467,77 +451,31 @@ div.owl-theme .owl-nav {
   }
 }
 .template-yeah_grid--lastest-blog {
-  .yeah-grid-item:hover {
-    .yeah-grid-media {
-      &:before {
-        opacity: 0.4;
-      }
-      img {
-        @include transform(scale(1.12));
-      }
-    }
-  }
-  .yeah-grid-media {
-    position: relative;
-    overflow: hidden;
-    &:before {
-      @include transition(all 500ms ease);
-      position: absolute;
-      content: "";
-      width: 100%;
-      height: 100%;
-      background: #000;
-      opacity: 0;
-      z-index: 1;
-    }
-    img {
-      @include transition(all 500ms ease);
-    }
-    .yeah-grid-detail {
-      position: absolute;
-      bottom: 20px;
-      left: 20px;
-      color: #fff;
-      z-index: 2;
-      .yeah-grid-time {
-        display: block;
-        font-size: 16px;
-        font-style: italic;
-        padding-bottom: 10px;
-      }
-      .yeah-grid-title {
-        display: block;
-        text-transform: uppercase;
-        h3 {
-          @extend .museo_slab_300;
-          font-size: 24px;
-          line-height: 1.1;
-          margin-bottom: 0;
+  @extend .template-yeah_grid--welcome;
+  .yeah-grid-item {
+    .post-item {
+      margin-right: 50px;
+      .post-inner {
+        .flx-entry-thumb {
+          float: right;
+          margin: 100px -50px 133px 0px;
+        }
+        .entry-content {
+          padding-right: 100px;
+          width: 50%;
         }
       }
-      .author, .comment {
-        display: inline-block;
+    &:nth-child(2n+2) {
+      .entry-content {
+        padding-right: 100px;
+        width: 53.572%;
       }
-      .comment a {
-        color: $primary_color;
-        margin-left: 3px;
-        font-style: italic;
-        font-size: 16px;
-        &:hover {
-          color: #222;
-        }
-      }
-      a {
-        color: #fff;
-        &:hover {
-          color: $primary_color;
-        }
-      }
+    }
     }
   }
 }
 
-.template-zo_carousel--team {
+.template-yeah_carousel--team {
   .yeah-carousel-item {
     .yeah-carousel-media {
       &:hover {
@@ -559,7 +497,7 @@ div.owl-theme .owl-nav {
   }
 }
 
-.template-zo_heading--line-bottom {
+.template-yeah_heading--line-bottom {
   .zo-heading-main {
     background: url('../images/bg-title-bar.png') no-repeat bottom center;
     padding-bottom: 22px;
@@ -1055,7 +993,7 @@ div.owl-theme .owl-nav {
 /* ==========================================================================
    [Start] 11. Carousel
 ========================================================================== */
-.template-zo_carousel--latest-blog
+.template-yeah_carousel--latest-blog
   /* ==========================================================================
      [End] 11. Carousel
   ========================================================================== */
@@ -1380,7 +1318,7 @@ div.owl-theme .owl-nav {
   }
 }
 
-.template-zo_carousel_fancybox {
+.template-yeah_carousel_fancybox {
   position: relative;
   .yeah-fancybox-item {
     .yeah-fancybox-details {
