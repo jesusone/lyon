@@ -2,32 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b625b242-6e1c-401a-b383-adb841f87fd4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_carousel-testimonial.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/includes/zo_dummy.php" afterPath="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/includes/zo_dummy.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/includes/zo_shortcodes.php" afterPath="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/includes/zo_shortcodes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/languages/en_GB.po" afterPath="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/languages/en_GB.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/ohyeahthemes.php" afterPath="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/ohyeahthemes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/shortcodes/zo_carousel.php" afterPath="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/shortcodes/zo_carousel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/shortcodes/zo_carousel_fancybox.php" afterPath="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/shortcodes/zo_carousel_fancybox.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/assets/scss/shortcodes.scss" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/assets/scss/shortcodes.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/functions.php" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/inc/options/meta.options.php" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/inc/options/meta.options.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/inc/template.functions.php" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/inc/template.functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/languages/en_GB.po" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/languages/en_GB.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/single-templates/single/content.php" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/single-templates/single/content.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_grid--lastest-blog.php" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_grid--lastest-blog.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_grid--welcome.php" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_grid--welcome.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/shortcodes/zo_heading.php" afterPath="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/shortcodes/yeah_heading.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/templates/zo_carousel.php" afterPath="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/templates/yeah_carousel.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/templates/zo_carousel_fancybox.php" afterPath="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/templates/yeah_carousel_fancybox.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/templates/zo_heading.php" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_heading.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/zo_carousel--latest-blog.php" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_carousel--latest-blog.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/zo_carousel--new-product.php" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_carousel--new-product.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/zo_carousel--team.php" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_carousel--team.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/zo_carousel.php" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_carousel.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/zo_carousel_fancybox.php" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_carousel_fancybox.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/zo_heading--line-bottom.php" afterPath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_heading--line-bottom.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/zo_heading.php" afterPath="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/templates/yeah_heading.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/shortcodes/zo_carousel.php" afterPath="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/shortcodes/yeah_carousel.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/shortcodes/zo_carousel_fancybox.php" afterPath="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/shortcodes/yeah_carousel_fancybox.php" />
     </list>
     <ignored path="lyon.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,8 +31,8 @@
       <file leaf-file-name="shortcodes.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/assets/scss/shortcodes.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.756098">
-              <caret line="464" column="21" selection-start-line="464" selection-start-column="21" selection-end-line="464" selection-end-column="21" />
+            <state vertical-scroll-proportion="-2.890244">
+              <caret line="455" column="16" selection-start-line="455" selection-start-column="16" selection-end-line="455" selection-end-column="16" />
               <folding>
                 <element signature="e#591#617#0" expanded="false" />
                 <element signature="e#682#1731#0" expanded="false" />
@@ -67,17 +46,37 @@
                 <element signature="e#7716#7837#0" expanded="false" />
                 <element signature="e#7876#8937#0" expanded="false" />
                 <element signature="e#8973#10019#0" expanded="false" />
-                <element signature="e#11831#12195#0" expanded="false" />
+                <element signature="e#11855#12219#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zo_shortcodes.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="yeah_carousel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_carousel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.1923075">
+              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="yeah_carousel-testimonial.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_carousel-testimonial.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.71350366">
+              <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zo_shortcodes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/includes/zo_shortcodes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.49635038">
-              <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
+            <state vertical-scroll-proportion="-13.076923">
+              <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -98,26 +97,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-8.709091">
               <caret line="156" column="28" selection-start-line="156" selection-start-column="22" selection-end-line="156" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="function.options.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/inc/options/function.options.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.576923">
-              <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="content-none.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/single-templates/content-none.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -215,9 +194,10 @@
         <option value="$PROJECT_DIR$/wp-content/themes/lyon/inc/template.functions.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_grid--lastest-blog.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_grid--welcome.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/lyon/assets/scss/shortcodes.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/lyon/inc/options/meta.options.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/includes/zo_shortcodes.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/lyon/assets/scss/shortcodes.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_carousel-testimonial.php" />
       </list>
     </option>
   </component>
@@ -423,6 +403,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lyon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lyon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ohyeahthemes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -434,15 +440,15 @@
     <property name="js-jscs-nodeInterpreter" value="F:\node\node.exe" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\xamp\htdocs\lyon\wp-content\themes\lyon\assets\images" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\xamp\htdocs\lyon\wp-content\themes\lyon\vc_templates" />
       <recent name="F:\xamp\htdocs\lyon\wp-content\themes\lyon\assets\images" />
       <recent name="F:\xamp\htdocs\lyon\wp-content\themes\lyon\assets\css" />
       <recent name="F:\xamp\htdocs\lyon\wp-content\themes\lyon\assets\js" />
       <recent name="F:\xamp\htdocs\lyon\wp-content\themes\lyon" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\xamp\htdocs\lyon\wp-content\themes\lyon\assets\images" />
     </key>
   </component>
   <component name="RunManager">
@@ -495,7 +501,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1378" height="735" extended-state="0" />
+    <frame x="-7" y="0" width="1378" height="735" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25493172" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -546,13 +552,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://F:/Startup/lyon/html-lyon/single-room-gallery.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="654" column="25" selection-start-line="654" selection-start-column="24" selection-end-line="654" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/assets/css/popular.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -739,13 +738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_carousel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/vc_row.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -803,6 +795,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.030965392">
           <caret line="59" column="9" selection-start-line="55" selection-start-column="2" selection-end-line="59" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -900,28 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/assets/scss/shortcodes.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.756098">
-          <caret line="464" column="21" selection-start-line="464" selection-start-column="21" selection-end-line="464" selection-end-column="21" />
-          <folding>
-            <element signature="e#591#617#0" expanded="false" />
-            <element signature="e#682#1731#0" expanded="false" />
-            <element signature="e#2136#5329#0" expanded="false" />
-            <element signature="e#5396#6737#0" expanded="false" />
-            <element signature="e#5605#5851#0" expanded="false" />
-            <element signature="e#5941#6101#0" expanded="false" />
-            <element signature="e#6768#7170#0" expanded="false" />
-            <element signature="e#7212#7230#0" expanded="false" />
-            <element signature="e#7247#7677#0" expanded="false" />
-            <element signature="e#7716#7837#0" expanded="false" />
-            <element signature="e#7876#8937#0" expanded="false" />
-            <element signature="e#8973#10019#0" expanded="false" />
-            <element signature="e#11831#12195#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/inc/metacore/core.options.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.709091">
@@ -940,8 +911,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/ohyeahthemes/includes/zo_shortcodes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49635038">
-          <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
+        <state vertical-scroll-proportion="-13.076923">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/assets/scss/shortcodes.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.890244">
+          <caret line="455" column="16" selection-start-line="455" selection-start-column="16" selection-end-line="455" selection-end-column="16" />
+          <folding>
+            <element signature="e#591#617#0" expanded="false" />
+            <element signature="e#682#1731#0" expanded="false" />
+            <element signature="e#2136#5329#0" expanded="false" />
+            <element signature="e#5396#6737#0" expanded="false" />
+            <element signature="e#5605#5851#0" expanded="false" />
+            <element signature="e#5941#6101#0" expanded="false" />
+            <element signature="e#6768#7170#0" expanded="false" />
+            <element signature="e#7212#7230#0" expanded="false" />
+            <element signature="e#7247#7677#0" expanded="false" />
+            <element signature="e#7716#7837#0" expanded="false" />
+            <element signature="e#7876#8937#0" expanded="false" />
+            <element signature="e#8973#10019#0" expanded="false" />
+            <element signature="e#11855#12219#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_carousel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.1923075">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/lyon/vc_templates/yeah_carousel-testimonial.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.71350366">
+          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
           <folding />
         </state>
       </provider>
