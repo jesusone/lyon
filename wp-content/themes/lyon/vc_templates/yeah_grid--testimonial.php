@@ -60,7 +60,7 @@ global $smof_data;
             foreach(zoGetCategoriesByPostID(get_the_ID()) as $category){
                 $groups[] = '"category-'.$category->slug.'"';
             }
-            $post_meta = zo_post_meta_data();
+            $post_meta = yeah_post_meta_data();
             $zo_title_size = isset( $atts['zo_title_size'] ) ? $atts['zo_title_size'] : 'h2';
             ?>
             <div class="zo-testimonial-wrap <?php echo esc_attr($atts['item_class']);?>" data-groups='[<?php echo implode(',', $groups);?>]'>

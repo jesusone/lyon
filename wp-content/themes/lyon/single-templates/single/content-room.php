@@ -27,7 +27,7 @@ wp_enqueue_style('owl-carousel');
     <?php if(has_post_thumbnail()) : ?>
 	<!-- Thumb -->
 	<?php
-		$gallery = zo_post_meta_data();
+		$gallery = yeah_post_meta_data();
 		if(!empty($gallery->_zo_portfolio_images)){
 			?>
 			<div class="yeah-blog-image yeah-room-gallery">

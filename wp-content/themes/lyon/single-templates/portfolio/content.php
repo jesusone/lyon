@@ -10,7 +10,7 @@
 ?>
 
 <?php
-$meta_data = zo_post_meta_data();
+$meta_data = yeah_post_meta_data();
 $images = !empty($meta_data->_zo_portfolio_images) ? $meta_data->_zo_portfolio_images : '';
 $image_ids = explode(',', $images);
 ?>

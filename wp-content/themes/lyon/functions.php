@@ -218,7 +218,7 @@ add_action('wp', 'zo_meta_data');
  * @author OhyeahThemes
  * @return mixed|NULL
  */
-function zo_post_meta_data(){
+function yeah_post_meta_data(){
     global $post;
 
     if(!isset($post->ID)) return null;

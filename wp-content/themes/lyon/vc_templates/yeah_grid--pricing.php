@@ -21,7 +21,7 @@ $atts['categories'] = $_category;
         $i = 1;
         while($posts->have_posts()) :
             $posts->the_post();
-            $pricing_meta = zo_post_meta_data();
+            $pricing_meta = yeah_post_meta_data();
             $zo_title_size = isset( $atts['zo_title_size'] ) ? $atts['zo_title_size'] : 'h2';
         ?>
             <div class="zo-pricing-item <?php echo 0 === $i++ % 2 ? 'even' : 'odd'; ?> <?php echo esc_attr($atts['item_class']);?> <?php echo ( $pricing_meta->_zo_is_feature == 1 ) ? ' pricing-feature-item' : '' ?> ">

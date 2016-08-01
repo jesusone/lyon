@@ -60,6 +60,7 @@ $atts['categories'] = $_category;
                 $groups[] = 'category-' . $category->slug;
             }
             ?>
+            <?php  $test_meta = yeah_post_meta_data(); ?>
             <div class="yeah-carousel-item <?php echo implode(' ', $groups);?>">
                 <?php
                 if (has_post_thumbnail() && !post_password_required() && !is_attachment() && wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), 'full', false)):
@@ -71,15 +72,37 @@ $atts['categories'] = $_category;
                 endif;
                 echo '<div class="yeah-grid-media ' . esc_attr($class) . '">' . $thumbnail . '</div>';
                 ?>
-                <div class="zo-carousel-title">
-                    <?php the_title();?>
+                <div class="yeah-carousel-info">
+                    <div class="yeah-carousel-header">
+                        <div class="yeah-carousel-title">
+                            <?php the_title();?>
+                        </div>
+                        <div class="yeah-ratings">
+                            <?php $rate = (int)$test_meta->_zo_rating;
+                             for($i=1; $i <= 5 ; $i ++){
+                                 if($i <= $rate ) {
+                                     ?>
+                                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/stars_crystal/rating_on.gif" alt="1 Star" title="1 Star" onmouseover="current_rating(2089, 1, '1 Star');" onmouseout="ratings_off(5, 0, 0);" onclick="rate_post();" onkeypress="rate_post();" style="cursor: pointer; border: 0px;">
+                                <?php
+                                 }
+                                 else {
+                                     ?>
+                                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/stars_crystal/rating_off.gif" alt="1 Star" title="1 Star" onmouseover="current_rating(2089, 1, '1 Star');" onmouseout="ratings_off(5, 0, 0);" onclick="rate_post();" onkeypress="rate_post();" style="cursor: pointer; border: 0px;">
+                                <?php
+                                 }
+                             }
+                            ?>
+                        </div>
+                    </div>
+                    <div class="yeah-carousel-position">
+                        <?php echo esc_attr($test_meta->_zo_testimonial_position);?>
+                    </div>
+                    <div class="yeah-description">
+                        <?php echo yeah_limit_words(get_the_excerpt(),50); ?>
+                    </div>
                 </div>
-                <div class="zo-carousel-time">
-                    <?php the_time('l, F jS, Y');?>
-                </div>
-                <div class="zo-carousel-categories">
-                    <?php echo get_the_term_list(get_the_ID(), 'category', 'Category: ', ', ', ''); ?>
-                </div>
+
+
             </div>
             <?php
         endwhile;
